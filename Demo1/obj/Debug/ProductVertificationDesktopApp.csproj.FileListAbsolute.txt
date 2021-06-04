@@ -1,0 +1,605 @@
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Properties.Resources.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe.config
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.Licensing.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Sharp7.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Sharp7.pdb
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.MainView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiulucuon.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiuvadap.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoViews.Form_Baocao_Dobencuongbuc.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Rocktest.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Dobiendang.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Doben.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Doben.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobiendang.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.BaoCaoView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Caidatthongso.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobencuongbuc.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.CaiDatView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.CanhBaoView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Doben.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.TroGiupView.TroGiupView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.DangNhapView.DangNhapView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.LichSuView.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobencuongbuc.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobiendang.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Doben.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobencuongbuc.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobiendang.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Doben.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobencuongbuc.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobiendang.resources
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.Pro.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\IconButton.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\IconButton.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\AutoMapper.dll
+C:\Users\PC\Desktop\Nhi\Demo1\Demo1\bin\Debug\AutoMapper.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe.config
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.Licensing.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.Pro.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.pdb
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csprojAssemblyReference.cache
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.MainView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.TroGiupView.TroGiupView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Dobiendang.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Doben.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoViews.Form_Baocao_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiulucuon.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiuvadap.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Rocktest.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Caidatthongso.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Doben.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobiendang.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.CaiDatView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.DangNhapView.DangNhapView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.LichSuView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.CanhBaoView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.BaoCaoView.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Doben.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobiendang.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Doben.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobiendang.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Doben.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobiendang.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Properties.Resources.resources
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Downloads\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe.config
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.Licensing.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.Pro.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csprojAssemblyReference.cache
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.MainView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.TroGiupView.TroGiupView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Dobiendang.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Doben.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoViews.Form_Baocao_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiulucuon.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiuvadap.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Rocktest.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Caidatthongso.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Doben.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobiendang.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.CaiDatView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.DangNhapView.DangNhapView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.LichSuView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.CanhBaoView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.BaoCaoView.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Doben.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobiendang.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Doben.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobiendang.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Doben.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobencuongbuc.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobiendang.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Properties.Resources.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_ConFirmRunning.resources
+C:\Users\PC\Downloads\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatthongso.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe.config
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.Licensing.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\FontAwesome.Sharp.Pro.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Platform.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\AutoMapper.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\IconButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Newtonsoft.Json.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Sharp7.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Core.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csprojAssemblyReference.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_ConFirmRunning.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatthongso.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.MainView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.TroGiupView.TroGiupView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoViews.Form_Baocao_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiulucuon.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiuvadap.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Rocktest.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Caidatthongso.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.CaiDatView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.DangNhapView.DangNhapView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.LichSuView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.CanhBaoView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.BaoCaoView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Properties.Resources.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.GenerateResource.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CoreCompileInputs.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit\Demo1-20210528T110637Z-001\Demo1\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaidatView.Dobiendang.ViewConfirmSetting.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csprojAssemblyReference.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaidatView.Dobiendang.ViewConfirmSetting.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_ConFirmRunning.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatthongso.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.MainView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.GiamSatView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.TroGiupView.TroGiupView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.Form_Baocao_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoViews.Form_Baocao_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiulucuon.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Chiuvadap.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.BaoCaoView.BaoCaoMKTDoBienDangView.Form_Baocao_Rocktest.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Caidatthongso.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.Form_Caidat_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CaiDatView.CaiDatView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.DangNhapView.DangNhapView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.LichSuView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.CanhBaoView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.BaoCaoView.BaoCaoView.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.CanhBaoView.Form_Canhbao_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.GiamSatView.Form_Giamsat_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Doben.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobencuongbuc.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.Views.Implements.LichSuView.Form_Lichsu_Dobiendang.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Properties.Resources.resources
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.GenerateResource.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CoreCompileInputs.cache
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe.config
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.exe
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\ProductVertificationDesktopApp.csproj.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\AutoMapper.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.Licensing.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\FontAwesome.Sharp.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\FontAwesome.Sharp.Pro.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\IconButton.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Newtonsoft.Json.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Sharp7.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Core.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Platform.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Xaml.dll
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\AutoMapper.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\IconButton.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Newtonsoft.Json.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Sharp7.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Core.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Core.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\SISTRAIN\13_PhongKiemTraChatLuongSanPham\6_Src\Desktop App\Demo_edit_V2\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete

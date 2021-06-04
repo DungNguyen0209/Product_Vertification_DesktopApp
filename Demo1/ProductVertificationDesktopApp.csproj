@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69B73BD8-9557-4C79-8261-C79122AB6898}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProductVertificationDesktopApp.csproj</RootNamespace>
+    <AssemblyName>ProductVertificationDesktopApp.csproj</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp.Pro, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.Pro.5.15.3\lib\net472\FontAwesome.Sharp.Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="IconButton, Version=5.0.0.2012, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IconButton.5.0.0.2012\lib\netstandard2.0\IconButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Sharp7, Version=1.1.79.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sharp7.1.1.79\lib\net40\Sharp7.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2012\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2012\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.5.0.0.2012\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IView\IViewConfirmRunning.cs" />
+    <Compile Include="IView\IViewConfirmSetting.cs" />
+    <Compile Include="IView\IViewParametersSetAndSup.cs" />
+    <Compile Include="IView\IViewSettingDeformationParam.cs" />
+    <Compile Include="IView\IViewSettingForcedEndurance.cs" />
+    <Compile Include="IView\IViewSettingReliability.cs" />
+    <Compile Include="IView\IViewSupervisorDeformation.cs" />
+    <Compile Include="IView\IViewSupervisorForcedEndurance.cs" />
+    <Compile Include="IView\IViewSupervisorReliability.cs" />
+    <Compile Include="ModelingMachines.cs" />
+    <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
+    <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
+    <Compile Include="Presenters\SettingPresenter\SettingDeformationPresenter.cs" />
+    <Compile Include="Presenters\SettingPresenter\SettingForecedEnduracePresenter.cs" />
+    <Compile Include="Presenters\SettingPresenter\SettingReliabilityPresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorDeformationConfirm\DeformationConFirmPresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorDeformationPresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorForecedEndurancePresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPVPresenter.cs" />
+    <Compile Include="Presenters\SupervisorPresenters\SupervisorReliabilityPresenter.cs" />
+    <Compile Include="Service\Interfaces\IModelingMachine.cs" />
+    <Compile Include="Service\Interfaces\Is71200ModellingMachine.cs" />
+    <Compile Include="Service\Interfaces\ISupervisor.cs" />
+    <Compile Include="Service\ModelingMachine.cs" />
+    <Compile Include="Service\S71200.cs" />
+    <Compile Include="Service\S71200ModellingMachines.cs" />
+    <Compile Include="Service\Supervisor.cs" />
+    <Compile Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.Designer.cs">
+      <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_ConFirmRunning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_ConFirmRunning.Designer.cs">
+      <DependentUpon>Form_ConFirmRunning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\GiamSatthongso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\GiamSatthongso.Designer.cs">
+      <DependentUpon>GiamSatthongso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\GiamSatView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\GiamSatView.Designer.cs">
+      <DependentUpon>GiamSatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\TroGiupView\TroGiupView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\TroGiupView\TroGiupView.Designer.cs">
+      <DependentUpon>TroGiupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Dobiendang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Dobiendang.Designer.cs">
+      <DependentUpon>Form_Baocao_Dobiendang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Doben.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Doben.Designer.cs">
+      <DependentUpon>Form_Baocao_Doben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Dobencuongbuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\Form_Baocao_Dobencuongbuc.Designer.cs">
+      <DependentUpon>Form_Baocao_Dobencuongbuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiulucuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiulucuon.Designer.cs">
+      <DependentUpon>Form_Baocao_Chiulucuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiuvadap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiuvadap.Designer.cs">
+      <DependentUpon>Form_Baocao_Chiuvadap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Rocktest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Rocktest.Designer.cs">
+      <DependentUpon>Form_Baocao_Rocktest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Caidatthongso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Caidatthongso.Designer.cs">
+      <DependentUpon>Caidatthongso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Doben.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Doben.Designer.cs">
+      <DependentUpon>Form_Caidat_Doben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Dobencuongbuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Dobencuongbuc.Designer.cs">
+      <DependentUpon>Form_Caidat_Dobencuongbuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Dobiendang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\Form_Caidat_Dobiendang.Designer.cs">
+      <DependentUpon>Form_Caidat_Dobiendang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\CaiDatView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CaidatView\CaiDatView.Designer.cs">
+      <DependentUpon>CaiDatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\LoginView\DangNhapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\LoginView\DangNhapView.Designer.cs">
+      <DependentUpon>DangNhapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\LichSuView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\LichSuView.Designer.cs">
+      <DependentUpon>LichSuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\CanhBaoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\CanhBaoView.Designer.cs">
+      <DependentUpon>CanhBaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\BaoCaoView\BaoCaoView.Designer.cs">
+      <DependentUpon>BaoCaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Doben.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Doben.Designer.cs">
+      <DependentUpon>Form_Canhbao_Doben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobencuongbuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobencuongbuc.Designer.cs">
+      <DependentUpon>Form_Canhbao_Dobencuongbuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobiendang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobiendang.Designer.cs">
+      <DependentUpon>Form_Canhbao_Dobiendang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Doben.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Doben.Designer.cs">
+      <DependentUpon>Form_Giamsat_Doben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Dobencuongbuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Dobencuongbuc.Designer.cs">
+      <DependentUpon>Form_Giamsat_Dobencuongbuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Dobiendang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\GiamSatView\Form_Giamsat_Dobiendang.Designer.cs">
+      <DependentUpon>Form_Giamsat_Dobiendang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Doben.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Doben.Designer.cs">
+      <DependentUpon>Form_Lichsu_Doben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Dobencuongbuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Dobencuongbuc.Designer.cs">
+      <DependentUpon>Form_Lichsu_Dobencuongbuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Dobiendang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Implements\LichSuView\Form_Lichsu_Dobiendang.Designer.cs">
+      <DependentUpon>Form_Lichsu_Dobiendang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Logo.cs" />
+    <EmbeddedResource Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.resx">
+      <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\Form_ConFirmRunning.resx">
+      <DependentUpon>Form_ConFirmRunning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\GiamSatthongso.resx">
+      <DependentUpon>GiamSatthongso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\GiamSatView.resx">
+      <DependentUpon>GiamSatView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\TroGiupView\TroGiupView.resx">
+      <DependentUpon>TroGiupView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\Form_Baocao_Dobiendang.resx">
+      <DependentUpon>Form_Baocao_Dobiendang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\Form_Baocao_Doben.resx">
+      <DependentUpon>Form_Baocao_Doben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\Form_Baocao_Dobencuongbuc.resx">
+      <DependentUpon>Form_Baocao_Dobencuongbuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiulucuon.resx">
+      <DependentUpon>Form_Baocao_Chiulucuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Chiuvadap.resx">
+      <DependentUpon>Form_Baocao_Chiuvadap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\BaoCaoMKTDoBienDangView\Form_Baocao_Rocktest.resx">
+      <DependentUpon>Form_Baocao_Rocktest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CaidatView\Caidatthongso.resx">
+      <DependentUpon>Caidatthongso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CaidatView\Form_Caidat_Doben.resx">
+      <DependentUpon>Form_Caidat_Doben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CaidatView\Form_Caidat_Dobencuongbuc.resx">
+      <DependentUpon>Form_Caidat_Dobencuongbuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CaidatView\Form_Caidat_Dobiendang.resx">
+      <DependentUpon>Form_Caidat_Dobiendang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CaidatView\CaiDatView.resx">
+      <DependentUpon>CaiDatView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\LoginView\DangNhapView.resx">
+      <DependentUpon>DangNhapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\LichSuView\LichSuView.resx">
+      <DependentUpon>LichSuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CanhBaoView\CanhBaoView.resx">
+      <DependentUpon>CanhBaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\BaoCaoView\BaoCaoView.resx">
+      <DependentUpon>BaoCaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CanhBaoView\Form_Canhbao_Doben.resx">
+      <DependentUpon>Form_Canhbao_Doben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobencuongbuc.resx">
+      <DependentUpon>Form_Canhbao_Dobencuongbuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\CanhBaoView\Form_Canhbao_Dobiendang.resx">
+      <DependentUpon>Form_Canhbao_Dobiendang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\Form_Giamsat_Doben.resx">
+      <DependentUpon>Form_Giamsat_Doben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\Form_Giamsat_Dobencuongbuc.resx">
+      <DependentUpon>Form_Giamsat_Dobencuongbuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\GiamSatView\Form_Giamsat_Dobiendang.resx">
+      <DependentUpon>Form_Giamsat_Dobiendang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\LichSuView\Form_Lichsu_Doben.resx">
+      <DependentUpon>Form_Lichsu_Doben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\LichSuView\Form_Lichsu_Dobencuongbuc.resx">
+      <DependentUpon>Form_Lichsu_Dobencuongbuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Implements\LichSuView\Form_Lichsu_Dobiendang.resx">
+      <DependentUpon>Form_Lichsu_Dobiendang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Model\Setting\" />
+    <Folder Include="Domain\Model\Supervisior\" />
+    <Folder Include="Domain\ViewModel\" />
+    <Folder Include="Views\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets')" />
+</Project>
