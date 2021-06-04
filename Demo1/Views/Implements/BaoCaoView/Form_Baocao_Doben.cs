@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ProductVertificationDesktopApp.Domain.ViewModel;
+using ProductVertificationDesktopApp.helps;
+using ProductVertificationDesktopApp.Views.Interface.Report;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,25 +13,41 @@ using System.Windows.Forms;
 
 namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
 {
-    public partial class Form_Baocao_Doben : UserControl
+    public partial class Form_Baocao_Doben : UserControl, IViewReportRiliability
     {
         public Form_Baocao_Doben()
         {
             InitializeComponent();
-        }
+            comboBoxTarget.DataSource = Constants.Targets;
+            Report = new BindingList<ReportViewModel>();
+            dataGridView_doben.DataSource = Report;
 
+            dataGridView_doben.Columns[0].Width = 125;
+            dataGridView_doben.Columns[1].Width = 180;
+            dataGridView_doben.Columns[2].Width = 180;
+            dataGridView_doben.Columns[3].Width = 180;
+            dataGridView_doben.Columns[4].Width = 180;
+            dataGridView_doben.Columns[5].Width = 180;
+            dataGridView_doben.Columns[6].Width = 180;
+            dataGridView_doben.Columns[7].Width = 180;
+            dataGridView_doben.Columns[8].Width = 180;
+            dataGridView_doben.Columns[9].Width = 200;
+            dataGridView_doben.Columns[10].Width = 200;
+            dataGridView_doben.Columns[11].Width = 200;
+
+        }
+        public IList<ReportViewModel> Report { get; set; }
         private void Form_Baocao_Doben_Load(object sender, EventArgs e)
         {
-            dataGridView_doben.BorderStyle = BorderStyle.None;
-            dataGridView_doben.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(235, 243, 250);
+            dataGridView_doben.BorderStyle = BorderStyle.Fixed3D;
+            //dataGridView_doben.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(235, 243, 250);
             dataGridView_doben.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(193, 218, 240);
             dataGridView_doben.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
             dataGridView_doben.BackgroundColor = Color.White;
             dataGridView_doben.EnableHeadersVisualStyles = false;
-            dataGridView_doben.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView_doben.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 29, 55);
-            dataGridView_doben.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            //dataGridView_doben.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView_doben.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+            //dataGridView_doben.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
     }
 }

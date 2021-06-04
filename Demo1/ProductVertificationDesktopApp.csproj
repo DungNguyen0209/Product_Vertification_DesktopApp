@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -138,6 +139,12 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -157,6 +164,7 @@
       <HintPath>..\packages\Sharp7.1.1.79\lib\net40\Sharp7.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -179,6 +187,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\TestingConfigurations.cs" />
+    <Compile Include="Domain\ViewModel\ReportViewModel.cs" />
+    <Compile Include="helps\Constants.cs" />
     <Compile Include="IView\IViewConfirmRunning.cs" />
     <Compile Include="IView\IViewConfirmSetting.cs" />
     <Compile Include="IView\IViewParametersSetAndSup.cs" />
@@ -189,6 +200,10 @@
     <Compile Include="IView\IViewSupervisorForcedEndurance.cs" />
     <Compile Include="IView\IViewSupervisorReliability.cs" />
     <Compile Include="ModelingMachines.cs" />
+    <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\UnitOfWork.cs" />
+    <Compile Include="Persistence\TestingConfigurationRepository.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationPresenter.cs" />
@@ -200,6 +215,7 @@
     <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPVPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorReliabilityPresenter.cs" />
+    <Compile Include="Service\DatabaseService.cs" />
     <Compile Include="Service\Interfaces\IModelingMachine.cs" />
     <Compile Include="Service\Interfaces\Is71200ModellingMachine.cs" />
     <Compile Include="Service\Interfaces\ISupervisor.cs" />
@@ -390,6 +406,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Logo.cs" />
+    <Compile Include="Views\Interface\Report\IViewReportDeformation.cs" />
+    <Compile Include="Views\Interface\Report\IViewReportRiliability.cs" />
     <EmbeddedResource Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.resx">
       <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
     </EmbeddedResource>
@@ -516,10 +534,8 @@
     <None Include="Resources\unnamed.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domain\Model\Setting\" />
-    <Folder Include="Domain\Model\Supervisior\" />
-    <Folder Include="Domain\ViewModel\" />
-    <Folder Include="Views\Interfaces\" />
+    <Folder Include="Domain\Communication\" />
+    <Folder Include="Domain\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font-awesome.css" />
@@ -533,6 +549,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
   <Import Project="..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.5.0.0.2012\build\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
