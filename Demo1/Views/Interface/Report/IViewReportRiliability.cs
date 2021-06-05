@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Domain.ViewModel;
+﻿using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,9 @@ namespace ProductVertificationDesktopApp.Views.Interface.Report
 {
     public interface IViewReportRiliability
     {
+        event EventHandler Insert;
+        event EventHandler LoadFromDatabase;
+        ETargetTest eTargetTest { get; set; }
         IList<ReportViewModel> Report { get; set; }
     }
 }

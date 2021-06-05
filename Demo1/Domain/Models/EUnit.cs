@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductVertificationDesktopApp.csproj.Presenters.SettingPresenter
+namespace ProductVertificationDesktopApp.Domain.Models
 {
-    class SettingDeformationPresenter
+    public enum  EUnit
     {
+        TestReliability,
+        TestDeformation,
     }
 }

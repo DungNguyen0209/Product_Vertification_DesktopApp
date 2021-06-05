@@ -40,6 +40,9 @@
     <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper.Extensions.Microsoft.DependencyInjection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=e767ac9c89543656, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.Extensions.Microsoft.DependencyInjection.8.1.1\lib\netstandard2.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
@@ -154,6 +157,15 @@
     <Reference Include="IconButton, Version=5.0.0.2012, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\IconButton.5.0.0.2012\lib\netstandard2.0\IconButton.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -164,9 +176,25 @@
       <HintPath>..\packages\Sharp7.1.1.79\lib\net40\Sharp7.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.6.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -190,6 +218,9 @@
     <Compile Include="Domain\Communication\ServiceResourceResponse.cs" />
     <Compile Include="Domain\Communication\ServiceResponse.cs" />
     <Compile Include="Domain\Communication\Error.cs" />
+    <Compile Include="Domain\Models\ETargetTest.cs" />
+    <Compile Include="Domain\Models\EUnit.cs" />
+    <Compile Include="Domain\Models\TestingMachine.cs" />
     <Compile Include="Domain\TestingConfigurations.cs" />
     <Compile Include="Domain\ViewModel\ReportViewModel.cs" />
     <Compile Include="helps\Constants.cs" />
@@ -202,16 +233,18 @@
     <Compile Include="IView\IViewSupervisorDeformation.cs" />
     <Compile Include="IView\IViewSupervisorForcedEndurance.cs" />
     <Compile Include="IView\IViewSupervisorReliability.cs" />
+    <Compile Include="Mapping\MappingReportTable.cs" />
     <Compile Include="ModelingMachines.cs" />
     <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\ITestingMachineRepository.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\IunitOfWork.cs" />
+    <Compile Include="Persistence\Repositories\TestingMachineRepository.cs" />
     <Compile Include="Persistence\Repositories\UnitOfWork.cs" />
-    <Compile Include="Persistence\TestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\TestingConfigurationRepository.cs" />
     <Compile Include="Presenters\ReportPresenter\ReportReliabilityPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
-    <Compile Include="Presenters\SettingPresenter\SettingDeformationPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingForecedEnduracePresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingReliabilityPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorDeformationConfirm\DeformationConFirmPresenter.cs" />
@@ -539,9 +572,7 @@
   <ItemGroup>
     <None Include="Resources\unnamed.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />

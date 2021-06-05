@@ -1,5 +1,6 @@
 ﻿using ProductVertificationDesktopApp.Domain;
 using ProductVertificationDesktopApp.Domain.Communication;
+using ProductVertificationDesktopApp.Domain.Models;
 using ProductVertificationDesktopApp.Persistence.Repositories.Interfaces;
 using ProductVertificationDesktopApp.Service.Interfaces;
 using System;
@@ -14,12 +15,16 @@ namespace ProductVertificationDesktopApp.Service
     {
         private readonly IunitOfWork _unitOfWork;
         private readonly ITestingConfigurationRepository _testingConfigurationRepository;
+        private readonly ITestingMachineRepository _testingMachineRepository;
 
-        public DatabaseService(IunitOfWork unitOfWork, ITestingConfigurationRepository testingConfigurationRepository)
+        public DatabaseService(IunitOfWork unitOfWork, ITestingConfigurationRepository testingConfigurationRepository, ITestingMachineRepository testingMachineRepository)
         {
             _unitOfWork = unitOfWork;
             _testingConfigurationRepository = testingConfigurationRepository;
+            _testingMachineRepository = testingMachineRepository;
         }
+
+
         #region TestingConfiguration
         public async Task<ServiceResponse> UpdateConfigurationEntry(TestingConfigurations entry)
         {
@@ -120,7 +125,69 @@ namespace ProductVertificationDesktopApp.Service
                 };
                 return new ServiceResourceResponse<TestingConfigurations>(error);
             }
-        }            
+        }
+        #endregion
+
+        #region TestingMachine
+        public async Task<ServiceResponse> UpdateTestingMachine(TestingMachine entry)
+        {
+            try
+            {
+                await _testingMachineRepository.Update(entry);
+                await _unitOfWork.SaveChangeAsync();
+                return ServiceResponse.Successful();
+            }
+            catch
+            {
+                _unitOfWork.DetachChange();
+                var error = new Error
+                {
+                    ErrorCode = "Database.Update",
+                    Message = "Lỗi database local."
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }
+        public async Task<ServiceResponse> InsertTestingMachines(TestingMachine entry)
+        {
+            try
+            {
+                _testingMachineRepository.Insert(entry);
+                await _unitOfWork.SaveChangeAsync();
+
+                return ServiceResponse.Successful();
+            }
+            catch
+            {
+                _unitOfWork.DetachChange();
+                Error error = new Error
+                {
+                    ErrorCode = "Database.Insert",
+                    Message = "Lỗi khác."
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }
+
+        public async Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTime)
+        {
+            try
+            {
+                var resultFind = await _testingMachineRepository.FindTest(dateTime);
+
+                return new ServiceResourceResponse<TestingMachine>(resultFind);
+            }
+            catch
+            {
+                _unitOfWork.DetachChange();
+                var error = new Error
+                {
+                    ErrorCode = "Database.FindConfigByMachineId",
+                    Message = "Lỗi database."
+                };
+                return new ServiceResourceResponse<TestingMachine>(error);
+            }
+        }
         #endregion
     }
 }

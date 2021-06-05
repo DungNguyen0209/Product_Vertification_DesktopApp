@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Domain.ViewModel;
+﻿using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.ViewModel;
 using ProductVertificationDesktopApp.helps;
 using ProductVertificationDesktopApp.Views.Interface.Report;
 using System;
@@ -37,6 +38,29 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
 
         }
         public IList<ReportViewModel> Report { get; set; }
+        public ETargetTest eTargetTest
+        {
+            get
+            {
+                return (ETargetTest)comboBoxTarget.SelectedIndex;
+            }
+            set
+            {
+               comboBoxTarget.SelectedIndex = value.CompareTo(eTargetTest);
+            }
+        }
+
+        public event EventHandler Insert
+        {
+            add => button_Insert.Click += value;
+            remove => button_Insert.Click -= value;
+        }
+
+        public event EventHandler LoadFromDatabase
+        {
+            add => button_LoadFromDataBase.Click += value;
+            remove => button_LoadFromDataBase.Click -= value;
+        }
         private void Form_Baocao_Doben_Load(object sender, EventArgs e)
         {
             dataGridView_doben.BorderStyle = BorderStyle.Fixed3D;
@@ -49,5 +73,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridView_doben.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
             //dataGridView_doben.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
+
     }
 }

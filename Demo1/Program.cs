@@ -22,6 +22,12 @@ using ProductVertificationDesktopApp.Presenters.SupervisorPresenters.SupervisorP
 using ProductVertificationDesktopApp.Presenters.SettingPresenter.SettingDeformationParam;
 using ProductVertificationDesktopApp.Views.Implements.CaidatView.Dobiendang;
 using ProductVertificationDesktopApp.Presenters.SupervisorPresenters.SupervisorDeformationConfirm;
+using ProductVertificationDesktopApp.Persistence.Contexts;
+using ProductVertificationDesktopApp.Persistence;
+using ProductVertificationDesktopApp.Persistence.Repositories;
+using AutoMapper;
+using ProductVertificationDesktopApp.Mapping;
+using ProductVertificationDesktopApp.Presenters.ReportPresenter;
 
 namespace ProductVertificationDesktopApp
 {
@@ -83,14 +89,28 @@ namespace ProductVertificationDesktopApp
             TroGiupView formTrogiup = new TroGiupView();
             LichSuView formLichsu = new LichSuView(form_Lichsu_Doben,form_Lichsu_Dobencuongbuc,form_Lichsu_Dobiendang);
             GiamSatView formGiamsat = new GiamSatView(form_Giamsat_Doben,form_Giamsat_Dobencuongbuc,form_Giamsat_Dobiendang);
-            
-            // Logo SetUp 
+
+            //Build Service for database
+            var context = new ApplicationDbContext();
+            var testingConfigurationRepository = new TestingConfigurationRepository(context);
+            var testingMachineRepository = new TestingMachineRepository(context);
+            var unitOfWorkRepository = new UnitOfWork(context);
+            var databaseService = new DatabaseService(unitOfWorkRepository, testingConfigurationRepository, testingMachineRepository);
+
+            //Setting Mapper
+            var mappingConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.AddMaps(typeof(Program));
+            });
+            var mapper = mappingConfig.CreateMapper();
+
+            // Logo Setting For Service
             Logo logo1 = new Logo("10.84.60.17",0);
             Logo logo2 = new Logo("10.84.60.19", 0);
 
-            //S7-1200 setup
+            //S7-1200 setting Service
             S71200 device1 = new S71200(0, "10.84.60.15", 52);
-            //Setting setup
+            //Setting service
             IModelingMachine modelingMachine2 = new ModelingMachine(logo2);
             IModelingMachine modelingMachine1 = new ModelingMachine(logo1);
             Is71200ModellingMachine is71200ModellingMachine = new S71200ModellingMachines(device1);
@@ -125,6 +145,9 @@ namespace ProductVertificationDesktopApp
             //DeFormation Supervisor Presner
             DeformationConFirmPresenter deformationConFirmPresenterStart = new DeformationConFirmPresenter(form_ConFirmRunning, is71200ModellingMachine);
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
+
+            //Report Preseenter 
+            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper);
             Application.Run(new MainView(formCaidat, formDangnhap, formCanhbao, formBaocao, formTrogiup, formLichsu, formGiamsat));
         }
     }

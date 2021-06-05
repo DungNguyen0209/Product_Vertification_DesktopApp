@@ -33,13 +33,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_LoadFromDataBase = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView_doben = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_Insert = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxTarget = new System.Windows.Forms.ComboBox();
@@ -47,20 +47,20 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_doben)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // button_LoadFromDataBase
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1005, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 79);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "Truy xuất";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_LoadFromDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
+            this.button_LoadFromDataBase.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_LoadFromDataBase.FlatAppearance.BorderSize = 0;
+            this.button_LoadFromDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_LoadFromDataBase.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_LoadFromDataBase.ForeColor = System.Drawing.Color.White;
+            this.button_LoadFromDataBase.Location = new System.Drawing.Point(1005, 49);
+            this.button_LoadFromDataBase.Name = "button_LoadFromDataBase";
+            this.button_LoadFromDataBase.Size = new System.Drawing.Size(229, 79);
+            this.button_LoadFromDataBase.TabIndex = 49;
+            this.button_LoadFromDataBase.Text = "Truy xuất";
+            this.button_LoadFromDataBase.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -152,20 +152,20 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.dataGridView_doben.Size = new System.Drawing.Size(1279, 584);
             this.dataGridView_doben.TabIndex = 50;
             // 
-            // button2
+            // button_Insert
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1289, 49);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(229, 79);
-            this.button2.TabIndex = 58;
-            this.button2.Text = "Xuất Excel";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
+            this.button_Insert.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_Insert.FlatAppearance.BorderSize = 0;
+            this.button_Insert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Insert.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Insert.ForeColor = System.Drawing.Color.White;
+            this.button_Insert.Location = new System.Drawing.Point(1289, 49);
+            this.button_Insert.Name = "button_Insert";
+            this.button_Insert.Size = new System.Drawing.Size(229, 79);
+            this.button_Insert.TabIndex = 58;
+            this.button_Insert.Text = "Xuất Excel";
+            this.button_Insert.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -194,6 +194,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.comboBoxTarget.Name = "comboBoxTarget";
             this.comboBoxTarget.Size = new System.Drawing.Size(176, 40);
             this.comboBoxTarget.TabIndex = 61;
+  
             // 
             // textBoxAdditional
             // 
@@ -213,9 +214,9 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.Controls.Add(this.comboBoxTarget);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Insert);
             this.Controls.Add(this.dataGridView_doben);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_LoadFromDataBase);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label1);
@@ -234,13 +235,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_LoadFromDataBase;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView_doben;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Insert;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxTarget;

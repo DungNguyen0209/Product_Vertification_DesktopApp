@@ -10,7 +10,7 @@ namespace ProductVertificationDesktopApp.Domain.ViewModel
     public class ReportViewModel
     {
         [DisplayName("Số lần thử")]
-        public string Numbers { get; set; }
+        public string NumberTesting { get; set; }
 
         [DisplayName("Thời gian nắp đóng êm")]
         public int TimeSmoothClosingLid { get; set; }
@@ -18,10 +18,10 @@ namespace ProductVertificationDesktopApp.Domain.ViewModel
         [DisplayName("Chân nắp không rơi ra")]
         public string StatusLidNotFall  { get; set; }
         [DisplayName("Không rò rỉ dầu")]
-        public string StatusOilNotLeak { get; set; }
+        public string StatusLidNotLeak { get; set; }
 
         [DisplayName("Kết quả đánh giá")]
-        public string ResultLid { get; set; }
+        public string StatusLidResult { get; set; }
 
         [DisplayName("Thời gian đế đóng êm")]
         public int TimeSmoothClosingPlinth { get; set; }
@@ -32,10 +32,10 @@ namespace ProductVertificationDesktopApp.Domain.ViewModel
         public string StatusPlinthNotLeak { get; set; }
 
         [DisplayName("Kết quả đánh giá")]
-        public string ResultPlinth { get; set; }
+        public string StatusPlinthResult { get; set; }
 
         [DisplayName("Tổng lỗi")]
-        public string TotalMistakes { get; set; }
+        public string TotalMistake { get; set; }
 
         [DisplayName("Ghi chú")]
         public string Note { get; set; }

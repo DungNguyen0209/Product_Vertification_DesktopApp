@@ -9,10 +9,10 @@ namespace ProductVertificationDesktopApp.Domain
     public class TestingConfigurations
     {
         public string  TestID { get; set; }
-        public int NumberClosingSetting { get; set; }
-        public int NumberClosingCurrent { get; set; }
-        public Int16 TimeHoldingCloseSP { get; set; }
-        public Int16 TimeHoldingOpenSP { get; set; }
+        public int? NumberClosingSetting { get; set; }
+        public int? NumberClosingCurrent { get; set; }
+        public Int16? TimeHoldingCloseSP { get; set; }
+        public Int16? TimeHoldingOpenSP { get; set; }
 
         public void Clone(TestingConfigurations configuration)
         {
