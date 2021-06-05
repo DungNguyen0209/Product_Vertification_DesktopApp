@@ -14,8 +14,7 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories.Interfaces
         Task Delete(TestingConfigurations entry);
         void Clear();
         Task<IEnumerable<TestingConfigurations>> Load();
-        Task<List<TestingConfigurations>> FindtestId(string TestId);
-
+        Task<List<TestingConfigurations>> FindTestId(string TestId);
 
     }
 }

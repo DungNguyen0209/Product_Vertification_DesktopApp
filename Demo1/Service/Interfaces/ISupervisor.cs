@@ -14,6 +14,9 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
         int TimeStop { get; set; }
         int TimeCount { get; set; }
         int TimeCurrent { get; set; }
+        int TimeCloseSP { get; set; }
+        int TimeOpenSP { get; set; }
+        int NumberCloseSP { get; set; }
         void SendStatus(string s);
         List<Action<bool>> UpdateData { get; set; }
     }

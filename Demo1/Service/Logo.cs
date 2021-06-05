@@ -143,7 +143,7 @@ namespace ProductVertificationDesktopApp.Service
             int bufferTimeClose = ReadInt16(0);
             int bufferTimeStart = ReadInt16(4);
             int buffTimeNumber = ReadInt32(14);    
-            int[] data_supervisor = { bufferTimestart, bufferTimeclose, bufferTimecheck, bufferCurrent };
+            int[] data_supervisor = { bufferTimestart, bufferTimeclose, bufferTimecheck, bufferCurrent,_bufferTimeClose,_bufferTimeStart,_buffTimeNumber };
             //Read TimeCurrent
 
             var bufferQ = new byte[2];
