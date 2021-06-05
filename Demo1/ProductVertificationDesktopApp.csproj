@@ -187,6 +187,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Communication\ServiceResourceResponse.cs" />
+    <Compile Include="Domain\Communication\ServiceResponse.cs" />
+    <Compile Include="Domain\Communication\Error.cs" />
     <Compile Include="Domain\TestingConfigurations.cs" />
     <Compile Include="Domain\ViewModel\ReportViewModel.cs" />
     <Compile Include="helps\Constants.cs" />
@@ -202,8 +205,10 @@
     <Compile Include="ModelingMachines.cs" />
     <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IunitOfWork.cs" />
     <Compile Include="Persistence\Repositories\UnitOfWork.cs" />
     <Compile Include="Persistence\TestingConfigurationRepository.cs" />
+    <Compile Include="Presenters\ReportPresenter\ReportReliabilityPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationPresenter.cs" />
@@ -216,6 +221,7 @@
     <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPVPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorReliabilityPresenter.cs" />
     <Compile Include="Service\DatabaseService.cs" />
+    <Compile Include="Service\Interfaces\IDatabaseService.cs" />
     <Compile Include="Service\Interfaces\IModelingMachine.cs" />
     <Compile Include="Service\Interfaces\Is71200ModellingMachine.cs" />
     <Compile Include="Service\Interfaces\ISupervisor.cs" />
@@ -534,7 +540,6 @@
     <None Include="Resources\unnamed.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domain\Communication\" />
     <Folder Include="Domain\Models\" />
   </ItemGroup>
   <ItemGroup>

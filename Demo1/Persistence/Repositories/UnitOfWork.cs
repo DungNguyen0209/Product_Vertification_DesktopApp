@@ -1,4 +1,5 @@
 ﻿using ProductVertificationDesktopApp.Persistence.Contexts;
+using ProductVertificationDesktopApp.Persistence.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Persistence.Repositories
 {
-    class UnitOfWork
+    class UnitOfWork: IunitOfWork
     {
         ApplicationDbContext _context;
 

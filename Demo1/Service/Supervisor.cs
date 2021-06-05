@@ -17,6 +17,9 @@ namespace ProductVertificationDesktopApp.Service
         private int _TimeStop;
         private int _TimeCount;
         private int _TimeCurrent;
+        private int _TimeCloseSP;
+        private int _TimeOpenSP;
+        private int _NumberCloseSP;
         public List<Action<bool>> UpdateData { get; set; }
         public Supervisor(Logo logo)
         {
@@ -87,6 +90,39 @@ namespace ProductVertificationDesktopApp.Service
             { _TimeCurrent = value; }
         }
 
+        public int TimeCloseSP
+        {
+            get
+            {
+                return _TimeCloseSP;
+            }
+
+            set
+            { _TimeCloseSP = value; }
+        }
+
+        public int TimeOpenSP
+        {
+            get
+            {
+                return _TimeOpenSP;
+            }
+
+            set
+            { _TimeOpenSP = value; }
+        }
+
+        public int NumberCloseSP
+        {
+            get
+            {
+                return _NumberCloseSP;
+            }
+
+            set
+            { _NumberCloseSP = value; }
+        }
+
         public void SendStatus(string s)
         {
             _logo.SetMemoryBit(s.ToLower());
@@ -98,6 +134,9 @@ namespace ProductVertificationDesktopApp.Service
             _TimeStart = data[1];
             _TimeCount = data[2];
             _TimeCurrent = data[3];
+            _TimeCloseSP = data[4];
+            _TimeOpenSP = data[5];
+            _NumberCloseSP = data[6];
             foreach (var handler in UpdateData)
             {
                 handler.Invoke(true);

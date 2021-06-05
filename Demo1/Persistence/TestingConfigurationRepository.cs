@@ -41,7 +41,7 @@ namespace ProductVertificationDesktopApp.Persistence
         {
             return await _context.TestingConfigurations.ToListAsync();
         }
-        public async Task<List<TestingConfigurations>> FindtestId(string TestId)
+        public async Task<List<TestingConfigurations>> FindTestId(string TestId)
         {
             var data = await _context.TestingConfigurations.ToListAsync();
             data = await (from p in _context.TestingConfigurations

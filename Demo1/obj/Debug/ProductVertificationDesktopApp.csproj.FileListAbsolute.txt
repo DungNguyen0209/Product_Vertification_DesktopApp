@@ -726,3 +726,7 @@ C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\obj\D
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.CopyComplete
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.exe
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.pdb
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EntityFramework.SqlServer.xml
