@@ -9,19 +9,19 @@ namespace ProductVertificationDesktopApp.Domain.Models
     public class TestingMachine
     {
         
-
+        public int ID { get; set; }
         public DateTime TimeStamp { get; set; }
-        public EUnit EUnit { get; set; }
-        public ETargetTest? Target { get; set; }
+        public string EUnit { get; set; }
+        public string Target { get; set; }
         public string NumberTesting { get; set; }
-        public int? TimeSmoothClosingLid { get; set; }
-        public bool? StatusLidNotFall { get; set; }
-        public bool? StatusLidNotLeak { get; set; }
-        public bool? StatusLidResult { get; set; }
-        public int? TimeSmoothClosingPlinth { get; set; }
-        public bool? StatusPlinthNotFall { get; set; }
-        public bool? StatusPlinthNotLeak { get; set; }
-        public bool? StatusPlinthResult { get; set; }
+        public string TimeSmoothClosingLid { get; set; }
+        public string StatusLidNotFall { get; set; }
+        public string StatusLidNotLeak { get; set; }
+        public string StatusLidResult { get; set; }
+        public string TimeSmoothClosingPlinth { get; set; }
+        public string StatusPlinthNotFall { get; set; }
+        public string StatusPlinthNotLeak { get; set; }
+        public string StatusPlinthResult { get; set; }
         public string TotalMistake { get; set; }
         public string Note { get; set; }
         public string StaffCheck {get;set;}

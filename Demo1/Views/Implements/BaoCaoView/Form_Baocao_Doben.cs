@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Domain.Models;
+﻿using ProductVertificationDesktopApp.Domain.Communication;
+using ProductVertificationDesktopApp.Domain.Models;
 using ProductVertificationDesktopApp.Domain.ViewModel;
 using ProductVertificationDesktopApp.helps;
 using ProductVertificationDesktopApp.Views.Interface.Report;
@@ -35,8 +36,17 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridView_doben.Columns[9].Width = 200;
             dataGridView_doben.Columns[10].Width = 200;
             dataGridView_doben.Columns[11].Width = 200;
-
+            for(int i=1;i<21;i++)
+            {
+                var count = new ReportViewModel
+                {
+                    NumberTesting = Convert.ToString(i * 5000)
+                };
+                Report.Add(count);
+                
+            }    
         }
+        
         public IList<ReportViewModel> Report { get; set; }
         public ETargetTest eTargetTest
         {
@@ -73,6 +83,8 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridView_doben.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
             //dataGridView_doben.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
+
+
 
     }
 }

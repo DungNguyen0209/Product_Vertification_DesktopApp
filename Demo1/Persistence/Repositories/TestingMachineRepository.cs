@@ -21,7 +21,7 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories
 {
     public class TestingMachineRepository: ITestingMachineRepository
     {
-        ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public TestingMachineRepository(ApplicationDbContext context)
         {

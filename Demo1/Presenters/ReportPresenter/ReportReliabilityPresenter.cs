@@ -24,38 +24,45 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
             _viewReportRiliability = viewReportRiliability;
             _supervisor = supervisor;
             _databaseService = databaseService;
-            _supervisor.UpdateData.Add(UpdateDataBase);
+            _supervisor.UpdateData += UpdateDataBase;
             _viewReportRiliability.Insert += Insertdata;
         }
-        private void UpdateDataBase (bool temp)
+        private void UpdateDataBase(object sender, int[] temp)
         {
+            Update(true);
+        }
+        private async Task Update(bool a)
+        {
+            var clear = await _databaseService.ClearConfiguration();
+
             var data = new TestingConfigurations
             {
-                TestID = "Bài TEST ĐÓNG ÊM NBC",
+                TestName = "TEST ĐÓNG ÊM NBC",
                 TimeHoldingCloseSP = (Int16)_supervisor.TimeCloseSP,
                 TimeHoldingOpenSP = (Int16)_supervisor.TimeOpenSP,
                 NumberClosingSetting = _supervisor.NumberCloseSP,
                 NumberClosingCurrent = _supervisor.TimeCurrent
             };
-            _databaseService.InsertTestingConfigurations(data);
-            if(_supervisor.TimeCurrent % 5000 == 0)
-            {
-                var Report = new ReportViewModel();
-                Report.NumberTesting= Convert.ToString(_supervisor.TimeCurrent);
-                _viewReportRiliability.Report.Add(Report);
-            }    
+            var serviceRespone = await _databaseService.InsertTestingConfigurations(data);
         }
         private void Insertdata(object sender, EventArgs e)
         {
+            InsertTable(true);
+        }
+        private async Task InsertTable( bool temp)
+        {
             TestingMachine testingMachine = new TestingMachine();
-            testingMachine.TimeStamp = DateTime.Now;
-            testingMachine.EUnit = (EUnit)0;
-            testingMachine.Target = _viewReportRiliability.eTargetTest;
+            Console.WriteLine(_viewReportRiliability.Report[2].StatusLidNotFall);
             foreach (var item in _viewReportRiliability.Report)
             {
                 testingMachine = _mapper.Map<ReportViewModel, TestingMachine>(item);
-               // _databaseService.InsertTestingMachines(testingMachine);
-            }    
+                testingMachine.Target = Convert.ToString(_viewReportRiliability.eTargetTest);
+                var a = (EUnit)0;
+                testingMachine.EUnit = Convert.ToString(a);
+                testingMachine.TimeStamp = DateTime.Now;
+                var error= await _databaseService.InsertTestingMachines(testingMachine);
+                //await _viewReportRiliability.Message(error);
+            }
         }
     }
 }

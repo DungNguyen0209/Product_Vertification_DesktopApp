@@ -13,7 +13,7 @@ namespace ProductVertificationDesktopApp.Domain.ViewModel
         public string NumberTesting { get; set; }
 
         [DisplayName("Thời gian nắp đóng êm")]
-        public int TimeSmoothClosingLid { get; set; }
+        public string TimeSmoothClosingLid { get; set; }
 
         [DisplayName("Chân nắp không rơi ra")]
         public string StatusLidNotFall  { get; set; }
@@ -24,7 +24,7 @@ namespace ProductVertificationDesktopApp.Domain.ViewModel
         public string StatusLidResult { get; set; }
 
         [DisplayName("Thời gian đế đóng êm")]
-        public int TimeSmoothClosingPlinth { get; set; }
+        public string TimeSmoothClosingPlinth { get; set; }
 
         [DisplayName("Chân đế không rơi")]
         public string StatusPlinthNotFall { get; set; }

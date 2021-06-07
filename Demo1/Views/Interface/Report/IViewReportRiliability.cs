@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Domain.Models;
+﻿using ProductVertificationDesktopApp.Domain.Communication;
+using ProductVertificationDesktopApp.Domain.Models;
 using ProductVertificationDesktopApp.Domain.ViewModel;
 using System;
 using System.Collections.Generic;

@@ -12,7 +12,7 @@ namespace ProductVertificationDesktopApp.Persistence
 {
     public class TestingConfigurationRepository:ITestingConfigurationRepository
     {
-        ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public TestingConfigurationRepository(ApplicationDbContext context)
         {
@@ -41,11 +41,11 @@ namespace ProductVertificationDesktopApp.Persistence
         {
             return await _context.TestingConfigurations.ToListAsync();
         }
-        public async Task<List<TestingConfigurations>> FindTestId(string TestId)
+        public async Task<List<TestingConfigurations>> FindTestId(string TestName)
         {
             var data = await _context.TestingConfigurations.ToListAsync();
             data = await (from p in _context.TestingConfigurations
-                          where (p.TestID == TestId)
+                          where ( p.TestName== TestName)
                           select p
                          )
                         .ToListAsync();

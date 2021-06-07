@@ -8,7 +8,8 @@ namespace ProductVertificationDesktopApp.Domain
 {
     public class TestingConfigurations
     {
-        public string  TestID { get; set; }
+        public int TestID { get; set; }
+        public string TestName { get; set; }
         public int? NumberClosingSetting { get; set; }
         public int? NumberClosingCurrent { get; set; }
         public Int16? TimeHoldingCloseSP { get; set; }
@@ -24,3 +25,4 @@ namespace ProductVertificationDesktopApp.Domain
         }
     }
 }
+

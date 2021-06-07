@@ -20,10 +20,9 @@ namespace ProductVertificationDesktopApp.Service
         private int _TimeCloseSP;
         private int _TimeOpenSP;
         private int _NumberCloseSP;
-        public List<Action<bool>> UpdateData { get; set; }
+        public event EventHandler<int[]> UpdateData;
         public Supervisor(Logo logo)
         {
-            UpdateData = new List<Action<bool>>();
             _logo = logo;
             _logo.DataReceivedHandlerInt.Add(DataRecivedIntHandler);
             _logo.DataReceivedHandlerBits.Add(DataReciedBitHandler);
@@ -137,10 +136,7 @@ namespace ProductVertificationDesktopApp.Service
             _TimeCloseSP = data[4];
             _TimeOpenSP = data[5];
             _NumberCloseSP = data[6];
-            foreach (var handler in UpdateData)
-            {
-                handler.Invoke(true);
-            }
+            UpdateData?.Invoke(this, data);
         }
 
         private void DataReciedBitHandler(bool[] data)

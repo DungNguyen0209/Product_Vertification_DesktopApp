@@ -108,8 +108,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             // 
             // dataGridView_doben
             // 
-            this.dataGridView_doben.AllowUserToAddRows = false;
-            this.dataGridView_doben.AllowUserToDeleteRows = false;
             this.dataGridView_doben.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView_doben.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_doben.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -134,8 +132,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.dataGridView_doben.Location = new System.Drawing.Point(174, 272);
             this.dataGridView_doben.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView_doben.Name = "dataGridView_doben";
-            this.dataGridView_doben.ReadOnly = true;
-            this.dataGridView_doben.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,7 +140,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView_doben.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_doben.RowHeadersVisible = false;
             this.dataGridView_doben.RowHeadersWidth = 55;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView_doben.RowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -194,7 +189,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.comboBoxTarget.Name = "comboBoxTarget";
             this.comboBoxTarget.Size = new System.Drawing.Size(176, 40);
             this.comboBoxTarget.TabIndex = 61;
-  
             // 
             // textBoxAdditional
             // 
@@ -226,7 +220,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form_Baocao_Doben";
             this.Size = new System.Drawing.Size(1607, 902);
-            this.Load += new System.EventHandler(this.Form_Baocao_Doben_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_doben)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

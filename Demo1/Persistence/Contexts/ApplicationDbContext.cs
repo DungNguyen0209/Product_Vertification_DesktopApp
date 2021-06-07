@@ -50,7 +50,7 @@ namespace ProductVertificationDesktopApp.Persistence.Contexts
 
             modelBuilder
                 .Entity<TestingMachine>()
-                .HasKey(s => s.EUnit);
+                .HasKey(s => s.ID);
 
             modelBuilder
                 .Entity<TestingMachine>()

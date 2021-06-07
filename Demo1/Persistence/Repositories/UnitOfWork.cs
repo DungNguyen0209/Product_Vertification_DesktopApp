@@ -11,7 +11,7 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories
 {
     class UnitOfWork: IunitOfWork
     {
-        ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public UnitOfWork(ApplicationDbContext context)
         {
