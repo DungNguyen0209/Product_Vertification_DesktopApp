@@ -19,7 +19,7 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters
             _supervisor = supervisor;
             _viewSupervisorReliability.Starting += SendStatusRun;
             _viewSupervisorReliability.Stopping += SendStatusStop;
-            _supervisor.UpdateData.Add(Update);
+            _supervisor.UpdateData+=Update;
            
 
         }
@@ -32,7 +32,7 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters
             _supervisor.SendStatus("stop");
         }
 
-        private void Update(bool data)
+        private void Update(object sender, int[] data)
         {
             _viewSupervisorReliability.TimeClose = _supervisor.TimeStop;
             _viewSupervisorReliability.TimeStart = _supervisor.TimeStart;

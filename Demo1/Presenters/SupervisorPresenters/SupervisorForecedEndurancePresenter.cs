@@ -19,7 +19,7 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters
             _supervisor = supervisor;
             _viewSupervisorForecedEndurance.Starting += SendStatusRun;
             _viewSupervisorForecedEndurance.Stopping += SendStatusStop;
-            _supervisor.UpdateData.Add(Update);
+            _supervisor.UpdateData +=Update;
         }
 
         private void SendStatusRun(object sender, EventArgs args)
@@ -31,7 +31,7 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters
             _supervisor.SendStatus("stop");
         }
 
-        private void Update(bool data)
+        private void Update(object sender,int[] data)
         {
             _viewSupervisorForecedEndurance.TimeClose = _supervisor.TimeStop;
             _viewSupervisorForecedEndurance.TimeStart = _supervisor.TimeStart;
