@@ -18,12 +18,14 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         private readonly ISupervisor _supervisor;
         private readonly IDatabaseService _databaseService;
         private readonly IMapper _mapper;
-        public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper)
+        private readonly IExcel _excel;
+        public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel)
         {
             _mapper = mapper;
             _viewReportRiliability = viewReportRiliability;
             _supervisor = supervisor;
             _databaseService = databaseService;
+            _excel = excel;
             _supervisor.UpdateData += UpdateDataBase;
             _viewReportRiliability.Insert += Insertdata;
         }
@@ -51,18 +53,19 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         }
         private async Task InsertTable( bool temp)
         {
-            TestingMachine testingMachine = new TestingMachine();
-            Console.WriteLine(_viewReportRiliability.Report[2].StatusLidNotFall);
+            var ListtestingMachine = new List<TestingMachine>();
             foreach (var item in _viewReportRiliability.Report)
             {
+                TestingMachine testingMachine = new TestingMachine();
                 testingMachine = _mapper.Map<ReportViewModel, TestingMachine>(item);
                 testingMachine.Target = Convert.ToString(_viewReportRiliability.eTargetTest);
                 var a = (EUnit)0;
                 testingMachine.EUnit = Convert.ToString(a);
                 testingMachine.TimeStamp = DateTime.Now;
                 var error= await _databaseService.InsertTestingMachines(testingMachine);
-                //await _viewReportRiliability.Message(error);
+                ListtestingMachine.Add(testingMachine);
             }
+            await _excel.Exportdata("ImportData.xlsx", ListtestingMachine);
         }
     }
 }

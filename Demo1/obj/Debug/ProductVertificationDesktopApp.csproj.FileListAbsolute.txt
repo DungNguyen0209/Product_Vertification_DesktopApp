@@ -746,3 +746,7 @@ C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\D
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\System.Memory.xml
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EPPlus.dll
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\EPPlus.xml
+C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml

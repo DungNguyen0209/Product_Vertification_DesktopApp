@@ -28,6 +28,7 @@ using ProductVertificationDesktopApp.Persistence.Repositories;
 using AutoMapper;
 using ProductVertificationDesktopApp.Mapping;
 using ProductVertificationDesktopApp.Presenters.ReportPresenter;
+using OfficeOpenXml;
 
 namespace ProductVertificationDesktopApp
 {
@@ -90,6 +91,9 @@ namespace ProductVertificationDesktopApp
             LichSuView formLichsu = new LichSuView(form_Lichsu_Doben,form_Lichsu_Dobencuongbuc,form_Lichsu_Dobiendang);
             GiamSatView formGiamsat = new GiamSatView(form_Giamsat_Doben,form_Giamsat_Dobencuongbuc,form_Giamsat_Dobiendang);
 
+            // Bulid service excel
+            var ExcelService = new Excel();
+
             //Build Service for database
             var context = new ApplicationDbContext();
             var testingConfigurationRepository = new TestingConfigurationRepository(context);
@@ -147,7 +151,7 @@ namespace ProductVertificationDesktopApp
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
 
             //Report Preseenter 
-            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper);
+            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService);
             Application.Run(new MainView(formCaidat, formDangnhap, formCanhbao, formBaocao, formTrogiup, formLichsu, formGiamsat));
         }
     }
