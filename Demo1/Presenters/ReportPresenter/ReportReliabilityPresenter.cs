@@ -62,10 +62,18 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                 var a = (EUnit)0;
                 testingMachine.EUnit = Convert.ToString(a);
                 testingMachine.TimeStamp = DateTime.Now;
-                var error= await _databaseService.InsertTestingMachines(testingMachine);
+               // var error= await _databaseService.InsertTestingMachines(testingMachine);
                 ListtestingMachine.Add(testingMachine);
             }
-            await _excel.Exportdata("ImportData.xlsx", ListtestingMachine);
+            var success = await _excel.Exportdata("ImportData.xlsx", ListtestingMachine);
+            if(success.Success==true)
+            {
+                _viewReportRiliability.SuccessExcel("Tải thành công");
+            }    
+            else
+            {
+                _viewReportRiliability.SuccessExcel("Lỗi");
+            }    
         }
     }
 }

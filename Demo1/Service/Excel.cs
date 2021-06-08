@@ -111,11 +111,12 @@ namespace ProductVertificationDesktopApp.Service
             }
         }
 
-        public async Task Exportdata(string path, List<TestingMachine> testingMachine)
+        public async Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine)
         {
             var step1 = await ReadExcelFile(path);
             var step2 = await EditExcelFile(testingMachine);
             var step3 = await ExportExcelFile();
+            return step3;
         }
 
     }

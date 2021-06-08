@@ -13,6 +13,7 @@ namespace ProductVertificationDesktopApp.Views.Interface.Report
     {
         event EventHandler Insert;
         event EventHandler LoadFromDatabase;
+        void SuccessExcel(string s);
         ETargetTest eTargetTest { get; set; }
         IList<ReportViewModel> Report { get; set; }
     }

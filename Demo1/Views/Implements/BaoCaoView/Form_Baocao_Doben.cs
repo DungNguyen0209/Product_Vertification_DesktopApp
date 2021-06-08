@@ -71,6 +71,11 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             add => button_LoadFromDataBase.Click += value;
             remove => button_LoadFromDataBase.Click -= value;
         }
+
+        public void SuccessExcel(string s)
+        {
+            MessageBox.Show(s);
+        }
         private void Form_Baocao_Doben_Load(object sender, EventArgs e)
         {
             dataGridView_doben.BorderStyle = BorderStyle.Fixed3D;
