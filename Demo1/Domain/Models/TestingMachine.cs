@@ -10,7 +10,8 @@ namespace ProductVertificationDesktopApp.Domain.Models
     {
         
         public int ID { get; set; }
-        public DateTime TimeStamp { get; set; }
+        public DateTime TimeStampFinish{ get; set; }
+        public DateTime TimeStampStart { get; set; }
         public string EUnit { get; set; }
         public string Target { get; set; }
         public string NumberTesting { get; set; }
@@ -29,7 +30,8 @@ namespace ProductVertificationDesktopApp.Domain.Models
 
         public void Clone(TestingMachine testingMachine)
         {
-            this.TimeStamp = testingMachine.TimeStamp;
+            this.TimeStampFinish = testingMachine.TimeStampFinish;
+            this.TimeStampStart = testingMachine.TimeStampStart;
             this.EUnit = testingMachine.EUnit;
             this.Target = testingMachine.Target;
             this.NumberTesting = testingMachine.NumberTesting;

@@ -27,20 +27,20 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories
         {
             _context = context;
         }
-        public async Task Update(TestingMachine entry)
+        /*public async Task Update(TestingMachine entry)
         {
             var existingEntry = await _context.testingMachines.FindAsync(entry.TimeStamp);
             existingEntry.Clone(entry);
-        }
+        }*/
         public void Insert(TestingMachine entry)
         {
             _context.testingMachines.Add(entry);
         }
-        public async Task<List<TestingMachine>> FindTest(DateTime dateTime)
+        public async Task<List<TestingMachine>> FindTest(DateTime dateTimestart, DateTime dateTimestop)
         {
             var data = await _context.testingMachines.ToListAsync();
             data = await (from p in _context.testingMachines
-                          where (p.TimeStamp == dateTime)
+                          where ((p.TimeStampStart == dateTimestart)&&(p.TimeStampFinish == dateTimestop))
                           select p
                          )
                         .ToListAsync();

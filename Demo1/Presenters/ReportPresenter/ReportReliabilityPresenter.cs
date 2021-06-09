@@ -59,13 +59,14 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                 TestingMachine testingMachine = new TestingMachine();
                 testingMachine = _mapper.Map<ReportViewModel, TestingMachine>(item);
                 testingMachine.Target = Convert.ToString(_viewReportRiliability.eTargetTest);
+                testingMachine.TimeStampStart = _viewReportRiliability.TimeStampStart;
+                testingMachine.TimeStampFinish = _viewReportRiliability.TimeStampFinish;
                 var a = (EUnit)0;
                 testingMachine.EUnit = Convert.ToString(a);
-                testingMachine.TimeStamp = DateTime.Now;
-               // var error= await _databaseService.InsertTestingMachines(testingMachine);
+                //var error= await _databaseService.InsertTestingMachines(testingMachine);
                 ListtestingMachine.Add(testingMachine);
             }
-            var success = await _excel.Exportdata("ImportData.xlsx", ListtestingMachine);
+            var success = await _excel.Exportdata("ImportData.xlsx", ListtestingMachine,0,_viewReportRiliability.NameProduct,_viewReportRiliability.Comment);
             if(success.Success==true)
             {
                 _viewReportRiliability.SuccessExcel("Tải thành công");

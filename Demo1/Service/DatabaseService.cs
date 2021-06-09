@@ -133,8 +133,8 @@ namespace ProductVertificationDesktopApp.Service
         {
             try
             {
-                await _testingMachineRepository.Update(entry);
-                await _unitOfWork.SaveChangeAsync();
+                //await _testingMachineRepository.Update(entry);
+               // await _unitOfWork.SaveChangeAsync();
                 return ServiceResponse.Successful();
             }
             catch
@@ -169,11 +169,11 @@ namespace ProductVertificationDesktopApp.Service
             }
         }
 
-        public async Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTime)
+        public async Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTimestart, DateTime dateTimestop)
         {
             try
             {
-                var resultFind = await _testingMachineRepository.FindTest(dateTime);
+               var resultFind = await _testingMachineRepository.FindTest(dateTimestart,dateTimestop);
 
                 return new ServiceResourceResponse<TestingMachine>(resultFind);
             }

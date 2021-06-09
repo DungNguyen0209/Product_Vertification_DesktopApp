@@ -19,7 +19,7 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
         Task<ServiceResourceResponse<TestingConfigurations>> FindTestId(string machineId);
         Task<ServiceResponse> UpdateTestingMachine(TestingMachine entry);
         Task<ServiceResponse> InsertTestingMachines(TestingMachine entry);
-        Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTime);
+        Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTimestart, DateTime dateTimestop);
 
     }
 }

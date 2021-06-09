@@ -35,15 +35,17 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_LoadFromDataBase = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerStop = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.dataGridView_doben = new System.Windows.Forms.DataGridView();
             this.button_Insert = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxTarget = new System.Windows.Forms.ComboBox();
             this.textBoxAdditional = new System.Windows.Forms.TextBox();
+            this.textBoxNameProduct = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_doben)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,17 +74,17 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.label2.TabIndex = 48;
             this.label2.Text = "Đến ngày";
             // 
-            // dateTimePicker2
+            // dateTimePickerStop
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
-            this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(210, 87);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(229, 45);
-            this.dateTimePicker2.TabIndex = 47;
+            this.dateTimePickerStop.CalendarFont = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerStop.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.dateTimePickerStop.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePickerStop.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerStop.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStop.Location = new System.Drawing.Point(210, 87);
+            this.dateTimePickerStop.Name = "dateTimePickerStop";
+            this.dateTimePickerStop.Size = new System.Drawing.Size(229, 45);
+            this.dateTimePickerStop.TabIndex = 47;
             // 
             // label1
             // 
@@ -94,17 +96,17 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.label1.TabIndex = 46;
             this.label1.Text = "Từ ngày";
             // 
-            // dateTimePicker1
+            // dateTimePickerStart
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(210, 26);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(229, 45);
-            this.dateTimePicker1.TabIndex = 45;
+            this.dateTimePickerStart.CalendarFont = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerStart.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.dateTimePickerStart.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePickerStart.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStart.Location = new System.Drawing.Point(210, 26);
+            this.dateTimePickerStart.Name = "dateTimePickerStart";
+            this.dateTimePickerStart.Size = new System.Drawing.Size(229, 45);
+            this.dateTimePickerStart.TabIndex = 45;
             // 
             // dataGridView_doben
             // 
@@ -199,11 +201,32 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.textBoxAdditional.Size = new System.Drawing.Size(176, 45);
             this.textBoxAdditional.TabIndex = 62;
             // 
+            // textBoxNameProduct
+            // 
+            this.textBoxNameProduct.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold);
+            this.textBoxNameProduct.Location = new System.Drawing.Point(493, 186);
+            this.textBoxNameProduct.Multiline = true;
+            this.textBoxNameProduct.Name = "textBoxNameProduct";
+            this.textBoxNameProduct.Size = new System.Drawing.Size(718, 77);
+            this.textBoxNameProduct.TabIndex = 63;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(204, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(203, 31);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Tên Sản Phẩm";
+            // 
             // Form_Baocao_Doben
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBoxNameProduct);
             this.Controls.Add(this.textBoxAdditional);
             this.Controls.Add(this.comboBoxTarget);
             this.Controls.Add(this.label4);
@@ -212,9 +235,9 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.Controls.Add(this.dataGridView_doben);
             this.Controls.Add(this.button_LoadFromDataBase);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePickerStop);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerStart);
             this.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -230,14 +253,16 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
 
         private System.Windows.Forms.Button button_LoadFromDataBase;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerStop;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerStart;
         private System.Windows.Forms.DataGridView dataGridView_doben;
         private System.Windows.Forms.Button button_Insert;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxTarget;
         private System.Windows.Forms.TextBox textBoxAdditional;
+        private System.Windows.Forms.TextBox textBoxNameProduct;
+        private System.Windows.Forms.Label label5;
     }
 }

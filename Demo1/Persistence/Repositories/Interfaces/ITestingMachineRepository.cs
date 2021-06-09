@@ -9,9 +9,9 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories.Interfaces
 {
     public interface ITestingMachineRepository
     {
-        Task Update(TestingMachine entry);
+        //Task Update(TestingMachine entry);
         void Insert(TestingMachine entry);
-        Task<List<TestingMachine>> FindTest(DateTime dateTime);
+        Task<List<TestingMachine>> FindTest(DateTime dateTimestart, DateTime dateTimestop);
 
     }
 }

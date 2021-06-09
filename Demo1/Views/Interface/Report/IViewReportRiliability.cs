@@ -14,7 +14,11 @@ namespace ProductVertificationDesktopApp.Views.Interface.Report
         event EventHandler Insert;
         event EventHandler LoadFromDatabase;
         void SuccessExcel(string s);
+        DateTime TimeStampStart { get; set; }
+        DateTime TimeStampFinish { get; set; }
         ETargetTest eTargetTest { get; set; }
+        String NameProduct { get; set; }
+        String Comment { get; set; }
         IList<ReportViewModel> Report { get; set; }
     }
 }

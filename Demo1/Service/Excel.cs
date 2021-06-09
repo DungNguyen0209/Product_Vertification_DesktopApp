@@ -23,7 +23,7 @@ namespace ProductVertificationDesktopApp.Service
             try
             {
                 // mở file excel
-                package = new ExcelPackage(new FileInfo("ImportData.xlsx"));
+                package = new ExcelPackage(new FileInfo(path));
 
                 // lấy ra sheet đầu tiên để thao tác
                 worksheet = package.Workbook.Worksheets[0];
@@ -41,11 +41,32 @@ namespace ProductVertificationDesktopApp.Service
 
         }
 
-        private async Task<ServiceResponse> EditExcelFile(List<TestingMachine> testingMachine)
+        private async Task<ServiceResponse> EditExcelFile(List<TestingMachine> testingMachine,int targettest,string nametest,string note)
         {
             try
             {
-                for(int i=0; i<=20;i++)
+                worksheet.Cells["F5"].Value = nametest;
+                worksheet.Cells["C8"].Style.Numberformat.Format = "dd-MM-yyyy";
+                worksheet.Cells["C8"].Value = testingMachine[0].TimeStampStart;
+                worksheet.Cells["K8"].Style.Numberformat.Format = "dd-MM-yyyy";
+                worksheet.Cells["K8"].Value = testingMachine[0].TimeStampFinish;
+                worksheet.Cells["K9"].Value = note;
+                switch (targettest)
+                {
+                    case 0:
+                        worksheet.Cells["E9"].Value = "X";
+                        break;
+                    case 1:
+                        worksheet.Cells["G9"].Value = "X";
+                        break;
+                    case 2:
+                        worksheet.Cells["I9"].Value = "X";
+                        break;
+                    case 3:
+                        worksheet.Cells["J9"].Value = "Khác X";
+                        break;
+                }
+                for (int i=0; i<20;i++)
                 {
                     worksheet.Cells[15+i, 2].Value = testingMachine[i].TimeSmoothClosingLid;
                     worksheet.Cells[15 + i, 3].Value = testingMachine[i].StatusLidNotFall;
@@ -57,8 +78,9 @@ namespace ProductVertificationDesktopApp.Service
                     worksheet.Cells[15 + i, 9].Value = testingMachine[i].StatusPlinthResult;
                     worksheet.Cells[15 + i, 10].Value = testingMachine[i].TotalMistake;
                     worksheet.Cells[15 + i, 11].Value = testingMachine[i].Note;
-                    worksheet.Cells[15 + i, 12].Value = testingMachine[i].TimeSmoothClosingLid;
+                    worksheet.Cells[15 + i, 12].Value = testingMachine[i].StaffCheck;
                 }
+                
                 return ServiceResponse.Successful();
             }
             catch (Exception EE)
@@ -111,10 +133,10 @@ namespace ProductVertificationDesktopApp.Service
             }
         }
 
-        public async Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine)
+        public async Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine, int targettest, string nametest, string note)
         {
             var step1 = await ReadExcelFile(path);
-            var step2 = await EditExcelFile(testingMachine);
+            var step2 = await EditExcelFile(testingMachine,targettest, nametest,note);
             var step3 = await ExportExcelFile();
             return step3;
         }

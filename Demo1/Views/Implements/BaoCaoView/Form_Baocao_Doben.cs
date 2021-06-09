@@ -44,7 +44,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
                 };
                 Report.Add(count);
                 
-            }    
+            } 
         }
         
         public IList<ReportViewModel> Report { get; set; }
@@ -59,6 +59,17 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
                comboBoxTarget.SelectedIndex = value.CompareTo(eTargetTest);
             }
         }
+
+        public DateTime TimeStampStart 
+        { get { return dateTimePickerStart.Value; } set { dateTimePickerStart.Value = value; } }
+        public DateTime TimeStampFinish 
+        { get { return dateTimePickerStop.Value; } set { dateTimePickerStop.Value = value; } }
+
+        public string NameProduct
+        { get { return textBoxNameProduct.Text; } set { textBoxNameProduct.Text = value; } }
+
+        public string Comment
+        { get { return textBoxNameProduct.Text; } set { textBoxNameProduct.Text = value; } }
 
         public event EventHandler Insert
         {

@@ -10,6 +10,6 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
 {
     public interface IExcel
     {
-        Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine);
+        Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine,int targettest, string nametest, string note);
     }
 }
