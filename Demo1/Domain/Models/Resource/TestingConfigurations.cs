@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductVertificationDesktopApp.Domain
+namespace ProductVertificationDesktopApp.Domain.Models.Resource
 {
     public class TestingConfigurations
     {

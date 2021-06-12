@@ -151,7 +151,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.DangNhapView
             this.btn_dangnhap.TabIndex = 6;
             this.btn_dangnhap.Text = "ĐĂNG NHẬP";
             this.btn_dangnhap.UseVisualStyleBackColor = false;
-            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // tb_matkhau
             // 
@@ -171,7 +170,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.DangNhapView
             this.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "DangNhapView";
             this.Size = new System.Drawing.Size(1607, 1002);
-            this.Load += new System.EventHandler(this.FormDangnhap_Load);
             this.panel_dangnhap.ResumeLayout(false);
             this.panel_dangnhap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();

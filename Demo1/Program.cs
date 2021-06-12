@@ -29,6 +29,7 @@ using AutoMapper;
 using ProductVertificationDesktopApp.Mapping;
 using ProductVertificationDesktopApp.Presenters.ReportPresenter;
 using OfficeOpenXml;
+using ProductVertificationDesktopApp.Presenters.LoginPresenter;
 
 namespace ProductVertificationDesktopApp
 {
@@ -97,7 +98,7 @@ namespace ProductVertificationDesktopApp
             //Build Service for database
             var context = new ApplicationDbContext();
             var testingConfigurationRepository = new TestingConfigurationRepository(context);
-            var testingMachineRepository = new TestingMachineRepository(context);
+            var testingMachineRepository = new TestingSheetRepository(context);
             var unitOfWorkRepository = new UnitOfWork(context);
             var databaseService = new DatabaseService(unitOfWorkRepository, testingConfigurationRepository, testingMachineRepository);
 
@@ -108,19 +109,26 @@ namespace ProductVertificationDesktopApp
             });
             var mapper = mappingConfig.CreateMapper();
 
+            //Api Service
+            IApiService apiService = new ApiService(mapper);
+
             // Logo Setting For Service
             Logo logo1 = new Logo("10.84.60.17",0);
             Logo logo2 = new Logo("10.84.60.19", 0);
 
             //S7-1200 setting Service
             S71200 device1 = new S71200(0, "10.84.60.15", 52);
-            //Setting service
+            //Setting logo service
             IModelingMachine modelingMachine2 = new ModelingMachine(logo2);
             IModelingMachine modelingMachine1 = new ModelingMachine(logo1);
             Is71200ModellingMachine is71200ModellingMachine = new S71200ModellingMachines(device1);
             //Warning Setup
             ISupervisor supervisor1 = new Supervisor(logo1);
             ISupervisor supervisor2 = new Supervisor(logo2);
+
+            //Presenter Login 
+            LoginPresenter loginPresenter = new LoginPresenter(formDangnhap,apiService);
+
             //Presenter Setup
             SettingReliabilityPresenter settingReliabilityPresenter = new SettingReliabilityPresenter(form_Caidat_Doben, modelingMachine1);
             SettingForecedEnduracePresenter settingForecedEnduracePresenter = new SettingForecedEnduracePresenter(form_Caidat_Dobencuongbuc, modelingMachine2);

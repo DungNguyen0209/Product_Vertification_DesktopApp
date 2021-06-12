@@ -24,7 +24,7 @@ namespace ProductVertificationDesktopApp.Service
             _s7Client = new S7Client();
             _timer = new Timer
             {
-                Interval = 500,
+                Interval = 650,
                 Enabled = false
             };
 
@@ -33,8 +33,7 @@ namespace ProductVertificationDesktopApp.Service
                 Interval = 200,
                 Enabled = false
             };
-            DataReceivedHandlerBits = new List<Action<bool[]>>();
-            DataReceivedHandlerInt = new List<Action<int[]>>();
+            DataReceivedHandler = new List<Action<int[],bool[]>>();
             DataReceivedHandlerUpdateSetting = new List<Action<int[]>>();
             _timer.Elapsed += Timer_Tick;
             _timer1.Elapsed += Timer1_Tick;
@@ -43,8 +42,7 @@ namespace ProductVertificationDesktopApp.Service
         }
        
 
-        public List<Action<bool[]>> DataReceivedHandlerBits { get; set; }
-        public List<Action<int[]>> DataReceivedHandlerInt { get; set; }
+        public List<Action<int[],bool[]>> DataReceivedHandler { get; set; }
         public List<Action<int[]>> DataReceivedHandlerUpdateSetting { get; set; }
 
         public void Connect()
@@ -63,14 +61,16 @@ namespace ProductVertificationDesktopApp.Service
             var buffer = new byte[1];
             if ((s == "start")&&(_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 6, true);
+                _timer.Enabled = false;
+                Sharp7.S7.SetBitAt(buffer, 0, 6, true);
                 _s7Client.DBWrite(1, 1105, 1, buffer);
                 _timer1.Enabled = true;
             }
             if ((s == "stop")&& (_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 6, false);
-                S7.SetBitAt(buffer, 0, 7, true);
+                _timer.Enabled = false;
+                Sharp7.S7.SetBitAt(buffer, 0, 6, false);
+                Sharp7.S7.SetBitAt(buffer, 0, 7, true);
                 _s7Client.DBWrite(1, 1105, 1, buffer);
                 _timer1.Enabled = true;
             }
@@ -79,17 +79,21 @@ namespace ProductVertificationDesktopApp.Service
         // Send data with2 Bytes
         public void SendData2Byte(int offset, Int16 data)
         {
+            _timer.Enabled = false;
             byte[] _data = new byte[2];
              _data = BitConverter.GetBytes(data*100);
             var data_send = MyConvert2Byte(_data);
             _s7Client.DBWrite(1, _memory + offset, 2, data_send);
+            _timer.Enabled = true;
         }
         public void SendData4Byte(int offset, Int32 data)
         {
+            _timer.Enabled = false;
             byte[] _data = new byte[4];
              _data = BitConverter.GetBytes(data);
             var data_send = MyConvert4Byte(_data);
             _s7Client.DBWrite(1, _memory + offset, 4, data_send);
+            _timer.Enabled = true;
         }
         // đọc về Word khi cần
         public int ReadInt16(int offset)
@@ -156,7 +160,7 @@ namespace ProductVertificationDesktopApp.Service
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    data[i * 8 + j+1] = S7.GetBitAt(bufferQ, i, j);
+                    data[i * 8 + j+1] = Sharp7.S7.GetBitAt(bufferQ, i, j);
                 }
             }
             // READ BIT M TO ARRAY
@@ -164,17 +168,14 @@ namespace ProductVertificationDesktopApp.Service
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    data[(i+2) * 8 + j+1] = S7.GetBitAt(bufferM, i, j);
+                    data[(i+2) * 8 + j+1] = Sharp7.S7.GetBitAt(bufferM, i, j);
                 }
             }
-            foreach (var handler in DataReceivedHandlerBits)
+            foreach (var handler in DataReceivedHandler)
             {
-                handler.Invoke(data);
+                handler.Invoke(data_supervisor,data);
             }
-            foreach (var handler in DataReceivedHandlerInt)
-            {
-                handler.Invoke(data_supervisor);
-            }
+
             if ((bufferTimeclose != _bufferTimeClose) || (bufferTimestart != _bufferTimeStart) || (buffTimeNumber != _buffTimeNumber))
             {
                 int[] bufferSetting = { bufferTimeClose, bufferTimeStart, buffTimeNumber };
@@ -194,6 +195,7 @@ namespace ProductVertificationDesktopApp.Service
             byte[] buffer = new byte[1];
             buffer[0] = 0;
             _s7Client.DBWrite(1, 1105, 1, buffer);
+            _timer.Enabled = true;
             _timer1.Enabled = false;
         }
 

@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Domain;
+﻿
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductVertificationDesktopApp.Domain.Models
+namespace ProductVertificationDesktopApp.Domain.Models.Resource
 {
     public enum  EUnit
     {

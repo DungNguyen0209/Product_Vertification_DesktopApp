@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using ProductVertificationDesktopApp.Domain.Models;
 using ProductVertificationDesktopApp.Domain.ViewModel;
 using System;
@@ -13,7 +14,8 @@ namespace ProductVertificationDesktopApp.Mapping
     {
         public MappingReportTable()
         {
-            CreateMap<ReportViewModel, TestingMachine>();
+            CreateMap<TestSheet,ReportViewModel>();
+            CreateMap<ReportViewModel, TestSheet>();
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using ProductVertificationDesktopApp.Domain.Communication;
+﻿using ProductVertificationDesktopApp.Domain;
+using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using ProductVertificationDesktopApp.Domain.ViewModel;
 using ProductVertificationDesktopApp.helps;
 using ProductVertificationDesktopApp.Views.Interface.Report;
@@ -36,7 +38,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridView_doben.Columns[9].Width = 200;
             dataGridView_doben.Columns[10].Width = 200;
             dataGridView_doben.Columns[11].Width = 200;
-            for(int i=1;i<21;i++)
+            /*for(int i=1;i<21;i++)
             {
                 var count = new ReportViewModel
                 {
@@ -44,7 +46,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
                 };
                 Report.Add(count);
                 
-            } 
+            } */
         }
         
         public IList<ReportViewModel> Report { get; set; }
@@ -83,10 +85,33 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             remove => button_LoadFromDataBase.Click -= value;
         }
 
+        public event EventHandler FormLoad;
+
         public void SuccessExcel(string s)
         {
             MessageBox.Show(s);
         }
+
+        public async Task<ServiceResponse> ConfirmExport ()
+        {
+            DialogResult dr;
+            dr = MessageBox.Show("Bạn có muốn in bản báo cáo  ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                return ServiceResponse.Successful();
+            }
+
+            else
+            {
+                var error = new Error
+                {
+                    ErrorCode = "Cancel.Export",
+                    Message = "Cancel"
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }
+    
         private void Form_Baocao_Doben_Load(object sender, EventArgs e)
         {
             dataGridView_doben.BorderStyle = BorderStyle.Fixed3D;
@@ -100,7 +125,9 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             //dataGridView_doben.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
-
-
+        private void Form_Baocao_Doben_Load_1(object sender, EventArgs e)
+        {
+                        FormLoad?.Invoke(this, e);
+        }
     }
 }

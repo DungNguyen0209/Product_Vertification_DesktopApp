@@ -179,6 +179,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="S7.Net, Version=0.12.0.0, Culture=neutral, PublicKeyToken=d5812d469e84c693, processorArchitecture=MSIL">
+      <HintPath>..\packages\S7netplus.0.12.0\lib\net452\S7.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Sharp7, Version=1.1.79.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sharp7.1.1.79\lib\net40\Sharp7.dll</HintPath>
     </Reference>
@@ -225,13 +228,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\API\ApiReportRiliability.cs" />
+    <Compile Include="Domain\API\ApiSupervisorReliability.cs" />
     <Compile Include="Domain\Communication\ServiceResourceResponse.cs" />
     <Compile Include="Domain\Communication\ServiceResponse.cs" />
     <Compile Include="Domain\Communication\Error.cs" />
-    <Compile Include="Domain\Models\ETargetTest.cs" />
-    <Compile Include="Domain\Models\EUnit.cs" />
-    <Compile Include="Domain\Models\TestingMachine.cs" />
-    <Compile Include="Domain\TestingConfigurations.cs" />
+    <Compile Include="Domain\Communication\WebApi\LoginRequest.cs" />
+    <Compile Include="Domain\Communication\WebApi\LoginResponse.cs" />
+    <Compile Include="Domain\Communication\WebApi\ServerError.cs" />
+    <Compile Include="Domain\Communication\WebApi\Token.cs" />
+    <Compile Include="Domain\Models\Resource\ETargetTest.cs" />
+    <Compile Include="Domain\Models\Resource\EUnit.cs" />
+    <Compile Include="Domain\Models\LoginApi\Employee.cs" />
+    <Compile Include="Domain\Models\Resource\TestingMachine.cs" />
+    <Compile Include="Domain\Models\Resource\TestingConfigurations.cs" />
+    <Compile Include="Domain\Models\Resource\TestSheet.cs" />
     <Compile Include="Domain\ViewModel\ReportViewModel.cs" />
     <Compile Include="helps\Constants.cs" />
     <Compile Include="IView\IViewConfirmRunning.cs" />
@@ -244,14 +255,20 @@
     <Compile Include="IView\IViewSupervisorForcedEndurance.cs" />
     <Compile Include="IView\IViewSupervisorReliability.cs" />
     <Compile Include="Mapping\MappingReportTable.cs" />
+    <Compile Include="Migrations\202106120542490_MINDUNG.cs" />
+    <Compile Include="Migrations\202106120542490_MINDUNG.designer.cs">
+      <DependentUpon>202106120542490_MINDUNG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelingMachines.cs" />
     <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
-    <Compile Include="Persistence\Repositories\Interfaces\ITestingMachineRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\ITestingSheetRepository.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\IunitOfWork.cs" />
-    <Compile Include="Persistence\Repositories\TestingMachineRepository.cs" />
+    <Compile Include="Persistence\Repositories\TestingSheetRepository.cs" />
     <Compile Include="Persistence\Repositories\UnitOfWork.cs" />
     <Compile Include="Persistence\Repositories\TestingConfigurationRepository.cs" />
+    <Compile Include="Presenters\LoginPresenter\LoginPresenter.cs" />
     <Compile Include="Presenters\ReportPresenter\ReportReliabilityPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
@@ -263,8 +280,10 @@
     <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorParamPresenter\SupervisorDeformationParamPVPresenter.cs" />
     <Compile Include="Presenters\SupervisorPresenters\SupervisorReliabilityPresenter.cs" />
+    <Compile Include="Service\ApiService.cs" />
     <Compile Include="Service\DatabaseService.cs" />
     <Compile Include="Service\Excel.cs" />
+    <Compile Include="Service\Interfaces\IApiService.cs" />
     <Compile Include="Service\Interfaces\IDatabaseService.cs" />
     <Compile Include="Service\Interfaces\IExcel.cs" />
     <Compile Include="Service\Interfaces\IModelingMachine.cs" />
@@ -457,8 +476,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Logo.cs" />
+    <Compile Include="Views\Interface\Login\IViewLogin.cs" />
     <Compile Include="Views\Interface\Report\IViewReportDeformation.cs" />
     <Compile Include="Views\Interface\Report\IViewReportRiliability.cs" />
+    <EmbeddedResource Include="Migrations\202106120542490_MINDUNG.resx">
+      <DependentUpon>202106120542490_MINDUNG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.resx">
       <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
     </EmbeddedResource>

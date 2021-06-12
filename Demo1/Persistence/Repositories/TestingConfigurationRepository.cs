@@ -1,4 +1,4 @@
-﻿using ProductVertificationDesktopApp.Domain;
+﻿
 using ProductVertificationDesktopApp.Persistence.Contexts;
 using System;
 using System.Collections.Generic;
@@ -7,6 +7,7 @@ using System.Text;
 using System.Data.Entity;
 using System.Threading.Tasks;
 using ProductVertificationDesktopApp.Persistence.Repositories.Interfaces;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 
 namespace ProductVertificationDesktopApp.Persistence
 {

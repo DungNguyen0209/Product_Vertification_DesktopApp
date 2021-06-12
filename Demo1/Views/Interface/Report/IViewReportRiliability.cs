@@ -1,5 +1,6 @@
 ﻿using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using ProductVertificationDesktopApp.Domain.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace ProductVertificationDesktopApp.Views.Interface.Report
     {
         event EventHandler Insert;
         event EventHandler LoadFromDatabase;
+        event EventHandler FormLoad;
         void SuccessExcel(string s);
         DateTime TimeStampStart { get; set; }
         DateTime TimeStampFinish { get; set; }
@@ -20,5 +22,6 @@ namespace ProductVertificationDesktopApp.Views.Interface.Report
         String NameProduct { get; set; }
         String Comment { get; set; }
         IList<ReportViewModel> Report { get; set; }
+        Task<ServiceResponse> ConfirmExport();
     }
 }

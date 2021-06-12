@@ -58,31 +58,31 @@ namespace ProductVertificationDesktopApp.Service
             var buffer = new byte[1];
             if ((s == "start")&& (_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0,1,true);
+                Sharp7.S7.SetBitAt(buffer, 0,1,true);
                 _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
 
             }
             if ((s == "stop")&&(_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 2, true);
+                Sharp7.S7.SetBitAt(buffer, 0, 2, true);
                 _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
             }
             if ((s == "reset")&&(_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 3, true);
+                Sharp7.S7.SetBitAt(buffer, 0, 3, true);
                 _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
                 _timer1.Enabled = true;
             }
 
             if ((s == "confirm") && (_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 6, true);
+                Sharp7.S7.SetBitAt(buffer, 0, 6, true);
                 _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
                 _timer1.Enabled = true;
             }
             if ((s == "cancel") && (_s7Client.Connect() == 0))
             {
-                S7.SetBitAt(buffer, 0, 6, false);
+                Sharp7.S7.SetBitAt(buffer, 0, 6, false);
                 _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
                 _timer1.Enabled = true;
             }
@@ -93,7 +93,7 @@ namespace ProductVertificationDesktopApp.Service
         {
             SelectSystem = StatusSelect;
             var buffer = new byte[1];
-            S7.SetBitAt(buffer, 0, bit, status);
+            Sharp7.S7.SetBitAt(buffer, 0, bit, status);
             _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
             _timer1.Enabled = true;
 
@@ -101,7 +101,7 @@ namespace ProductVertificationDesktopApp.Service
         public void SetMemMoryBitStatus(int offset, int bit, bool status)
         {
             var bufffer = new byte[1];
-            S7.SetBitAt(bufffer, 0, bit, status);
+            Sharp7.S7.SetBitAt(bufffer, 0, bit, status);
             _s7Client.WriteArea(0x84, 52, offset, 1, 0x02, bufffer);
         }
         public void SendDataUint(int offset, Int16 data)
@@ -178,36 +178,38 @@ namespace ProductVertificationDesktopApp.Service
         private void Timer1_Tick(object sender, EventArgs args)
         {
             var buffer_send1 = new byte[1];
-            S7.SetBitAt(buffer_send1, 0, 1, false);
-            S7.SetBitAt(buffer_send1, 0, 2, false);
-            S7.SetBitAt(buffer_send1, 0, 3, false);
-            S7.SetBitAt(buffer_send1, 0, 6, false);
-            S7.SetBitAt(buffer_send1, 0, 7, false);
+            Sharp7.S7.SetBitAt(buffer_send1, 0, 1, false);
+            Sharp7.S7.SetBitAt(buffer_send1, 0, 2, false);
+            Sharp7.S7.SetBitAt(buffer_send1, 0, 3, false);
+            Sharp7.S7.SetBitAt(buffer_send1, 0, 6, false);
+            Sharp7.S7.SetBitAt(buffer_send1, 0, 7, false);
             if(SelectSystem==1)
             {
-                S7.SetBitAt(buffer_send1, 0, 4, true);
-                S7.SetBitAt(buffer_send1, 0, 5, false);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 4, true);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 5, false);
             }
             if (SelectSystem == 2)
             {
-                S7.SetBitAt(buffer_send1, 0, 4, false);
-                S7.SetBitAt(buffer_send1, 0, 5, true);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 4, false);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 5, true);
             }
             if (SelectSystem == 3)
             {
-                S7.SetBitAt(buffer_send1, 0, 4, true);
-                S7.SetBitAt(buffer_send1, 0, 5, true);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 4, true);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 5, true);
             }
             if (SelectSystem == 4)
             {
-                S7.SetBitAt(buffer_send1, 0, 4,false);
-                S7.SetBitAt(buffer_send1, 0, 5, false);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 4,false);
+                Sharp7.S7.SetBitAt(buffer_send1, 0, 5, false);
             }
             _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer_send1);
             _timer1.Enabled = false;
         }
         private void Timer_Tick(object sender, EventArgs args)
         {
+            byte[] _buffer = new byte[100];
+            _s7Client.DBRead(_DB, 22, 42, _buffer);
             byte[] buffer = new byte[1];
             byte[] testing=new byte[15];
             int PV_Force_Cylinder_1 = ReadReal(22);
@@ -231,7 +233,7 @@ namespace ProductVertificationDesktopApp.Service
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    data[i * 8 + j] = S7.GetBitAt(buffer, i, j);
+                    data[i * 8 + j] = Sharp7.S7.GetBitAt(buffer, i, j);
                 }
             }
             foreach (var handler in DataReceivedHandlerBits)

@@ -1,5 +1,6 @@
 ﻿using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
 {
     public interface IExcel
     {
-        Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine,int targettest, string nametest, string note);
+        Task<ServiceResponse> Exportdata(string path, TestingMachine testingMachine);
     }
 }

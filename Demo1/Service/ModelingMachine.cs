@@ -20,7 +20,7 @@ namespace ProductVertificationDesktopApp.Service
         {
             _logo = logo;
             UpdateData = new List<Action<bool>>();
-            _logo.DataReceivedHandlerUpdateSetting.Add(DataRecivedIntHandler);
+            _logo.DataReceivedHandlerUpdateSetting.Add(DataRecivedSettingHandler);
         }
         public short TimeStart
         {
@@ -61,7 +61,7 @@ namespace ProductVertificationDesktopApp.Service
         {
             _logo.SendData4Byte(offset, data);
         }
-        private void DataRecivedIntHandler(int[] data)
+        private void DataRecivedSettingHandler(int[] data)
         {
             _TimeStop = Convert.ToInt16(data[0]);
             _TimeStart = Convert.ToInt16(data[1]);

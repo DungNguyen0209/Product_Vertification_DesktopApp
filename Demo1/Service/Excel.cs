@@ -2,6 +2,7 @@
 using ProductVertificationDesktopApp.Domain;
 using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using ProductVertificationDesktopApp.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -34,51 +35,53 @@ namespace ProductVertificationDesktopApp.Service
                 Error error = new Error
                 {
                     ErrorCode = "ReadExcel",
-                    Message = "Lỗi Đọc"
+                    Message = "Lỗi Đọc File Nguồn"
                 };
                 return  ServiceResponse.Failed(error);
             }
 
         }
 
-        private async Task<ServiceResponse> EditExcelFile(List<TestingMachine> testingMachine,int targettest,string nametest,string note)
+        private async Task<ServiceResponse> EditExcelFile(TestingMachine testingMachine)
         {
             try
             {
-                worksheet.Cells["F5"].Value = nametest;
+                worksheet.Cells["F5"].Value = testingMachine.ProductCode;
                 worksheet.Cells["C8"].Style.Numberformat.Format = "dd-MM-yyyy";
-                worksheet.Cells["C8"].Value = testingMachine[0].TimeStampStart;
+                worksheet.Cells["C8"].Value =testingMachine.TimeStampStart;
                 worksheet.Cells["K8"].Style.Numberformat.Format = "dd-MM-yyyy";
-                worksheet.Cells["K8"].Value = testingMachine[0].TimeStampFinish;
-                worksheet.Cells["K9"].Value = note;
-                switch (targettest)
+                worksheet.Cells["K8"].Value = testingMachine.TimeStampFinish;
+                worksheet.Cells["K9"].Value = testingMachine.Note;
+                switch (testingMachine.Target)
                 {
-                    case 0:
+                    case "dinhky":
                         worksheet.Cells["E9"].Value = "X";
                         break;
-                    case 1:
+                    case "bathuong":
                         worksheet.Cells["G9"].Value = "X";
                         break;
-                    case 2:
+                    case "SPmoi":
                         worksheet.Cells["I9"].Value = "X";
                         break;
-                    case 3:
+                    case "khac":
                         worksheet.Cells["J9"].Value = "Khác X";
                         break;
                 }
-                for (int i=0; i<20;i++)
+                int i = 0;
+                foreach(var sheet in testingMachine.Testsheet)
                 {
-                    worksheet.Cells[15+i, 2].Value = testingMachine[i].TimeSmoothClosingLid;
-                    worksheet.Cells[15 + i, 3].Value = testingMachine[i].StatusLidNotFall;
-                    worksheet.Cells[15 + i, 4].Value = testingMachine[i].StatusLidNotLeak;
-                    worksheet.Cells[15 + i, 5].Value = testingMachine[i].StatusLidResult;
-                    worksheet.Cells[15 + i, 6].Value = testingMachine[i].TimeSmoothClosingPlinth;
-                    worksheet.Cells[15 + i, 7].Value = testingMachine[i].StatusPlinthNotFall;
-                    worksheet.Cells[15 + i, 8].Value = testingMachine[i].StatusPlinthNotLeak;
-                    worksheet.Cells[15 + i, 9].Value = testingMachine[i].StatusPlinthResult;
-                    worksheet.Cells[15 + i, 10].Value = testingMachine[i].TotalMistake;
-                    worksheet.Cells[15 + i, 11].Value = testingMachine[i].Note;
-                    worksheet.Cells[15 + i, 12].Value = testingMachine[i].StaffCheck;
+                    worksheet.Cells[15 + i, 2].Value = sheet.TimeSmoothClosingLid;
+                    worksheet.Cells[15 + i, 3].Value = sheet.StatusLidNotFall;
+                    worksheet.Cells[15 + i, 4].Value = sheet.StatusLidNotLeak;
+                    worksheet.Cells[15 + i, 5].Value = sheet.StatusLidResult;
+                    worksheet.Cells[15 + i, 6].Value = sheet.TimeSmoothClosingPlinth;
+                    worksheet.Cells[15 + i, 7].Value = sheet.StatusPlinthNotFall;
+                    worksheet.Cells[15 + i, 8].Value = sheet.StatusPlinthNotLeak;
+                    worksheet.Cells[15 + i, 9].Value = sheet.StatusPlinthResult;
+                    worksheet.Cells[15 + i, 10].Value = sheet.TotalMistake;
+                    worksheet.Cells[15 + i, 11].Value = sheet.Note;
+                    worksheet.Cells[15 + i, 12].Value = sheet.StaffCheck;
+                    i++;
                 }
                 
                 return ServiceResponse.Successful();
@@ -88,7 +91,7 @@ namespace ProductVertificationDesktopApp.Service
                 Error error = new Error
                 {
                     ErrorCode = "EditExcel",
-                    Message = "Lỗi Edit"
+                    Message = "Lỗi Thêm dữ liệu"
                 };
                 return ServiceResponse.Failed(error);
             }
@@ -105,40 +108,79 @@ namespace ProductVertificationDesktopApp.Service
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 filePath = dialog.FileName;
-            }
-
-            // nếu đường dẫn null hoặc rỗng thì báo không hợp lệ và return hàm
-            if (string.IsNullOrEmpty(filePath))
-            {
-                MessageBox.Show("Đường dẫn báo cáo không hợp lệ");
-            }
-            try
-            {
-                using (package)
+                try
                 {
-                    //Lưu file lại
-                    Byte[] bin = package.GetAsByteArray();
-                    File.WriteAllBytes(filePath, bin);
+                    using (package)
+                    {
+                        //Lưu file lại
+                        Byte[] bin = package.GetAsByteArray();
+                        File.WriteAllBytes(filePath, bin);
+                    }
+                    return ServiceResponse.Successful();
                 }
-                return ServiceResponse.Successful();
-            }
-            catch (Exception EE)
-            {
-                Error error = new Error
+                catch (Exception EE)
                 {
-                    ErrorCode = "ExportExcel",
-                    Message = "Lỗi Export"
-                };
-                return ServiceResponse.Failed(error);
+                    Error error = new Error
+                    {
+                        ErrorCode = "ExportExcel",
+                        Message = "Lỗi Export"
+                    };
+                    return ServiceResponse.Failed(error);
+                }
             }
+            else
+            {
+                // nếu đường dẫn null hoặc rỗng thì báo không hợp lệ và return hàm
+                if (string.IsNullOrEmpty(filePath))
+                {
+                    MessageBox.Show("Đường dẫn báo cáo không hợp lệ");
+                    Error error = new Error
+                    {
+                        ErrorCode = "ExportExcel",
+                        Message = "Đường dẫn không hợp lệ"
+                    };
+                    return ServiceResponse.Failed(error);
+                }
+                else
+                {
+                    Error error = new Error
+                    {
+                        ErrorCode = "ExportExcel",
+                        Message = "Lỗi Lưu file"
+                    };
+                    return ServiceResponse.Failed(error);
+                }
+            }
+           
         }
 
-        public async Task<ServiceResponse> Exportdata(string path, List<TestingMachine> testingMachine, int targettest, string nametest, string note)
+        public async Task<ServiceResponse> Exportdata(string path, TestingMachine testingMachine)
         {
             var step1 = await ReadExcelFile(path);
-            var step2 = await EditExcelFile(testingMachine,targettest, nametest,note);
+            var step2 = await EditExcelFile(testingMachine);
             var step3 = await ExportExcelFile();
-            return step3;
+            if (step1.Success != true)
+            {
+                return step1;
+            }
+            else
+            {
+                if (step2.Success != true)
+                {
+                    return step2;
+                }
+                else
+                {
+                    if (step3.Success != true)
+                    {
+                        return step3;
+                    }
+                    else
+                    {
+                        return ServiceResponse.Successful();
+                    }    
+                }    
+            }
         }
 
     }

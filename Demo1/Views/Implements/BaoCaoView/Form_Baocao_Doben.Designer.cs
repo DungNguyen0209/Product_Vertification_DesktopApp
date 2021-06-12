@@ -131,7 +131,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_doben.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_doben.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView_doben.Location = new System.Drawing.Point(174, 272);
+            this.dataGridView_doben.Location = new System.Drawing.Point(189, 272);
             this.dataGridView_doben.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView_doben.Name = "dataGridView_doben";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -243,6 +243,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form_Baocao_Doben";
             this.Size = new System.Drawing.Size(1607, 902);
+            this.Load += new System.EventHandler(this.Form_Baocao_Doben_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_doben)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

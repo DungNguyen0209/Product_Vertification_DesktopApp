@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductVertificationDesktopApp.Domain.Models
+namespace ProductVertificationDesktopApp.Domain.Models.Resource
 {
     public enum ETargetTest
     {
-        Định_kỳ,
-        Bất_thường,
-        Sản_phẩm_mới,
-        Khác
+        dinhky,
+        batthuong,
+        SPmoi,
+        khac
     }
 }

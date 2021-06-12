@@ -1,6 +1,7 @@
-﻿using ProductVertificationDesktopApp.Domain;
+﻿
+using ProductVertificationDesktopApp.Domain;
 using ProductVertificationDesktopApp.Domain.Communication;
-using ProductVertificationDesktopApp.Domain.Models;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using ProductVertificationDesktopApp.Persistence.Repositories.Interfaces;
 using ProductVertificationDesktopApp.Service.Interfaces;
 using System;
@@ -15,13 +16,13 @@ namespace ProductVertificationDesktopApp.Service
     {
         private readonly IunitOfWork _unitOfWork;
         private readonly ITestingConfigurationRepository _testingConfigurationRepository;
-        private readonly ITestingMachineRepository _testingMachineRepository;
+        private readonly ITestingSheetRepository _testingsheetRepository;
 
-        public DatabaseService(IunitOfWork unitOfWork, ITestingConfigurationRepository testingConfigurationRepository, ITestingMachineRepository testingMachineRepository)
+        public DatabaseService(IunitOfWork unitOfWork, ITestingConfigurationRepository testingConfigurationRepository, ITestingSheetRepository testingMachineRepository)
         {
             _unitOfWork = unitOfWork;
             _testingConfigurationRepository = testingConfigurationRepository;
-            _testingMachineRepository = testingMachineRepository;
+            _testingsheetRepository = testingMachineRepository;
         }
 
 
@@ -50,26 +51,6 @@ namespace ProductVertificationDesktopApp.Service
             try
             {
                 _testingConfigurationRepository.Insert(testingConfigurations);
-                await _unitOfWork.SaveChangeAsync();
-
-                return ServiceResponse.Successful();
-            }
-            catch
-            {
-                _unitOfWork.DetachChange();
-                Error error = new Error
-                {
-                    ErrorCode = "Database.Insert",
-                    Message = "Lỗi khác."
-                };
-                return ServiceResponse.Failed(error);
-            }
-        }
-        public async Task<ServiceResponse> DeleteReportShift(TestingConfigurations testingConfigurations)
-        {
-            try
-            {
-                await _testingConfigurationRepository.Delete(testingConfigurations);
                 await _unitOfWork.SaveChangeAsync();
 
                 return ServiceResponse.Successful();
@@ -129,30 +110,12 @@ namespace ProductVertificationDesktopApp.Service
         #endregion
 
         #region TestingMachine
-        public async Task<ServiceResponse> UpdateTestingMachine(TestingMachine entry)
+        
+        public async Task<ServiceResponse> InsertReliability(TestSheet entry)
         {
             try
             {
-                //await _testingMachineRepository.Update(entry);
-               // await _unitOfWork.SaveChangeAsync();
-                return ServiceResponse.Successful();
-            }
-            catch
-            {
-                _unitOfWork.DetachChange();
-                var error = new Error
-                {
-                    ErrorCode = "Database.Update",
-                    Message = "Lỗi database local."
-                };
-                return ServiceResponse.Failed(error);
-            }
-        }
-        public async Task<ServiceResponse> InsertTestingMachines(TestingMachine entry)
-        {
-            try
-            {
-                _testingMachineRepository.Insert(entry);
+                _testingsheetRepository.InsertReliability(entry);
                 await _unitOfWork.SaveChangeAsync();
 
                 return ServiceResponse.Successful();
@@ -169,25 +132,72 @@ namespace ProductVertificationDesktopApp.Service
             }
         }
 
-        public async Task<ServiceResourceResponse<TestingMachine>> FindTest(DateTime dateTimestart, DateTime dateTimestop)
+      /*  public async Task<ServiceResponse> InsertDeformation(TestSheet entry)
         {
             try
             {
-               var resultFind = await _testingMachineRepository.FindTest(dateTimestart,dateTimestop);
+                _testingsheetRepository.InsertDeformation(entry);
+                await _unitOfWork.SaveChangeAsync();
 
-                return new ServiceResourceResponse<TestingMachine>(resultFind);
+                return ServiceResponse.Successful();
+            }
+            catch
+            {
+                _unitOfWork.DetachChange();
+                Error error = new Error
+                {
+                    ErrorCode = "Database.Insert",
+                    Message = "Lỗi khác."
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }*/
+        public async Task<IEnumerable<TestSheet>> LoadReliability()
+        {
+            return await _testingsheetRepository.LoadReliability();
+        }
+       /* public async Task<IEnumerable<TestSheet>> LoadDeformation()
+        {
+            return await _testingsheetRepository.LoadDeformation();
+        }*/
+        public async Task<ServiceResponse> ClearReliability()
+        {
+            try
+            {
+                _testingsheetRepository.ClearReliability();
+                await _unitOfWork.SaveChangeAsync();
+                return ServiceResponse.Successful();
             }
             catch
             {
                 _unitOfWork.DetachChange();
                 var error = new Error
                 {
-                    ErrorCode = "Database.FindConfigByMachineId",
+                    ErrorCode = "Database.Clear",
                     Message = "Lỗi database."
                 };
-                return new ServiceResourceResponse<TestingMachine>(error);
+                return ServiceResponse.Failed(error);
             }
         }
+       /* public async Task<ServiceResponse> ClearDeformation()
+        {
+            try
+            {
+                _testingsheetRepository.ClearDeformation();
+                await _unitOfWork.SaveChangeAsync();
+                return ServiceResponse.Successful();
+            }
+            catch
+            {
+                _unitOfWork.DetachChange();
+                var error = new Error
+                {
+                    ErrorCode = "Database.Clear",
+                    Message = "Lỗi database."
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }*/
         #endregion
     }
 }

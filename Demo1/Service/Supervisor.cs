@@ -24,8 +24,7 @@ namespace ProductVertificationDesktopApp.Service
         public Supervisor(Logo logo)
         {
             _logo = logo;
-            _logo.DataReceivedHandlerInt.Add(DataRecivedIntHandler);
-            _logo.DataReceivedHandlerBits.Add(DataReciedBitHandler);
+            _logo.DataReceivedHandler.Add(DataRecivedHandler);
         }
         public bool Run
         {
@@ -127,23 +126,21 @@ namespace ProductVertificationDesktopApp.Service
             _logo.SetMemoryBit(s.ToLower());
         }
 
-        private void DataRecivedIntHandler(int[] data )
+        private void DataRecivedHandler(int[] data1, bool[] data)
         {
-            _TimeStop = data[0];
-            _TimeStart = data[1];
-            _TimeCount = data[2];
-            _TimeCurrent = data[3];
-            _TimeCloseSP = data[4];
-            _TimeOpenSP = data[5];
-            _NumberCloseSP = data[6];
-            UpdateData?.Invoke(this, data);
-        }
-
-        private void DataReciedBitHandler(bool[] data)
-        {
+            _TimeStop = data1[0];
+            _TimeStart = data1[1];
+            _TimeCount = data1[2];
+            _TimeCurrent = data1[3];
+            _TimeCloseSP = data1[4];
+            _TimeOpenSP = data1[5];
+            _NumberCloseSP = data1[6];
             _Run = data[7];
             _Warn = data[3];
+            UpdateData?.Invoke(this, data1);
         }
+
+
 
     }
 }
