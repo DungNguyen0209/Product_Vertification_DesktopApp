@@ -24,6 +24,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         private readonly IExcel _excel;
         private readonly IApiService _apiService;
         private bool FlagOpen = false;
+        private int Countprevious;
         public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel, IApiService apiService)
         {
             _mapper = mapper;
@@ -96,8 +97,9 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         {
             if (_supervisor.TimeCurrent != 0)
             {
-                if (_supervisor.TimeCurrent % 5000 == 0)
+                if ((_supervisor.TimeCurrent % 5000 == 0)&&(_supervisor.TimeCurrent != Countprevious))
                 {
+                    Countprevious = _supervisor.TimeCurrent;
                     var test = new ReportViewModel();
                     test.NumberTesting = Convert.ToString(_supervisor.TimeCurrent);
                     _viewReportRiliability.Report.Add(test);
