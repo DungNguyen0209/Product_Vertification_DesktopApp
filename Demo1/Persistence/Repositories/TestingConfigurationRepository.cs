@@ -19,38 +19,20 @@ namespace ProductVertificationDesktopApp.Persistence
         {
             _context = context;
         }
-        public async Task Update(TestingConfigurations entry)
-        {
-            var existingEntry = await _context.TestingConfigurations.FindAsync(entry.TestID);
-            existingEntry.Clone(entry);
-        }
+        
         public void Insert(TestingConfigurations entry)
         {
             _context.TestingConfigurations.Add(entry);
         }
-        public async Task Delete(TestingConfigurations entry)
-        {
-            var data = await (from p in _context.TestingConfigurations where (p.TestID == entry.TestID) select p).FirstOrDefaultAsync();
-             _context.TestingConfigurations.Remove(data);
-        }
+        
         public void Clear()
         {
             _context.Database.ExecuteSqlCommand("TRUNCATE TABLE [TestingConfigurations]");
         }
 
-        public async Task<IEnumerable<TestingConfigurations>> Load()
+        public async Task<IList<TestingConfigurations>> LoadConfigurations()
         {
             return await _context.TestingConfigurations.ToListAsync();
-        }
-        public async Task<List<TestingConfigurations>> FindTestId(string TestName)
-        {
-            var data = await _context.TestingConfigurations.ToListAsync();
-            data = await (from p in _context.TestingConfigurations
-                          where ( p.TestName== TestName)
-                          select p
-                         )
-                        .ToListAsync();
-            return data;
         }
 
     }

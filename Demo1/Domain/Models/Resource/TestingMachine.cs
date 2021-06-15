@@ -10,11 +10,11 @@ namespace ProductVertificationDesktopApp.Domain.Models.Resource
     {
         
         public string TestingMachineID { get; set; }
-        public DateTime TimeStampStart { get; set; }
-        public DateTime TimeStampFinish{ get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime StopTime { get; set; }
         // muc dich test
         public string Target { get; set; }
-        public string ProductCode { get; set; }
+        public string ProductId { get; set; }
         // tieu chuan
         public string Standard { get; set; }
         // chu y khi target = khac

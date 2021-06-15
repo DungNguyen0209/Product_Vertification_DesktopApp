@@ -159,7 +159,7 @@ namespace ProductVertificationDesktopApp
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
 
             //Report Preseenter 
-            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService);
+            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService);
             Application.Run(new MainView(formCaidat, formDangnhap, formCanhbao, formBaocao, formTrogiup, formLichsu, formGiamsat));
         }
     }

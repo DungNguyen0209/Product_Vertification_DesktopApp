@@ -24,31 +24,9 @@ namespace ProductVertificationDesktopApp.Persistence.Contexts
         {
             modelBuilder.
                 Entity<TestingConfigurations>().
-                HasKey(t => t.TestID);
+                HasKey(t => t.TestingMachineID);
 
-            modelBuilder.
-                Entity<TestingConfigurations>().
-                Property(t => t.NumberClosingSetting).
-                IsOptional().
-                HasColumnName("Số lần đóng nắp cài đặt ");
-
-            modelBuilder.
-               Entity<TestingConfigurations>().
-               Property(t => t.NumberClosingCurrent).
-               IsOptional().
-               HasColumnName("Số lần đóng nắp hiện tại ");
-
-            modelBuilder.
-               Entity<TestingConfigurations>().
-               Property(t => t.TimeHoldingCloseSP).
-               IsOptional().
-               HasColumnName("Thời gian giữ nắp đóng :SP ");
-
-            modelBuilder
-               .Entity<TestingConfigurations>()
-               .Property(t => t.TimeHoldingOpenSP)
-               .IsOptional()
-               .HasColumnName("Số lần giữ nắp mở :SP");
+           
 
 
             modelBuilder

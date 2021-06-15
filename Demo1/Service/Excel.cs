@@ -46,11 +46,11 @@ namespace ProductVertificationDesktopApp.Service
         {
             try
             {
-                worksheet.Cells["F5"].Value = testingMachine.ProductCode;
+                worksheet.Cells["F5"].Value = testingMachine.ProductId;
                 worksheet.Cells["C8"].Style.Numberformat.Format = "dd-MM-yyyy";
-                worksheet.Cells["C8"].Value =testingMachine.TimeStampStart;
+                worksheet.Cells["C8"].Value =testingMachine.StartTime;
                 worksheet.Cells["K8"].Style.Numberformat.Format = "dd-MM-yyyy";
-                worksheet.Cells["K8"].Value = testingMachine.TimeStampFinish;
+                worksheet.Cells["K8"].Value = testingMachine.StopTime;
                 worksheet.Cells["K9"].Value = testingMachine.Note;
                 switch (testingMachine.Target)
                 {

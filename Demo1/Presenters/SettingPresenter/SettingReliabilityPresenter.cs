@@ -32,9 +32,11 @@ namespace ProductVertificationDesktopApp.Presenters.SettingPresenter
         }
         private void UpdateView(bool data)
         {
-            _viewSettingReliability.TimeClose = _modelingMachine.TimeStop;
-            _viewSettingReliability.TimeStart = _modelingMachine.TimeStart;
-            _viewSettingReliability.TimeNumber = _modelingMachine.TimeNumber;
+            Task<bool> sCode = Task.Run(async () =>
+            {
+                bool msg = await _viewSettingReliability.UpdateSetting(Convert.ToString(_modelingMachine.TimeStop), Convert.ToString(_modelingMachine.TimeStart), Convert.ToString(_modelingMachine.TimeNumber));
+                return msg;
+            });
         }
 
     }

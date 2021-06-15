@@ -27,25 +27,6 @@ namespace ProductVertificationDesktopApp.Service
 
 
         #region TestingConfiguration
-        public async Task<ServiceResponse> UpdateConfigurationEntry(TestingConfigurations entry)
-        {
-            try
-            {
-                await _testingConfigurationRepository.Update(entry);
-                await _unitOfWork.SaveChangeAsync();
-                return ServiceResponse.Successful();
-            }
-            catch
-            {
-                _unitOfWork.DetachChange();
-                var error = new Error
-                {
-                    ErrorCode = "Database.Update",
-                    Message = "Lỗi database local."
-                };
-                return ServiceResponse.Failed(error);
-            }
-        }
         public async Task<ServiceResponse> InsertTestingConfigurations(TestingConfigurations testingConfigurations)
         {
             try
@@ -85,28 +66,11 @@ namespace ProductVertificationDesktopApp.Service
                 return ServiceResponse.Failed(error);
             }
         }
-        public async Task<IEnumerable<TestingConfigurations>> LoadAllConfiguration()
+        public async Task<IList<TestingConfigurations>> LoadAllConfiguration()
         {
-            return await _testingConfigurationRepository.Load();
+            return await _testingConfigurationRepository.LoadConfigurations();
         }
-        public async Task<ServiceResourceResponse<TestingConfigurations>> FindTestId(string machineId)
-        {
-            try
-            {
-                var resultFindByMachineId = await _testingConfigurationRepository.FindTestId(machineId);
-                return new ServiceResourceResponse<TestingConfigurations>(resultFindByMachineId);
-            }
-            catch
-            {
-                _unitOfWork.DetachChange();
-                var error = new Error
-                {
-                    ErrorCode = "Database.FindConfigByMachineId",
-                    Message = "Lỗi database."
-                };
-                return new ServiceResourceResponse<TestingConfigurations>(error);
-            }
-        }
+
         #endregion
 
         #region TestingMachine

@@ -9,12 +9,14 @@ namespace ProductVertificationDesktopApp.Domain.API
     public class ApiSupervisorReliability
     {
         //SolandongnapCaidat
-        public int NumberClosingLidSP { get; set; }
+        public int NumberClosingSp { get; set; }
         //SolanDongNapHientai
-        public int NumberClosingLidCurrent { get; set; }
+        public int NumberClosingPv { get; set; }
         //thoigiangiunapmo
-        public int TimeOpeningLid { get; set; }
+        public int TimeLidClose { get; set; }
         // thoigiangiunapdong
-        public int TimeClosingPlithTimeOpeningLid { get; set; }
+        public int TimeLidOpen { get; set; }
+        public bool Running { get; set; }
+        public bool Warning { get; set; }
     }
 }

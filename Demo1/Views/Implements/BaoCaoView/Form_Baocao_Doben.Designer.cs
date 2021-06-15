@@ -33,7 +33,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button_LoadFromDataBase = new System.Windows.Forms.Button();
+            this.btn_ImportData = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePickerStop = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,20 +49,20 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_doben)).BeginInit();
             this.SuspendLayout();
             // 
-            // button_LoadFromDataBase
+            // btn_ImportData
             // 
-            this.button_LoadFromDataBase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
-            this.button_LoadFromDataBase.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button_LoadFromDataBase.FlatAppearance.BorderSize = 0;
-            this.button_LoadFromDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_LoadFromDataBase.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_LoadFromDataBase.ForeColor = System.Drawing.Color.White;
-            this.button_LoadFromDataBase.Location = new System.Drawing.Point(1005, 49);
-            this.button_LoadFromDataBase.Name = "button_LoadFromDataBase";
-            this.button_LoadFromDataBase.Size = new System.Drawing.Size(229, 79);
-            this.button_LoadFromDataBase.TabIndex = 49;
-            this.button_LoadFromDataBase.Text = "Truy xuất";
-            this.button_LoadFromDataBase.UseVisualStyleBackColor = false;
+            this.btn_ImportData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(77)))));
+            this.btn_ImportData.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_ImportData.FlatAppearance.BorderSize = 0;
+            this.btn_ImportData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ImportData.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ImportData.ForeColor = System.Drawing.Color.White;
+            this.btn_ImportData.Location = new System.Drawing.Point(1005, 49);
+            this.btn_ImportData.Name = "btn_ImportData";
+            this.btn_ImportData.Size = new System.Drawing.Size(229, 79);
+            this.btn_ImportData.TabIndex = 49;
+            this.btn_ImportData.Text = "Truy xuất";
+            this.btn_ImportData.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -85,6 +85,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.dateTimePickerStop.Name = "dateTimePickerStop";
             this.dateTimePickerStop.Size = new System.Drawing.Size(229, 45);
             this.dateTimePickerStop.TabIndex = 47;
+            this.dateTimePickerStop.Value = new System.DateTime(2021, 6, 15, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -107,6 +108,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.dateTimePickerStart.Name = "dateTimePickerStart";
             this.dateTimePickerStart.Size = new System.Drawing.Size(229, 45);
             this.dateTimePickerStart.TabIndex = 45;
+            this.dateTimePickerStart.Value = new System.DateTime(2021, 6, 15, 0, 0, 0, 0);
             // 
             // dataGridView_doben
             // 
@@ -233,7 +235,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button_Insert);
             this.Controls.Add(this.dataGridView_doben);
-            this.Controls.Add(this.button_LoadFromDataBase);
+            this.Controls.Add(this.btn_ImportData);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePickerStop);
             this.Controls.Add(this.label1);
@@ -252,7 +254,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
 
         #endregion
 
-        private System.Windows.Forms.Button button_LoadFromDataBase;
+        private System.Windows.Forms.Button btn_ImportData;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePickerStop;
         private System.Windows.Forms.Label label1;

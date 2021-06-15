@@ -8,21 +8,14 @@ namespace ProductVertificationDesktopApp.Domain.Models.Resource
 {
     public class TestingConfigurations
     {
-        public int TestID { get; set; }
-        public string TestName { get; set; }
-        public int? NumberClosingSetting { get; set; }
-        public int? NumberClosingCurrent { get; set; }
-        public Int16? TimeHoldingCloseSP { get; set; }
-        public Int16? TimeHoldingOpenSP { get; set; }
-
-        public void Clone(TestingConfigurations configuration)
-        {
-            this.TestID = configuration.TestID;
-            this.NumberClosingSetting = configuration.NumberClosingSetting;
-            this.NumberClosingCurrent = configuration.NumberClosingCurrent;
-            this.TimeHoldingCloseSP = configuration.TimeHoldingCloseSP;
-            this.TimeHoldingOpenSP = configuration.TimeHoldingOpenSP;
-        }
+        public string TestingMachineID { get; set; }
+        public DateTime TimeStampStart { get; set; }
+        public DateTime TimeStampFinish { get; set; }
+        // muc dich test
+        public int Target { get; set; }
+        public string ProductCode { get; set; }
+        // chu y khi target = khac
+        public string Note { get; set; }
     }
 }
 

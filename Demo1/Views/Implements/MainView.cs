@@ -122,5 +122,21 @@ namespace ProductVertificationDesktopApp
         {
             _troGiupView.BringToFront();
         }
+
+
+        private void MainView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("This will close down the whole application. Confirm?", "Close Application", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                _baoCaoView.Close(this, e);
+                MessageBox.Show("The application has been closed successfully.", "Application Closed!", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                e.Cancel = true;
+                this.Activate();
+            }
+        }
     }
 }

@@ -79,6 +79,9 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             _form_Baocao_Dobiendang.Visible = true;
         }
 
-        
+        public void Close(object sender, EventArgs e)
+        {
+            _form_Baocao_Doben.Closing(this, e);
+        }
     }
 }

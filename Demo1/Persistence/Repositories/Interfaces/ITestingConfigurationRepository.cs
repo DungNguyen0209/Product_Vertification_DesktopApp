@@ -10,12 +10,8 @@ namespace ProductVertificationDesktopApp.Persistence.Repositories.Interfaces
 {
     public interface ITestingConfigurationRepository
     {
-        Task Update(TestingConfigurations entry);
         void Insert(TestingConfigurations entry);
-        Task Delete(TestingConfigurations entry);
         void Clear();
-        Task<IEnumerable<TestingConfigurations>> Load();
-        Task<List<TestingConfigurations>> FindTestId(string TestId);
-
+        Task<IList<TestingConfigurations>> LoadConfigurations();
     }
 }

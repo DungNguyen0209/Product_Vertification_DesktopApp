@@ -25,7 +25,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             comboBoxTarget.DataSource = Constants.Targets;
             Report = new BindingList<ReportViewModel>();
             dataGridView_doben.DataSource = Report;
-
             dataGridView_doben.Columns[0].Width = 125;
             dataGridView_doben.Columns[1].Width = 180;
             dataGridView_doben.Columns[2].Width = 180;
@@ -38,40 +37,110 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             dataGridView_doben.Columns[9].Width = 200;
             dataGridView_doben.Columns[10].Width = 200;
             dataGridView_doben.Columns[11].Width = 200;
-            /*for(int i=1;i<21;i++)
-            {
-                var count = new ReportViewModel
-                {
-                    NumberTesting = Convert.ToString(i * 5000)
-                };
-                Report.Add(count);
-                
-            } */
+            dateTimePickerStart.Format = DateTimePickerFormat.Custom;
         }
         
         public IList<ReportViewModel> Report { get; set; }
-        public ETargetTest eTargetTest
+        public int eTargetTest
         {
             get
             {
-                return (ETargetTest)comboBoxTarget.SelectedIndex;
+                return comboBoxTarget.SelectedIndex;
             }
             set
             {
-               comboBoxTarget.SelectedIndex = value.CompareTo(eTargetTest);
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        comboBoxTarget.SelectedIndex = value;
+                    }));
+                }
+                catch
+                {
+                    comboBoxTarget.SelectedIndex = value;
+                }
             }
         }
 
-        public DateTime TimeStampStart 
-        { get { return dateTimePickerStart.Value; } set { dateTimePickerStart.Value = value; } }
+        public DateTime TimeStampStart
+        {
+            get
+            { return dateTimePickerStart.Value; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        dateTimePickerStart.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                    }));
+                }
+                catch
+                {
+                    dateTimePickerStart.Value =value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                }
+            }
+        }
         public DateTime TimeStampFinish 
-        { get { return dateTimePickerStop.Value; } set { dateTimePickerStop.Value = value; } }
+        {
+            get
+            { return dateTimePickerStop.Value; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        dateTimePickerStop.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                    }));
+                }
+                catch
+                {
+                    dateTimePickerStop.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                }
+            }
+        }
 
         public string NameProduct
-        { get { return textBoxNameProduct.Text; } set { textBoxNameProduct.Text = value; } }
+        {
+            get
+            { return textBoxNameProduct.Text; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        textBoxNameProduct.Text = value;
+                    }));
+                }
+                catch
+                {
+                    textBoxNameProduct.Text = value;
+                }
+            }
+        } 
 
         public string Comment
-        { get { return textBoxNameProduct.Text; } set { textBoxNameProduct.Text = value; } }
+        {
+            get
+            { return textBoxAdditional.Text; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        textBoxAdditional.Text = value;
+                    }));
+                }
+                catch
+                {
+                    textBoxAdditional.Text = value;
+                }
+            }
+        }
 
         public event EventHandler Insert
         {
@@ -79,14 +148,19 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
             remove => button_Insert.Click -= value;
         }
 
-        public event EventHandler LoadFromDatabase
+        public event EventHandler ImportData
         {
-            add => button_LoadFromDataBase.Click += value;
-            remove => button_LoadFromDataBase.Click -= value;
+            add => btn_ImportData.Click += value;
+            remove => btn_ImportData.Click -= value;
         }
 
         public event EventHandler FormLoad;
-
+        public event EventHandler FormClose;
+ 
+        public void Closing(object sender, EventArgs e)
+        {
+            FormClose?.Invoke(this, e);
+        }    
         public void SuccessExcel(string s)
         {
             MessageBox.Show(s);
@@ -129,5 +203,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
         {
                         FormLoad?.Invoke(this, e);
         }
+
+
     }
 }

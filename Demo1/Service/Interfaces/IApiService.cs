@@ -1,4 +1,6 @@
-﻿using ProductVertificationDesktopApp.Domain.Communication;
+﻿
+using ProductVertificationDesktopApp.Domain.API;
+using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models.LoginApi;
 using System;
 using System.Collections.Generic;
@@ -12,5 +14,8 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
     {
         Task<ServiceResourceResponse<Employee>> LogInAsync(string username, string password);
         void LogOut();
+        Task<ServiceResponse> PostReportRiliability(ApiReportRiliability settingMachine);
+        Task<ServiceResponse> PostReportSupervisorRiliability(ApiSupervisorReliability settingMachine);
+        Task<ServiceResourceResponse<QueryResult<ApiReportRiliability>>> GetReportRiliability(DateTime? startTime, DateTime? stopTime);
     }
 }

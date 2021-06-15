@@ -13,5 +13,6 @@ namespace ProductVertificationDesktopApp.IView
         Int16 TimeStart { get; set; }
         Int32 TimeNumber { get; set; }
         event EventHandler Confirm;
+        Task<bool> UpdateSetting(string Stop, string Start, string Time);
     }
 }
