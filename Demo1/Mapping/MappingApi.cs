@@ -15,13 +15,20 @@ namespace ProductVertificationDesktopApp.Mapping
         public MappingApi()
         {
             CreateMap<TestSheet, ApiTestSheet>()
-            .ReverseMap()
-            .ForMember(des => des.StaffCheck, act => act.MapFrom(src => src.Employee))
-            .ForMember(des => des.TotalMistake, act => act.MapFrom(src => src.TotalError));
+                .ForMember(des => des.Employee, act => act.MapFrom(src => src.StaffCheck))
+                .ForMember(des => des.TotalError, act => act.MapFrom(src => src.TotalMistake));
+
+            CreateMap<ApiTestSheet, TestSheet>()
+                .ForMember(des => des.StaffCheck, act => act.MapFrom(src => src.Employee))
+                .ForMember(des => des.TotalMistake, act => act.MapFrom(src => src.TotalError));
+
 
             CreateMap<TestingMachine, ApiReportRiliability>()
-            .ReverseMap()
-            .ForMember(des => des.Testsheet, act => act.MapFrom(src => src.ReliabilityTestSheet));
+                .ForMember(des => des.ReliabilityTestSheet, act => act.MapFrom(src => src.Testsheet));
+
+            CreateMap<ApiReportRiliability, TestingMachine>()
+                .ForMember(des => des.Testsheet, act => act.MapFrom(src => src.ReliabilityTestSheet));
+
 
         }
     } 

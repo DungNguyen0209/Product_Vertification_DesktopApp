@@ -8,7 +8,7 @@ namespace ProductVertificationDesktopApp.Domain.Communication
 {
     public class QueryResult<T>
     {
-        public IList<T> Items { get; set; } = new List<T>();
+        public IEnumerable<T> Items { get; set; } = new List<T>();
         public int TotalItems { get; set; } = 0;
     }
 }

@@ -15,10 +15,12 @@ namespace ProductVertificationDesktopApp.Mapping
         public MappingReportTable()
         {
             CreateMap<ReportViewModel, TestSheet>()
-            .ReverseMap()
-            .ForMember(dest => dest.NumberTesting, expression => expression.MapFrom(src => Convert.ToInt32(src.NumberTesting)))
-            .ForMember(dest => dest.TimeSmoothClosingLid, expression => expression.MapFrom(src => Convert.ToDouble(src.TimeSmoothClosingLid)))
-            .ForMember(dest => dest.TimeSmoothClosingPlinth, expression => expression.MapFrom(src => Convert.ToDouble(src.TimeSmoothClosingPlinth)));
+                .ReverseMap()
+                .ForMember(dest => dest.NumberTesting, expression => expression.MapFrom(src => Convert.ToInt32(src.NumberTesting)))
+                .ForMember(dest => dest.TimeSmoothClosingLid, expression => expression.MapFrom(src => Convert.ToDouble(src.TimeSmoothClosingLid)))
+                .ForMember(dest => dest.TimeSmoothClosingPlinth, expression => expression.MapFrom(src => Convert.ToDouble(src.TimeSmoothClosingPlinth)));
+
+
         }
     }
 }

@@ -23,9 +23,10 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         private readonly IMapper _mapper;
         private readonly IExcel _excel;
         private readonly IApiService _apiService;
+        private readonly IRegularExpression _regularExpression;
         private bool FlagOpen = false;
         private int Countprevious;
-        public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel, IApiService apiService)
+        public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel, IApiService apiService,IRegularExpression regularExpression)
         {
             _mapper = mapper;
             _viewReportRiliability = viewReportRiliability;
@@ -33,6 +34,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
             _databaseService = databaseService;
             _excel = excel;
             _apiService = apiService;
+            _regularExpression = regularExpression;
             _supervisor.UpdateData += UpdateDataBase;
             _viewReportRiliability.Insert += Insertdata;
             _viewReportRiliability.FormLoad += LoadForm;
@@ -142,6 +144,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                 var testingMachine = new TestingMachine();
                 testingMachine.TestingMachineID = Convert.ToString((EUnit)0);
                 testingMachine.Standard = "TC";
+                testingMachine.Note = _viewReportRiliability.Comment;
                 testingMachine.ProductId = _viewReportRiliability.NameProduct;
                 testingMachine.Target = Convert.ToString((ETargetTest)_viewReportRiliability.eTargetTest);
                 testingMachine.StartTime = _viewReportRiliability.TimeStampStart;
@@ -188,23 +191,47 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         }
         private async Task Importdata(bool a)
         {
-            var timestart = _viewReportRiliability.TimeStampStart;
-            var timestop = _viewReportRiliability.TimeStampFinish;
+            var timestart = _viewReportRiliability.TimeStampStart.AddDays(-1);
+            var timestop = _viewReportRiliability.TimeStampFinish.AddDays(+1);
             var result = await _apiService.GetReportRiliability(timestart, timestop);
             if (result.Success == true)
             {
-                var data = result.Resource.Items.Last();
-                var import = _mapper.Map<ApiReportRiliability, TestingMachine>(data);
-                foreach(var items in import.Testsheet)
+                var data = result.Resource.Items.First();
+                var import = _mapper.Map<ApiReportRiliability, TestingMachine>(data);    
+                    foreach (var items in import.Testsheet)
                 {
                     var importdata = _mapper.Map<TestSheet, ReportViewModel>(items);
                     _viewReportRiliability.Report.Add(importdata);
                 }
+                var targetandnote = _regularExpression.RegularExpression1(data.Target);
+                _viewReportRiliability.Comment = targetandnote[0];
+                _viewReportRiliability.eTargetTest = Target(targetandnote[1]);
                 _viewReportRiliability.NameProduct = data.ProductId;
                 _viewReportRiliability.TimeStampStart = data.StartTime;
                 _viewReportRiliability.TimeStampFinish = data.StopTime;
                 _viewReportRiliability.SuccessExcel("Truy xuất thành công ");
             }
+        }
+
+        private int Target(string s)
+        {
+            if(s == Convert.ToString((ETargetTest)0))
+            {
+                return  0;
+            }
+            if (s == Convert.ToString((ETargetTest)1))
+            {
+                return 1;
+            }
+            if (s == Convert.ToString((ETargetTest)2))
+            {
+                return 2;
+            }
+            else
+            {
+                return 3;
+            }
+
         }
     }
 }

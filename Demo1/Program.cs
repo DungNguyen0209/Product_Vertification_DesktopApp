@@ -112,6 +112,9 @@ namespace ProductVertificationDesktopApp
             //Api Service
             IApiService apiService = new ApiService(mapper);
 
+            //Regular Expression Service 
+            IRegularExpression regularExpression = new RegularExpression();
+
             // Logo Setting For Service
             Logo logo1 = new Logo("10.84.60.17",0);
             Logo logo2 = new Logo("10.84.60.19", 0);
@@ -159,7 +162,7 @@ namespace ProductVertificationDesktopApp
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
 
             //Report Preseenter 
-            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService);
+            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService,regularExpression);
             Application.Run(new MainView(formCaidat, formDangnhap, formCanhbao, formBaocao, formTrogiup, formLichsu, formGiamsat));
         }
     }

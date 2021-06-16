@@ -190,7 +190,7 @@ namespace ProductVertificationDesktopApp.Service
             }
             try
             {
-                HttpResponseMessage response = await _httpClient.GetAsync($"{serverUrl}/api/reportreliability/?Page=1&ItemsPerPage=1000" + queryString);
+                HttpResponseMessage response = await _httpClient.GetAsync($"{serverUrl}/api/reportreliability/?Page=1&ItemsPerPage=10" + queryString);
                 string responseBody = await response.Content.ReadAsStringAsync();
                 switch (response.StatusCode)
                 {

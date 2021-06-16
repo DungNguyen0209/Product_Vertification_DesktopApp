@@ -261,6 +261,11 @@
     <Compile Include="IView\IViewSupervisorReliability.cs" />
     <Compile Include="Mapping\MappingApi.cs" />
     <Compile Include="Mapping\MappingReportTable.cs" />
+    <Compile Include="Migrations\202106151245553_1.cs" />
+    <Compile Include="Migrations\202106151245553_1.designer.cs">
+      <DependentUpon>202106151245553_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelingMachines.cs" />
     <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
@@ -290,7 +295,9 @@
     <Compile Include="Service\Interfaces\IModelingMachine.cs" />
     <Compile Include="Service\Interfaces\Is71200ModellingMachine.cs" />
     <Compile Include="Service\Interfaces\ISupervisor.cs" />
+    <Compile Include="Service\Interfaces\IRegularExpression.cs" />
     <Compile Include="Service\ModelingMachine.cs" />
+    <Compile Include="Service\RegularExpression.cs" />
     <Compile Include="Service\S71200.cs" />
     <Compile Include="Service\S71200ModellingMachines.cs" />
     <Compile Include="Service\Supervisor.cs" />
@@ -480,6 +487,9 @@
     <Compile Include="Views\Interface\Login\IViewLogin.cs" />
     <Compile Include="Views\Interface\Report\IViewReportDeformation.cs" />
     <Compile Include="Views\Interface\Report\IViewReportRiliability.cs" />
+    <EmbeddedResource Include="Migrations\202106151245553_1.resx">
+      <DependentUpon>202106151245553_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.resx">
       <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
     </EmbeddedResource>

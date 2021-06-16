@@ -73,12 +73,12 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
                 {
                     this.Invoke(new MethodInvoker(delegate ()
                     {
-                        dateTimePickerStart.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                        dateTimePickerStart.Value = value;
                     }));
                 }
                 catch
                 {
-                    dateTimePickerStart.Value =value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                    dateTimePickerStart.Value =value;
                 }
             }
         }
@@ -92,12 +92,12 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
                 {
                     this.Invoke(new MethodInvoker(delegate ()
                     {
-                        dateTimePickerStop.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                        dateTimePickerStop.Value = value;
                     }));
                 }
                 catch
                 {
-                    dateTimePickerStop.Value = value.AddHours(-value.Hour).AddMinutes(-value.Minute).AddSeconds(-value.Second);
+                    dateTimePickerStop.Value = value;
                 }
             }
         }
