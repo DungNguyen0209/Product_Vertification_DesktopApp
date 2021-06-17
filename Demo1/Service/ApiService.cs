@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Service
 {
-    public class ApiService: IApiService
+    public class ApiService : IApiService
     {
         private readonly HttpClient _httpClient;
         private readonly IMapper _mapper;
@@ -86,7 +86,8 @@ namespace ProductVertificationDesktopApp.Service
             token = "";
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
-        public async Task<ServiceResponse> PostReportRiliability(ApiReportRiliability settingMachine)
+        #region Reliability
+        public async Task<ServiceResponse> PostReliabilityReport(ReliabilityApiReport settingMachine)
         {
             ServiceResponse result;
             var json = JsonConvert.SerializeObject(settingMachine);
@@ -95,7 +96,9 @@ namespace ProductVertificationDesktopApp.Service
             {
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                string url = $"{serverUrl}/api/reportreliability";
+
+               string url = $"{serverUrl}/api/reportreliability";
+
                 var response = await _httpClient.PostAsync(url, content);
 
                 switch (response.StatusCode)
@@ -130,7 +133,7 @@ namespace ProductVertificationDesktopApp.Service
             return result;
         }
 
-        public async Task<ServiceResponse> PostReportSupervisorRiliability(ApiSupervisorReliability settingMachine)
+        public async Task<ServiceResponse> PostDeformationReport(DeformationApiReport settingMachine)
         {
             ServiceResponse result;
             var json = JsonConvert.SerializeObject(settingMachine);
@@ -139,7 +142,57 @@ namespace ProductVertificationDesktopApp.Service
             {
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                string url = $"{serverUrl}/api/monitorreliability";
+                string  url = $"{serverUrl}/api/reportdeformation";
+                var response = await _httpClient.PostAsync(url, content);
+
+                switch (response.StatusCode)
+                {
+                    case HttpStatusCode.OK:
+                        //EndShiftStatus = true;
+                        return ServiceResponse.Successful();
+                    case HttpStatusCode.BadRequest:
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        var serverError = JsonConvert.DeserializeObject<ServerError>(responseBody);
+                        var error = new Error("Api.SettingMachine.Post", serverError.Message);
+                        return ServiceResponse.Failed(error);
+                    case HttpStatusCode.Unauthorized:
+                        error = new Error("Api.SettingMachine.Post", "Vui lòng đăng nhập.");
+                        return ServiceResponse.Failed(error);
+                    default:
+                        error = new Error("Api.SettingMachine.Post", "Đã có lỗi xảy ra.");
+                        return ServiceResponse.Failed(error);
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                var error = new Error("Api.Connection", $"Đã có lỗi xảy ra. Không thể kết nối được với server vì: {ex.Message}");
+                result = new ServiceResourceResponse<Employee>(error);
+            }
+            catch (Exception ex)
+            {
+                var error = new Error("Api.SettingMachine.Post", $"Đã có lỗi xảy ra. Không thể gửi dữ liệu về server được vì: {ex.Message}");
+                result = ServiceResponse.Failed(error);
+                return result;
+            }
+            return result;
+        }
+        public async Task<ServiceResponse> PostReportSupervisor(ApiSupervisor settingMachine, string NameOfReport)
+        {
+            ServiceResponse result;
+            var json = JsonConvert.SerializeObject(settingMachine);
+
+            try
+            {
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                string url;
+                if (NameOfReport.ToLower() == "reliability")
+                {
+                    url = $"{serverUrl}/api/monitorreliability";
+                }
+                else
+                {
+                     url = $"{serverUrl}/api/monitordeformation";
+                }    
                 var response = await _httpClient.PostAsync(url, content);
 
                 switch (response.StatusCode)
@@ -174,10 +227,11 @@ namespace ProductVertificationDesktopApp.Service
             return result;
         }
 
-        public async Task<ServiceResourceResponse<QueryResult<ApiReportRiliability>>> GetReportRiliability(DateTime? startTime, DateTime? stopTime)
+        public async Task<ServiceResourceResponse<QueryResult<ReliabilityApiReport>>> GetReliabilityReport(DateTime? startTime, DateTime? stopTime)
         {
-            ServiceResourceResponse<QueryResult<ApiReportRiliability>> result;
+            ServiceResourceResponse<QueryResult<ReliabilityApiReport>> result;
             string queryString = "";
+            string url;
             if (startTime != null)
             {
                 string startTimestring = startTime.Value.ToString("yyyy-MM-dd");
@@ -195,27 +249,73 @@ namespace ProductVertificationDesktopApp.Service
                 switch (response.StatusCode)
                 {
                     case HttpStatusCode.OK:
-                        var reportRiliability = JsonConvert.DeserializeObject<QueryResult<ApiReportRiliability>>(responseBody);
-                        result = new ServiceResourceResponse<QueryResult<ApiReportRiliability>>(reportRiliability);
+                        var reportRiliability = JsonConvert.DeserializeObject<QueryResult<ReliabilityApiReport>>(responseBody);
+                        result = new ServiceResourceResponse<QueryResult<ReliabilityApiReport>>(reportRiliability);
                         return result;
                     default:
                         var error = new Error("Api.Product.Get", "Đã có lỗi xảy ra. Không thể truy xuất dữ liệu từ server.");
-                        result = new ServiceResourceResponse<QueryResult<ApiReportRiliability>>(error);
+                        result = new ServiceResourceResponse<QueryResult<ReliabilityApiReport>>(error);
                         return result;
                 }
             }
             catch (HttpRequestException ex)
             {
                 var error = new Error("Api.Connection", $"Đã có lỗi xảy ra. Không thể kết nối được với server vì: {ex.Message}");
-                result = new ServiceResourceResponse<QueryResult<ApiReportRiliability>>(error);
+                result = new ServiceResourceResponse<QueryResult<ReliabilityApiReport>>(error);
             }
             catch (Exception ex)
             {
                 var error = new Error("Api.Product.Get", $"Đã có lỗi xảy ra. Không thể truy xuất dữ liệu từ server vì: {ex.Message}");
-                result = new ServiceResourceResponse<QueryResult<ApiReportRiliability>>(error);
+                result = new ServiceResourceResponse<QueryResult<ReliabilityApiReport>>(error);
                 return result;
             }
             return result;
         }
+
+        public async Task<ServiceResourceResponse<QueryResult<DeformationApiReport>>> GetDeformationReport(DateTime? startTime, DateTime? stopTime)
+        {
+            ServiceResourceResponse<QueryResult<DeformationApiReport>> result;
+            string queryString = "";
+            string url;
+            if (startTime != null)
+            {
+                string startTimestring = startTime.Value.ToString("yyyy-MM-dd");
+                queryString += "&StartTime=" + startTimestring;
+            }
+            if (stopTime != null && startTime.Value.Date != stopTime.Value.Date)
+            {
+                string stopTimestring = stopTime.Value.ToString("yyyy-MM-dd");
+                queryString += "&StopTime=" + stopTimestring;
+            }
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync($"{serverUrl}/api/reportdeformation/?Page=1&ItemsPerPage=10" + queryString);
+                string responseBody = await response.Content.ReadAsStringAsync();
+                switch (response.StatusCode)
+                {
+                    case HttpStatusCode.OK:
+                        var reportRiliability = JsonConvert.DeserializeObject<QueryResult<DeformationApiReport>>(responseBody);
+                        result = new ServiceResourceResponse<QueryResult<DeformationApiReport>>(reportRiliability);
+                        return result;
+                    default:
+                        var error = new Error("Api.Product.Get", "Đã có lỗi xảy ra. Không thể truy xuất dữ liệu từ server.");
+                        result = new ServiceResourceResponse<QueryResult<DeformationApiReport>>(error);
+                        return result;
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                var error = new Error("Api.Connection", $"Đã có lỗi xảy ra. Không thể kết nối được với server vì: {ex.Message}");
+                result = new ServiceResourceResponse<QueryResult<DeformationApiReport>>(error);
+            }
+            catch (Exception ex)
+            {
+                var error = new Error("Api.Product.Get", $"Đã có lỗi xảy ra. Không thể truy xuất dữ liệu từ server vì: {ex.Message}");
+                result = new ServiceResourceResponse<QueryResult<DeformationApiReport>>(error);
+                return result;
+            }
+            return result;
+        }
+        #endregion
     }
 }

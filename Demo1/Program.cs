@@ -97,10 +97,13 @@ namespace ProductVertificationDesktopApp
 
             //Build Service for database
             var context = new ApplicationDbContext();
-            var testingConfigurationRepository = new TestingConfigurationRepository(context);
-            var testingMachineRepository = new TestingSheetRepository(context);
+            var reliabilitytestingConfigurationRepository = new ReliabilityTestingConfigurationRepository(context);
+            var reliabilitytestingSheetRepository = new ReliabilityTestingSheetRepository(context);
+            var deformationtestingConfiguarationRepository = new DeformationTestingConfigurationRepository(context);
+            var deformationTestingsheetRepository = new DeformationTestingSheetRepository(context);
+            
             var unitOfWorkRepository = new UnitOfWork(context);
-            var databaseService = new DatabaseService(unitOfWorkRepository, testingConfigurationRepository, testingMachineRepository);
+            var databaseService = new DatabaseService(unitOfWorkRepository, reliabilitytestingConfigurationRepository, reliabilitytestingSheetRepository,deformationtestingConfiguarationRepository,deformationTestingsheetRepository);
 
             //Setting Mapper
             var mappingConfig = new MapperConfiguration(cfg =>
@@ -162,7 +165,8 @@ namespace ProductVertificationDesktopApp
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
 
             //Report Preseenter 
-            ReportReliabilityPresenter reportReliabilityPresenter = new ReportReliabilityPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService,regularExpression);
+            ReliabilityReportPresenter reportReliabilityPresenter = new ReliabilityReportPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService,regularExpression);
+            DeformationReportPresenter deformationReportPresenter = new DeformationReportPresenter(form_Baocao_Dobencuongbuc, supervisor2, databaseService, mapper, ExcelService, apiService, regularExpression);
             Application.Run(new MainView(formCaidat, formDangnhap, formCanhbao, formBaocao, formTrogiup, formLichsu, formGiamsat));
         }
     }

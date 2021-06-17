@@ -14,13 +14,12 @@ namespace ProductVertificationDesktopApp.Service
         {
             string[] k = new string[2];
             Regex re = new Regex(@"(?<data>\w+)");
+            int i = 0;
             foreach (Match item in re.Matches(s)) 
             {
                 Group group = item.Groups["data"];
-                for (int captureCtr = 0; captureCtr < group.Captures.Count; captureCtr++)
-                {
-                    k[captureCtr] = group.Captures[captureCtr].Value;
-                }
+                k[i] = group.Captures[0].Value;
+                i++;
             };
             return k;
         }

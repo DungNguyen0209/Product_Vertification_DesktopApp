@@ -232,8 +232,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\API\ApiReportRiliability.cs" />
-    <Compile Include="Domain\API\ApiSupervisorReliability.cs" />
+    <Compile Include="Domain\API\DeformationApiSupervisor.cs" />
+    <Compile Include="Domain\API\ReliabilityApiReport.cs" />
+    <Compile Include="Domain\API\ApiSupervisor.cs" />
+    <Compile Include="Domain\API\DeformationApiReport.cs" />
     <Compile Include="Domain\Communication\QueryResult.cs" />
     <Compile Include="Domain\Communication\ServiceResourceResponse.cs" />
     <Compile Include="Domain\Communication\ServiceResponse.cs" />
@@ -242,11 +244,13 @@
     <Compile Include="Domain\Communication\WebApi\LoginResponse.cs" />
     <Compile Include="Domain\Communication\WebApi\ServerError.cs" />
     <Compile Include="Domain\Communication\WebApi\Token.cs" />
+    <Compile Include="Domain\Models\Resource\DeformationTestingConfigurations.cs" />
+    <Compile Include="Domain\Models\Resource\DeformationTestSheet.cs" />
     <Compile Include="Domain\Models\Resource\ETargetTest.cs" />
     <Compile Include="Domain\Models\Resource\EUnit.cs" />
     <Compile Include="Domain\Models\LoginApi\Employee.cs" />
     <Compile Include="Domain\Models\Resource\TestingMachine.cs" />
-    <Compile Include="Domain\Models\Resource\TestingConfigurations.cs" />
+    <Compile Include="Domain\Models\Resource\ReliabilityTestingConfigurations.cs" />
     <Compile Include="Domain\Models\Resource\TestSheet.cs" />
     <Compile Include="Domain\ViewModel\ReportViewModel.cs" />
     <Compile Include="helps\Constants.cs" />
@@ -261,21 +265,21 @@
     <Compile Include="IView\IViewSupervisorReliability.cs" />
     <Compile Include="Mapping\MappingApi.cs" />
     <Compile Include="Mapping\MappingReportTable.cs" />
-    <Compile Include="Migrations\202106151245553_1.cs" />
-    <Compile Include="Migrations\202106151245553_1.designer.cs">
-      <DependentUpon>202106151245553_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelingMachines.cs" />
     <Compile Include="Persistence\Contexts\ApplicationDbContext.cs" />
-    <Compile Include="Persistence\Repositories\Interfaces\ITestingConfigurationRepository.cs" />
-    <Compile Include="Persistence\Repositories\Interfaces\ITestingSheetRepository.cs" />
+    <Compile Include="Persistence\Repositories\DeformationTestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\DeformationTestingSheetRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IDeformationTestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IDeformationTestingSheetRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IReliabilityTestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IReliabilityTestingSheetRepository.cs" />
     <Compile Include="Persistence\Repositories\Interfaces\IunitOfWork.cs" />
-    <Compile Include="Persistence\Repositories\TestingSheetRepository.cs" />
+    <Compile Include="Persistence\Repositories\ReliabilityTestingSheetRepository.cs" />
     <Compile Include="Persistence\Repositories\UnitOfWork.cs" />
-    <Compile Include="Persistence\Repositories\TestingConfigurationRepository.cs" />
+    <Compile Include="Persistence\Repositories\ReliabilityTestingConfigurationRepository.cs" />
     <Compile Include="Presenters\LoginPresenter\LoginPresenter.cs" />
-    <Compile Include="Presenters\ReportPresenter\ReportReliabilityPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenter\DeformationReportPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenter\ReliabilityReportPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\ConfirmSettingPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingDeformationParam\SettingDeformationParamPresenter.cs" />
     <Compile Include="Presenters\SettingPresenter\SettingForecedEnduracePresenter.cs" />
@@ -487,9 +491,6 @@
     <Compile Include="Views\Interface\Login\IViewLogin.cs" />
     <Compile Include="Views\Interface\Report\IViewReportDeformation.cs" />
     <Compile Include="Views\Interface\Report\IViewReportRiliability.cs" />
-    <EmbeddedResource Include="Migrations\202106151245553_1.resx">
-      <DependentUpon>202106151245553_1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Implements\CaidatView\Dobiendang\ViewConfirmSetting.resx">
       <DependentUpon>ViewConfirmSetting.cs</DependentUpon>
     </EmbeddedResource>

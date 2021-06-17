@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
 {
-    public class ReportReliabilityPresenter
+    public class ReliabilityReportPresenter
     {
         private readonly IViewReportRiliability _viewReportRiliability;
         private readonly ISupervisor _supervisor;
@@ -26,7 +26,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         private readonly IRegularExpression _regularExpression;
         private bool FlagOpen = false;
         private int Countprevious;
-        public ReportReliabilityPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel, IApiService apiService,IRegularExpression regularExpression)
+        public ReliabilityReportPresenter(IViewReportRiliability viewReportRiliability, ISupervisor supervisor, IDatabaseService databaseService, IMapper mapper, IExcel excel, IApiService apiService,IRegularExpression regularExpression)
         {
             _mapper = mapper;
             _viewReportRiliability = viewReportRiliability;
@@ -68,7 +68,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                     var data = _mapper.Map<TestSheet, ReportViewModel>(previous);
                     _viewReportRiliability.Report.Add(data);
                 };
-                var configprevious = await _databaseService.LoadAllConfiguration();
+                var configprevious = await _databaseService.LoadAllReliabilityConfiguration();
                 _viewReportRiliability.NameProduct = configprevious[0].ProductCode;
                 _viewReportRiliability.Comment = configprevious[0].Note;
                 _viewReportRiliability.TimeStampFinish = configprevious[0].TimeStampStart;
@@ -85,15 +85,15 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                 await _databaseService.InsertReliability(dataCurrent);
 
             }
-            var testingConfigurations = new TestingConfigurations();
+            var testingConfigurations = new ReliabilityTestingConfigurations();
             testingConfigurations.TestingMachineID = Convert.ToString((EUnit)0);
             testingConfigurations.Target = Convert.ToInt32(_viewReportRiliability.eTargetTest);
             testingConfigurations.ProductCode = _viewReportRiliability.NameProduct;
             testingConfigurations.Note = _viewReportRiliability.Comment;
             testingConfigurations.TimeStampStart = _viewReportRiliability.TimeStampStart;
             testingConfigurations.TimeStampFinish = _viewReportRiliability.TimeStampFinish;
-            await _databaseService.ClearConfiguration();
-            await _databaseService.InsertTestingConfigurations(testingConfigurations);
+            await _databaseService.ClearReliabilityConfiguration();
+            await _databaseService.InsertReliabilityTestingConfigurations(testingConfigurations);
         }
         private async Task Update(bool a)
         {
@@ -107,7 +107,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                     _viewReportRiliability.Report.Add(test);
                 }
             }
-            var apisupervisor = new ApiSupervisorReliability
+            var apisupervisor = new ApiSupervisor
             {
                 NumberClosingSp = _supervisor.NumberCloseSP,
                 NumberClosingPv = _supervisor.TimeCurrent,
@@ -116,7 +116,7 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                 Running = _supervisor.Run,
                 Warning =_supervisor.Warn
             };
-            await _apiService.PostReportSupervisorRiliability(apisupervisor);
+            var g =await _apiService.PostReportSupervisor(apisupervisor,"reliability");
             /*
             // Update đóng êm lên API
             var data = new TestingConfigurations
@@ -163,13 +163,13 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
                     var clear = await _databaseService.ClearReliability();
                     if(clear.Success == true)
                     {
-                        var ApiReport = _mapper.Map<TestingMachine, ApiReportRiliability>(testingMachine);
+                        var ApiReport = _mapper.Map<TestingMachine, ReliabilityApiReport>(testingMachine);
                         ApiReport.Target = testingMachine.Target + ":" + testingMachine.Note;
-                        var result = await _apiService.PostReportRiliability(ApiReport);
+                        var result = await _apiService.PostReliabilityReport(ApiReport);
                         if(result.Success == true)
                         {
                             _viewReportRiliability.Report.Clear();
-                            await _databaseService.ClearConfiguration();
+                            await _databaseService.ClearReliabilityConfiguration();
                             _viewReportRiliability.SuccessExcel("Truy xuất thành công ");
                         }    
                         else
@@ -193,23 +193,31 @@ namespace ProductVertificationDesktopApp.Presenters.ReportPresenter
         {
             var timestart = _viewReportRiliability.TimeStampStart.AddDays(-1);
             var timestop = _viewReportRiliability.TimeStampFinish.AddDays(+1);
-            var result = await _apiService.GetReportRiliability(timestart, timestop);
+            var result = await _apiService.GetReliabilityReport(timestart, timestop);
             if (result.Success == true)
             {
-                var data = result.Resource.Items.First();
-                var import = _mapper.Map<ApiReportRiliability, TestingMachine>(data);    
-                    foreach (var items in import.Testsheet)
+                try
                 {
-                    var importdata = _mapper.Map<TestSheet, ReportViewModel>(items);
-                    _viewReportRiliability.Report.Add(importdata);
+                    var data = result.Resource.Items.Last();
+                    var import = _mapper.Map<ReliabilityApiReport, TestingMachine>(data);
+                    foreach (var items in import.Testsheet)
+                    {
+                        var importdata = _mapper.Map<TestSheet, ReportViewModel>(items);
+                        _viewReportRiliability.Report.Add(importdata);
+                    }
+                    var targetandnote = _regularExpression.RegularExpression1(data.Target);
+                    _viewReportRiliability.Comment = targetandnote[0];
+                    _viewReportRiliability.eTargetTest = Target(targetandnote[1]);
+                    _viewReportRiliability.NameProduct = data.ProductId.ToLower();
+                    _viewReportRiliability.TimeStampStart = data.StartTime;
+                    _viewReportRiliability.TimeStampFinish = data.StopTime;
+                    _viewReportRiliability.SuccessExcel("Truy xuất thành công ");
                 }
-                var targetandnote = _regularExpression.RegularExpression1(data.Target);
-                _viewReportRiliability.Comment = targetandnote[0];
-                _viewReportRiliability.eTargetTest = Target(targetandnote[1]);
-                _viewReportRiliability.NameProduct = data.ProductId;
-                _viewReportRiliability.TimeStampStart = data.StartTime;
-                _viewReportRiliability.TimeStampFinish = data.StopTime;
-                _viewReportRiliability.SuccessExcel("Truy xuất thành công ");
+                catch
+                {
+                    _viewReportRiliability.SuccessExcel("Không có dữ liệu trong thời gian này");
+                }
+                
             }
         }
 

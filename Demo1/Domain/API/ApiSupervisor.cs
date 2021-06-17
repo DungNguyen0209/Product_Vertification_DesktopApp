@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Domain.API
 {
-    public class ApiSupervisorReliability
+    public class ApiSupervisor
+
+
     {
         //SolandongnapCaidat
         public int NumberClosingSp { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Domain.Models.Resource
 {
-    public class TestingConfigurations
+    public class DeformationTestingConfigurations
     {
         public string TestingMachineID { get; set; }
         public DateTime TimeStampStart { get; set; }
@@ -18,4 +18,3 @@ namespace ProductVertificationDesktopApp.Domain.Models.Resource
         public string Note { get; set; }
     }
 }
-

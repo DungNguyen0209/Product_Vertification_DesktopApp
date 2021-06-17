@@ -2,6 +2,7 @@
 using ProductVertificationDesktopApp.Domain.API;
 using ProductVertificationDesktopApp.Domain.Communication;
 using ProductVertificationDesktopApp.Domain.Models.LoginApi;
+using ProductVertificationDesktopApp.Domain.Models.Resource;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,11 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
     {
         Task<ServiceResourceResponse<Employee>> LogInAsync(string username, string password);
         void LogOut();
-        Task<ServiceResponse> PostReportRiliability(ApiReportRiliability settingMachine);
-        Task<ServiceResponse> PostReportSupervisorRiliability(ApiSupervisorReliability settingMachine);
-        Task<ServiceResourceResponse<QueryResult<ApiReportRiliability>>> GetReportRiliability(DateTime? startTime, DateTime? stopTime);
+        Task<ServiceResponse> PostReliabilityReport(ReliabilityApiReport settingMachine);
+        Task<ServiceResponse> PostDeformationReport(DeformationApiReport settingMachine);
+        Task<ServiceResponse> PostReportSupervisor(ApiSupervisor settingMachine, string NameOfReport);
+        Task<ServiceResourceResponse<QueryResult<ReliabilityApiReport>>> GetReliabilityReport(DateTime? startTime, DateTime? stopTime);
+        Task<ServiceResourceResponse<QueryResult<DeformationApiReport>>> GetDeformationReport(DateTime? startTime, DateTime? stopTime);
+
     }
 }

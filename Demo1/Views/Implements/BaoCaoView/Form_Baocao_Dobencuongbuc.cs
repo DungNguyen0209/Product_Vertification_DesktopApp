@@ -1,4 +1,6 @@
-﻿using ProductVertificationDesktopApp.Domain.ViewModel;
+﻿using ProductVertificationDesktopApp.Domain;
+using ProductVertificationDesktopApp.Domain.Communication;
+using ProductVertificationDesktopApp.Domain.ViewModel;
 using ProductVertificationDesktopApp.helps;
 using ProductVertificationDesktopApp.Interface.Report;
 using System;
@@ -36,8 +38,153 @@ namespace ProductVertificationDesktopApp.Views.BaoCaoViews
             dataGridView_dobencuongbuc.Columns[11].Width = 200;
         }
         public IList<ReportViewModel> Report { get; set; }
+        public int eTargetTest
+        {
+            get
+            {
+                return comboBoxTarget.SelectedIndex;
+            }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        comboBoxTarget.SelectedIndex = value;
+                    }));
+                }
+                catch
+                {
+                    comboBoxTarget.SelectedIndex = value;
+                }
+            }
+        }
+
+        public DateTime TimeStampStart
+        {
+            get
+            { return dateTimePickerStart.Value; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        dateTimePickerStart.Value = value;
+                    }));
+                }
+                catch
+                {
+                    dateTimePickerStart.Value = value;
+                }
+            }
+        }
+        public DateTime TimeStampFinish
+        {
+            get
+            { return dateTimePickerStop.Value; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        dateTimePickerStop.Value = value;
+                    }));
+                }
+                catch
+                {
+                    dateTimePickerStop.Value = value;
+                }
+            }
+        }
+
+        public string NameProduct
+        {
+            get
+            { return textBoxNameProduct.Text; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        textBoxNameProduct.Text = value;
+                    }));
+                }
+                catch
+                {
+                    textBoxNameProduct.Text = value;
+                }
+            }
+        }
+
+        public string Comment
+        {
+            get
+            { return textBoxAdditional.Text; }
+            set
+            {
+                try
+                {
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        textBoxAdditional.Text = value;
+                    }));
+                }
+                catch
+                {
+                    textBoxAdditional.Text = value;
+                }
+            }
+        }
+
+        public event EventHandler Insert
+        {
+            add => button_Insert.Click += value;
+            remove => button_Insert.Click -= value;
+        }
+
+        public event EventHandler ImportData
+        {
+            add => btn_ImportData.Click += value;
+            remove => btn_ImportData.Click -= value;
+        }
+
+        public event EventHandler FormLoad;
+        public event EventHandler FormClose;
+
+        public void Closing(object sender, EventArgs e)
+        {
+            FormClose?.Invoke(this, e);
+        }
+        public void SuccessExcel(string s)
+        {
+            MessageBox.Show(s);
+        }
+
+        public async Task<ServiceResponse> ConfirmExport()
+        {
+            DialogResult dr;
+            dr = MessageBox.Show("Bạn có muốn in bản báo cáo  ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                return ServiceResponse.Successful();
+            }
+
+            else
+            {
+                var error = new Error
+                {
+                    ErrorCode = "Cancel.Export",
+                    Message = "Cancel"
+                };
+                return ServiceResponse.Failed(error);
+            }
+        }
         private void Form_Baocao_Dobencuongbuc_Load(object sender, EventArgs e)
         {
+            FormLoad?.Invoke(this, e);
             dataGridView_dobencuongbuc.BorderStyle = BorderStyle.Fixed3D;
             //dataGridView_doben.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(235, 243, 250);
             dataGridView_dobencuongbuc.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;

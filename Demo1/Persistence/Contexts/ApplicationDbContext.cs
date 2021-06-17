@@ -12,26 +12,33 @@ namespace ProductVertificationDesktopApp.Persistence.Contexts
 {
     public class ApplicationDbContext: DbContext
     {
-        public DbSet<TestingConfigurations> TestingConfigurations { get; set; }
-
-        public DbSet<TestSheet> testSheetReliability { get; set; }
+        public DbSet<ReliabilityTestingConfigurations> ReliabilityTestingConfigurations { get; set; }
+        public DbSet<TestSheet> ReliabilitytestSheet { get; set; }
+        public DbSet<DeformationTestingConfigurations> DeformationTestingConfigurations { get; set; }
+        public DbSet <DeformationTestSheet> deformationTestSheet { get; set; }
         //public DbSet<TestSheet> testSheetDeformation { get; set; }
         public ApplicationDbContext() : base("name = Connect")
         {
-            Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
+           // Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.
-                Entity<TestingConfigurations>().
-                HasKey(t => t.TestingMachineID);
-
-           
-
+            modelBuilder
+                .Entity<ReliabilityTestingConfigurations>()
+                .HasKey(t => t.TestingMachineID);
 
             modelBuilder
                 .Entity<TestSheet>()
                 .HasKey(s => s.TestSheetID);
+
+            modelBuilder
+                .Entity<DeformationTestingConfigurations>()
+                .HasKey(a => a.TestingMachineID);
+
+            modelBuilder
+                .Entity<DeformationTestSheet>()
+                .HasKey(b => b.TestSheetID);
+
         }
     }
 }

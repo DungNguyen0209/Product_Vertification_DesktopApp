@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Persistence.Repositories.Interfaces
 {
-    public interface ITestingConfigurationRepository
+    public interface IReliabilityTestingConfigurationRepository
     {
-        void Insert(TestingConfigurations entry);
+        void Insert(ReliabilityTestingConfigurations entry);
         void Clear();
-        Task<IList<TestingConfigurations>> LoadConfigurations();
+        Task<IList<ReliabilityTestingConfigurations>> LoadConfigurations();
     }
 }

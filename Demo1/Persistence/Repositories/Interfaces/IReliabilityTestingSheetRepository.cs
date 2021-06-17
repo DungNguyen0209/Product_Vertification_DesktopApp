@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Persistence.Repositories.Interfaces
 {
-    public interface ITestingSheetRepository
+    public interface IReliabilityTestingSheetRepository
     {
         //Task Update(TestingMachine entry);
         void InsertReliability(TestSheet entryreliability);

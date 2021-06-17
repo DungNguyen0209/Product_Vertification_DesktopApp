@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProductVertificationDesktopApp.Domain.API
 {
-    public class ApiReportRiliability
+    public class DeformationApiReport
     {
-        // Ngay bat day
         public DateTime StartTime { get; set; }
         // ngay ket thuc 
         public DateTime StopTime { get; set; }
@@ -20,23 +19,23 @@ namespace ProductVertificationDesktopApp.Domain.API
         public string Standard { get; set; }
         // luu y khi muc dich kiem tra la khac
         //public string Note { get; set; }
-        public IList<ApiTestSheet> ReliabilityTestSheet { get; set; }
+        public IList<DeformationApiTestSheet> DeformationTestSheet { get; set; }
     }
 
-    public class ApiTestSheet
+    public class DeformationApiTestSheet
     {
-      public int NumberTesting { get; set; }
+        public int NumberTesting { get; set; }
         public double TimeSmoothClosingLid { get; set; }
-        public string StatusLidNotFall { get; set; }
+        public string StatusLidNotBreak { get; set; }
         public string StatusLidNotLeak { get; set; }
         public string StatusLidResult { get; set; }
         public double TimeSmoothClosingPlinth { get; set; }
-        public string StatusPlinthNotFall { get; set; }
+        public string StatusPlinthNotBreak { get; set; }
         public string StatusPlinthNotLeak { get; set; }
         public string StatusPlinthResult { get; set; }
         public string TotalError { get; set; }
         public string Note { get; set; }
         public string Employee { get; set; }
     }
-
 }
+

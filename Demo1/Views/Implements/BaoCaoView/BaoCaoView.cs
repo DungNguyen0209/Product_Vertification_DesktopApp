@@ -82,6 +82,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.BaoCaoView
         public void Close(object sender, EventArgs e)
         {
             _form_Baocao_Doben.Closing(this, e);
+            _form_Baocao_Dobencuongbuc.Closing(this, e);
         }
     }
 }
