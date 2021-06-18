@@ -16,7 +16,7 @@ namespace ProductVertificationDesktopApp.IView
         Int16 NumberClick3 { get; set; }
         event EventHandler ConfirmSettingSystem1;
         event EventHandler ConfirmSettingSystem2;
-
+        void Controltextboxreadonly(bool system12, bool system3);
 
     }
 }

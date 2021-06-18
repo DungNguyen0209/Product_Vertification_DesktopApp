@@ -17,7 +17,8 @@ namespace ProductVertificationDesktopApp.IView
         int NumberClick1 { get; set; }
         int NumberClick2 { get; set; }
         int NumberClick3 { get; set; }
-
+        bool System1 { set; }
+        bool System2 { set; }
 
     }
 }

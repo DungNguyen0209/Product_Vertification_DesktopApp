@@ -31,6 +31,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
         {
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel_bangdieukhien = new System.Windows.Forms.Panel();
+            this.pictureBox_Mode = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,14 +51,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.btn_thongsovanhanh = new System.Windows.Forms.Button();
             this.btn_thongsocaidat = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox_Mode = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
             this.panel_bangdieukhien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).BeginInit();
             this.panel_label_bangdieukhien.SuspendLayout();
             this.panel_giamsat.SuspendLayout();
             this.panelParammeters.SuspendLayout();
             this.panel_nutnhan_thongso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).BeginInit();
             this.SuspendLayout();
             // 
             // panel11
@@ -91,6 +91,14 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel_bangdieukhien.Name = "panel_bangdieukhien";
             this.panel_bangdieukhien.Size = new System.Drawing.Size(1164, 303);
             this.panel_bangdieukhien.TabIndex = 0;
+            // 
+            // pictureBox_Mode
+            // 
+            this.pictureBox_Mode.Location = new System.Drawing.Point(561, 85);
+            this.pictureBox_Mode.Name = "pictureBox_Mode";
+            this.pictureBox_Mode.Size = new System.Drawing.Size(169, 143);
+            this.pictureBox_Mode.TabIndex = 28;
+            this.pictureBox_Mode.TabStop = false;
             // 
             // label13
             // 
@@ -313,14 +321,6 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel4.Size = new System.Drawing.Size(1170, 439);
             this.panel4.TabIndex = 75;
             // 
-            // pictureBox_Mode
-            // 
-            this.pictureBox_Mode.Location = new System.Drawing.Point(571, 85);
-            this.pictureBox_Mode.Name = "pictureBox_Mode";
-            this.pictureBox_Mode.Size = new System.Drawing.Size(169, 143);
-            this.pictureBox_Mode.TabIndex = 28;
-            this.pictureBox_Mode.TabStop = false;
-            // 
             // Form_Giamsat_Dobiendang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
@@ -336,12 +336,12 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel11.ResumeLayout(false);
             this.panel_bangdieukhien.ResumeLayout(false);
             this.panel_bangdieukhien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).EndInit();
             this.panel_label_bangdieukhien.ResumeLayout(false);
             this.panel_label_bangdieukhien.PerformLayout();
             this.panel_giamsat.ResumeLayout(false);
             this.panelParammeters.ResumeLayout(false);
             this.panel_nutnhan_thongso.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -28,6 +28,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.CaiDatView
             _luccheo3 = luccheo3;
             _khac = khac;
             InitializeComponent();
+            SettingParamDesign();
             btn_baitesttaptrung1.Click += OpenViewButton_Click;
             btn_testluccheo1.Click += OpenViewButton_Click;
             btn_testluccheo2.Click += OpenViewButton_Click;
@@ -93,5 +94,42 @@ namespace ProductVertificationDesktopApp.Views.Implements.CaiDatView
             _khac.BringToFront();
             _khac.Visible = true;
         }
+
+        private void SettingParamDesign ()
+        {
+            _testtaptrung.CompressionForceSettingsystem12 = 1500;
+            _testtaptrung.CompressionForceSettingsystem3 = 1200;
+            _testtaptrung.TimeOccupying12 = 5;
+            _testtaptrung.TimeOccuping3 = 7;
+            _testtaptrung.NumberClick12 = 15;
+            _testtaptrung.NumberClick3 = 20;
+
+            _luccheo1.CompressionForceSettingsystem12 = 1300;
+            _luccheo1.CompressionForceSettingsystem3 = 1350;
+            _luccheo1.TimeOccupying12 = 50;
+            _luccheo1.TimeOccuping3 = 70;
+            _luccheo1.NumberClick12 = 150;
+            _luccheo1.NumberClick3 = 200;
+
+            _luccheo2.CompressionForceSettingsystem12 = 13;
+            _luccheo2.CompressionForceSettingsystem3 = 135;
+            _luccheo2.TimeOccupying12 = 1;
+            _luccheo2.TimeOccuping3 = 1;
+            _luccheo2.NumberClick12 = 1;
+            _luccheo2.NumberClick3 = 1;
+
+            _luccheo3.CompressionForceSettingsystem12 = 1200;
+            _luccheo3.CompressionForceSettingsystem3 = 1000;
+            _luccheo3.TimeOccupying12 = 14;
+            _luccheo3.TimeOccuping3 = 13;
+            _luccheo3.NumberClick12 = 15;
+            _luccheo3.NumberClick3 = 10;
+
+            _testtaptrung.Controltextboxreadonly(true,false);
+            _luccheo1.Controltextboxreadonly(true,true);
+            _luccheo2.Controltextboxreadonly(false,true);
+            _luccheo3.Controltextboxreadonly(true,false);
+        }
+
     }
 }

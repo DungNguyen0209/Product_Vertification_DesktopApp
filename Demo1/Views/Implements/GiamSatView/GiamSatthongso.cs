@@ -43,6 +43,84 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                 { tb_CompressionForceSettingsystem1.Text = value.ToString(); }
             }
         }
+
+        public bool System1
+        { 
+
+            set
+            {
+                switch(value)
+                {
+                    case true:
+                        try
+                        {
+                            this.Invoke(new MethodInvoker(delegate ()
+                            {
+                                button1.Text = "✓";
+                                button1.ForeColor = Color.Green;
+                            }));
+                        }
+                        catch
+                        {
+                            button1.Text = "✓";
+                            button1.ForeColor = Color.Green;
+                        }
+                        break;
+                        case false:
+                        try
+                        {
+                            this.Invoke(new MethodInvoker(delegate ()
+                            {
+                                button1.Text = "";
+                            }));
+                        }
+                        catch
+                        {
+                            button1.Text = "";
+                        }
+                        break;
+                }    
+            }
+        }
+        public bool System2
+        {
+
+            set
+            {
+                switch (value)
+                {
+                    case true:
+                        try
+                        {
+                            this.Invoke(new MethodInvoker(delegate ()
+                            {
+                                button2.Text = "✓";
+                                button2.ForeColor = Color.Green;
+                            }));
+                        }
+                        catch
+                        {
+                            button2.Text = "✓";
+                            button2.ForeColor = Color.Green;
+                        }
+                        break;
+                    case false:
+                        try
+                        {
+                            this.Invoke(new MethodInvoker(delegate ()
+                            {
+                                button2.Text = "";
+                            }));
+                        }
+                        catch
+                        {
+                            button2.Text = "";
+                        }
+                        break;
+                }
+            }
+        }
+
         public int CompressionForceSettingsystem2
         {
             get

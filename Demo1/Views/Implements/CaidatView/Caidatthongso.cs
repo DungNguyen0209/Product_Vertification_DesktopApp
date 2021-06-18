@@ -220,5 +220,27 @@ namespace ProductVertificationDesktopApp.Views.Implements.CaiDatView
             btn_luu.Enabled = true;
             btn_xacnhan.Enabled = true;
         }
+
+        public void Controltextboxreadonly(bool system12,bool system3)
+        {
+            if(system12 == true)
+            {
+                button1.Text = "✓";
+                system1 = true;
+            }    
+            if(system3 == true)
+            {
+                button2.Text = "✓";
+                system2 = true;
+            }    
+            tb_CompressionForceSettingsystem1.ReadOnly = true;
+            tb_CompressionForceSettingsystem3.ReadOnly = true;
+            tb_NumberClick1.ReadOnly = true;
+            tb_NumberClick3.ReadOnly = true;
+            tb_TimeOccupying1.ReadOnly = true;
+            tb_TimeOccupying3.ReadOnly = true;
+            button1.Enabled = false;
+            button2.Enabled = false;
+        }
     }
 }

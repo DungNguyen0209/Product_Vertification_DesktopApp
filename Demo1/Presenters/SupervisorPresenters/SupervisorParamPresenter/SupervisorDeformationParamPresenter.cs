@@ -30,7 +30,8 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters.Supervi
             _viewParametersSetAndSup.NumberClick1 = _is71200ModellingMachine.SP_No_Press_12;
             _viewParametersSetAndSup.NumberClick2 = _is71200ModellingMachine.SP_No_Press_12;
             _viewParametersSetAndSup.NumberClick3 = _is71200ModellingMachine.SP_No_Press_3;
-
+            _viewParametersSetAndSup.System1 = _is71200ModellingMachine.SelectSystem1;
+            _viewParametersSetAndSup.System2 = _is71200ModellingMachine.SelectSystem2;
         }
     }
 }

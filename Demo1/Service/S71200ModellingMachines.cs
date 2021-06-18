@@ -250,6 +250,8 @@ namespace ProductVertificationDesktopApp.Service
             _ErrorCode = (int)testingStruct.Error_Code;
             _Start = testingStruct.Green_App;
             _Warning = testingStruct.Red_App;
+            _SelectSystem1 = testingStruct.Seclec_1_App;
+            _SelectSystem2 = testingStruct.Seclec_2_App;
             Mode = testingStruct.Mode;
             foreach (var handler in UpdateData)
             {

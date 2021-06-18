@@ -65,11 +65,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                             this.Invoke(new MethodInvoker(delegate ()
                             {
                                 pictureBox_Mode.Image = Image.FromFile("0_Wait.png");
+                                pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                             }));
                         }
                         catch
                         {
                             pictureBox_Mode.Image = Image.FromFile("0_Wait.png");
+                            pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                         }
                         break;
                     case 1:
@@ -78,11 +80,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                             this.Invoke(new MethodInvoker(delegate ()
                             {
                                 pictureBox_Mode.Image = Image.FromFile("1_Man.png");
+                                pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                             }));
                         }
                         catch
                         {
                             pictureBox_Mode.Image = Image.FromFile("1_Man.png");
+                            pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                         }
                         break;
                     case 2:
@@ -91,11 +95,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                             this.Invoke(new MethodInvoker(delegate ()
                             {
                                 pictureBox_Mode.Image = Image.FromFile("2_Auto.png");
+                                pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                             }));
                         }
                         catch
                         {
                             pictureBox_Mode.Image = Image.FromFile("2_Auto.png");
+                            pictureBox_Mode.SizeMode = PictureBoxSizeMode.StretchImage;
                         }
                         break;
                 }
