@@ -248,9 +248,8 @@ namespace ProductVertificationDesktopApp.Service
             _SP_Time_Hold_12 = (int)testingStruct.SP_Time_Hold_12;
             _SP_Time_Hold_3 = (int)testingStruct.SP_Time_Hold_3;
             _ErrorCode = (int)testingStruct.Error_Code;
-            var bits = new BitArray(testingStruct.Mode);
-            _Start = bits[3];
-            _Warning = bits[5];
+            _Start = testingStruct.Green_App;
+            _Warning = testingStruct.Red_App;
             foreach (var handler in UpdateData)
             {
                 handler.Invoke(true);

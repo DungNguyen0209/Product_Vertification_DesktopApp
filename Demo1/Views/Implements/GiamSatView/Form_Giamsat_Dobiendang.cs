@@ -18,6 +18,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
         private readonly GiamSatthongso _panelDeformationParameters2;
         private readonly Form_ConFirmRunning _form_ConFirmRunning;
         private readonly Form_ConFirmRunning _form_ConFirmStopping;
+        private readonly Form_ConFirmRunning _form_ConfirmReset;
         private Button selectedViewButton;
 
         public bool StartStatus
@@ -97,11 +98,11 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                         {
                             this.Invoke(new MethodInvoker(delegate ()
                             {
-                                ovalShape_Warning.BackColor = Color.Yellow;
+                                ovalShape_Warning.BackColor = Color.Red;
                             }));
                         }
                         catch
-                        { ovalShape_Warning.BackColor = Color.Yellow; }
+                        { ovalShape_Warning.BackColor = Color.Red; }
                         break;
                     case false:
                         try
@@ -118,16 +119,18 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             }
         }
 
-        public Form_Giamsat_Dobiendang(GiamSatthongso panelDeformationParameters1, GiamSatthongso panelDeformationParameters2,Form_ConFirmRunning form_ConFirmRunning, Form_ConFirmRunning form_ConFirmStopping)
+        public Form_Giamsat_Dobiendang(GiamSatthongso panelDeformationParameters1, GiamSatthongso panelDeformationParameters2,Form_ConFirmRunning form_ConFirmRunning, Form_ConFirmRunning form_ConFirmStopping,Form_ConFirmRunning form_ConFirmReset)
         {
             _form_ConFirmRunning = form_ConFirmRunning;
             _form_ConFirmStopping = form_ConFirmStopping;
+            _form_ConfirmReset = form_ConFirmReset;
             _panelDeformationParameters1 = panelDeformationParameters1;
             _panelDeformationParameters2 = panelDeformationParameters2;
             InitializeComponent();
             selectedViewButton = btn_thongsocaidat;
             _form_ConFirmRunning.Visible = false;
             _form_ConFirmStopping.Visible = false;
+            _form_ConfirmReset.Visible = false;
             _panelDeformationParameters1.Visible = true;
             _panelDeformationParameters2.Visible = false;
             panelConfirm.Visible = false;
@@ -137,12 +140,15 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             btn_thongsovanhanh.Click += OpenViewButton_Click;
             btn_Start.Click += ConFirmStart;
             btn_Stop.Click += ConFirmStop;
+            btn_Reset.Click += ConFirmReset;
             _form_ConFirmRunning.Confirm.Add(ClosingCofirm);
             _form_ConFirmStopping.Confirm.Add(ClosingCofirm);
+            _form_ConfirmReset.Confirm.Add(ResetCofirm);
             panelParammeters.Controls.Add(_panelDeformationParameters1);
             panelParammeters.Controls.Add(_panelDeformationParameters2);
             panelConfirm.Controls.Add(_form_ConFirmRunning);
             panelConfirm.Controls.Add(_form_ConFirmStopping);
+            panelConfirm.Controls.Add(_form_ConfirmReset);
             HighlightButton(btn_thongsocaidat);
         }
 
@@ -208,8 +214,22 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             _form_ConFirmStopping.BringToFront();
             _form_ConFirmStopping.Visible = true;
         }
+        private void ConFirmReset(object sender, EventArgs e)
+        {
+            panelConfirm.Visible = true;
+            panelConfirm.BringToFront();
+            panelConfirm.Show();
+            _form_ConfirmReset.BringToFront();
+            _form_ConfirmReset.Visible = true;
+        }
 
         private void ClosingCofirm(bool data)
+        {
+            panelConfirm.Visible = false;
+            panelConfirm.SendToBack();
+        }
+
+        private void ResetCofirm(bool data)
         {
             panelConfirm.Visible = false;
             panelConfirm.SendToBack();

@@ -58,16 +58,18 @@ namespace ProductVertificationDesktopApp
             Form_Caidat_Doben form_Caidat_Doben = new Form_Caidat_Doben();
             Form_Caidat_Dobencuongbuc form_Caidat_Dobencuongbuc = new Form_Caidat_Dobencuongbuc();
             Form_Caidat_Dobiendang form_Caidat_Dobiendang = new Form_Caidat_Dobiendang(caidattaptrung, caidatthongso1, caidatthongso2, caidatthongso3, khac);
-
+            
+            // form mini confirm in supervisor Deformation
             Form_ConFirmRunning form_ConFirmRunning = new Form_ConFirmRunning();
             Form_ConFirmRunning form_ConFirmStopping = new Form_ConFirmRunning();
+            Form_ConFirmRunning form_ConFirmReset = new Form_ConFirmRunning();
 
             GiamSatthongso panelDeformationParameters1 = new GiamSatthongso();
             GiamSatthongso panelDeformationParameters2 = new GiamSatthongso();
 
             Form_Giamsat_Doben form_Giamsat_Doben = new Form_Giamsat_Doben();
             Form_Giamsat_Dobencuongbuc form_Giamsat_Dobencuongbuc = new Form_Giamsat_Dobencuongbuc();
-            Form_Giamsat_Dobiendang form_Giamsat_Dobiendang = new Form_Giamsat_Dobiendang(panelDeformationParameters1,panelDeformationParameters2, form_ConFirmRunning, form_ConFirmStopping);
+            Form_Giamsat_Dobiendang form_Giamsat_Dobiendang = new Form_Giamsat_Dobiendang(panelDeformationParameters1,panelDeformationParameters2, form_ConFirmRunning, form_ConFirmStopping, form_ConFirmReset);
 
             Form_Lichsu_Doben form_Lichsu_Doben = new Form_Lichsu_Doben();
             Form_Lichsu_Dobencuongbuc form_Lichsu_Dobencuongbuc = new Form_Lichsu_Dobencuongbuc();
@@ -163,7 +165,7 @@ namespace ProductVertificationDesktopApp
             //DeFormation Supervisor Presner
             DeformationConFirmPresenter deformationConFirmPresenterStart = new DeformationConFirmPresenter(form_ConFirmRunning, is71200ModellingMachine);
             DeformationConFirmPresenter deformationConFirmPresenterStop = new DeformationConFirmPresenter(form_ConFirmStopping, is71200ModellingMachine);
-
+            DeformationConFirmPresenter deformationConFirmPresenterReset = new DeformationConFirmPresenter(form_ConFirmReset, is71200ModellingMachine);
             //Report Preseenter 
             ReliabilityReportPresenter reportReliabilityPresenter = new ReliabilityReportPresenter(form_Baocao_Doben, supervisor1,databaseService,mapper, ExcelService,apiService,regularExpression);
             DeformationReportPresenter deformationReportPresenter = new DeformationReportPresenter(form_Baocao_Dobencuongbuc, supervisor2, databaseService, mapper, ExcelService, apiService, regularExpression);
