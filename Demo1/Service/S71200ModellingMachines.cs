@@ -30,7 +30,7 @@ namespace ProductVertificationDesktopApp.Service
         private bool _SelectSystem1;
         private bool _SelectSystem2;
         private bool _Start;
-        private bool _Mode;
+        private int _Mode;
         private bool _Warning;
         private S71200 _s71200;
 
@@ -179,7 +179,7 @@ namespace ProductVertificationDesktopApp.Service
             set
             { _Start = value; }
         }
-        public bool Mode
+        public int Mode
         {
             get
             {
@@ -245,11 +245,12 @@ namespace ProductVertificationDesktopApp.Service
             _SP_Force_Cylinder_2 = (int)testingStruct.SP_Force_Cylinder_3;
             _SP_No_Press_12 = (int)testingStruct.SP_No_Press_12;
             _SP_No_Press_3 = (int)testingStruct.SP_No_Press_3;
-            _SP_Time_Hold_12 = (int)testingStruct.SP_Time_Hold_12;
-            _SP_Time_Hold_3 = (int)testingStruct.SP_Time_Hold_3;
+            _SP_Time_Hold_12 = (int)testingStruct.SP_Time_Hold_12/1000;
+            _SP_Time_Hold_3 = (int)testingStruct.SP_Time_Hold_3/1000;
             _ErrorCode = (int)testingStruct.Error_Code;
             _Start = testingStruct.Green_App;
             _Warning = testingStruct.Red_App;
+            Mode = testingStruct.Mode;
             foreach (var handler in UpdateData)
             {
                 handler.Invoke(true);

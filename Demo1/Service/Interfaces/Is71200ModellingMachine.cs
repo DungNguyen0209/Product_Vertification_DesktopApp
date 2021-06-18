@@ -25,7 +25,7 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
         bool SelectSystem1 { get; set; }
         bool SelectSystem2 { get; set; }
         bool Start { get; set; }
-        bool Mode { get; set; }
+        int Mode { get; set; }
         bool Warning { get; set; }
         List<Action<bool>> UpdateData { get; set; }
         void SendStatus(string s);

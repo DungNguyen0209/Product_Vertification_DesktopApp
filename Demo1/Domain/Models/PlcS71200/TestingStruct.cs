@@ -30,5 +30,6 @@ namespace ProductVertificationDesktopApp.Domain.Models.PlcS71200
         public bool Empty_mode2;
         public Byte Empty;
         public Int16 Error_Code;
+        public Int32 Mode;
     }
 }

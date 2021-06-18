@@ -13,7 +13,7 @@ namespace ProductVertificationDesktopApp.IView
         event EventHandler Reset;
 
         bool StartStatus { set; }
-        bool ModeStatus { set; }
+        int ModeStatus { set; }
         bool Warning { set; }
     }
 }

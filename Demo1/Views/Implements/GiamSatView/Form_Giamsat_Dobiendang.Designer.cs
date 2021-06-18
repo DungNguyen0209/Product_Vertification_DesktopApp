@@ -40,23 +40,24 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel_label_bangdieukhien = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.ovalShape_Mode = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape_Warning = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape_Running = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.panel_giamsat = new System.Windows.Forms.Panel();
             this.panelParammeters = new System.Windows.Forms.Panel();
+            this.panelConfirm = new System.Windows.Forms.Panel();
             this.panel_nutnhan_thongso = new System.Windows.Forms.Panel();
             this.panelViewSelected = new System.Windows.Forms.Panel();
             this.btn_thongsovanhanh = new System.Windows.Forms.Button();
             this.btn_thongsocaidat = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelConfirm = new System.Windows.Forms.Panel();
+            this.pictureBox_Mode = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
             this.panel_bangdieukhien.SuspendLayout();
             this.panel_label_bangdieukhien.SuspendLayout();
             this.panel_giamsat.SuspendLayout();
             this.panelParammeters.SuspendLayout();
             this.panel_nutnhan_thongso.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).BeginInit();
             this.SuspendLayout();
             // 
             // panel11
@@ -74,6 +75,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             // panel_bangdieukhien
             // 
             this.panel_bangdieukhien.BackColor = System.Drawing.Color.White;
+            this.panel_bangdieukhien.Controls.Add(this.pictureBox_Mode);
             this.panel_bangdieukhien.Controls.Add(this.label13);
             this.panel_bangdieukhien.Controls.Add(this.label12);
             this.panel_bangdieukhien.Controls.Add(this.label11);
@@ -196,20 +198,11 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.ovalShape_Mode,
             this.ovalShape_Warning,
             this.ovalShape_Running});
             this.shapeContainer2.Size = new System.Drawing.Size(1164, 303);
             this.shapeContainer2.TabIndex = 27;
             this.shapeContainer2.TabStop = false;
-            // 
-            // ovalShape_Mode
-            // 
-            this.ovalShape_Mode.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape_Mode.BorderWidth = 5;
-            this.ovalShape_Mode.Location = new System.Drawing.Point(593, 96);
-            this.ovalShape_Mode.Name = "ovalShape_Mode";
-            this.ovalShape_Mode.Size = new System.Drawing.Size(130, 130);
             // 
             // ovalShape_Warning
             // 
@@ -248,6 +241,14 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panelParammeters.Name = "panelParammeters";
             this.panelParammeters.Size = new System.Drawing.Size(1164, 357);
             this.panelParammeters.TabIndex = 1;
+            // 
+            // panelConfirm
+            // 
+            this.panelConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.panelConfirm.Location = new System.Drawing.Point(329, 43);
+            this.panelConfirm.Name = "panelConfirm";
+            this.panelConfirm.Size = new System.Drawing.Size(600, 250);
+            this.panelConfirm.TabIndex = 0;
             // 
             // panel_nutnhan_thongso
             // 
@@ -312,13 +313,13 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel4.Size = new System.Drawing.Size(1170, 439);
             this.panel4.TabIndex = 75;
             // 
-            // panelConfirm
+            // pictureBox_Mode
             // 
-            this.panelConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.panelConfirm.Location = new System.Drawing.Point(329, 43);
-            this.panelConfirm.Name = "panelConfirm";
-            this.panelConfirm.Size = new System.Drawing.Size(600, 250);
-            this.panelConfirm.TabIndex = 0;
+            this.pictureBox_Mode.Location = new System.Drawing.Point(571, 85);
+            this.pictureBox_Mode.Name = "pictureBox_Mode";
+            this.pictureBox_Mode.Size = new System.Drawing.Size(169, 143);
+            this.pictureBox_Mode.TabIndex = 28;
+            this.pictureBox_Mode.TabStop = false;
             // 
             // Form_Giamsat_Dobiendang
             // 
@@ -340,6 +341,7 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
             this.panel_giamsat.ResumeLayout(false);
             this.panelParammeters.ResumeLayout(false);
             this.panel_nutnhan_thongso.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mode)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,9 +365,9 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
         private System.Windows.Forms.Panel panelViewSelected;
         private System.Windows.Forms.Panel panelParammeters;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape_Mode;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape_Warning;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape_Running;
         private System.Windows.Forms.Panel panelConfirm;
+        private System.Windows.Forms.PictureBox pictureBox_Mode;
     }
 }

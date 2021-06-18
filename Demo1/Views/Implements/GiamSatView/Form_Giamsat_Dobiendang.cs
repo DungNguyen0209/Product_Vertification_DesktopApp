@@ -54,35 +54,48 @@ namespace ProductVertificationDesktopApp.Views.Implements.GiamSatView
                 }
             }
         }
-        public bool ModeStatus {
+        public int ModeStatus {
             set
             {
                 switch (value)
                 {
-                    case true:
+                    case 0:
                         try
                         {
                             this.Invoke(new MethodInvoker(delegate ()
                             {
-                                ovalShape_Mode.BackColor = Color.Green;
+                                pictureBox_Mode.Image = Image.FromFile("0_Wait.png");
                             }));
                         }
                         catch
                         {
-                            ovalShape_Mode.BackColor = Color.Green;
+                            pictureBox_Mode.Image = Image.FromFile("0_Wait.png");
                         }
                         break;
-                    case false:
+                    case 1:
                         try
                         {
                             this.Invoke(new MethodInvoker(delegate ()
                             {
-                                ovalShape_Mode.BackColor = Color.White;
+                                pictureBox_Mode.Image = Image.FromFile("1_Man.png");
                             }));
                         }
                         catch
                         {
-                            ovalShape_Mode.BackColor = Color.White;
+                            pictureBox_Mode.Image = Image.FromFile("1_Man.png");
+                        }
+                        break;
+                    case 2:
+                        try
+                        {
+                            this.Invoke(new MethodInvoker(delegate ()
+                            {
+                                pictureBox_Mode.Image = Image.FromFile("2_Auto.png");
+                            }));
+                        }
+                        catch
+                        {
+                            pictureBox_Mode.Image = Image.FromFile("2_Auto.png");
                         }
                         break;
                 }
