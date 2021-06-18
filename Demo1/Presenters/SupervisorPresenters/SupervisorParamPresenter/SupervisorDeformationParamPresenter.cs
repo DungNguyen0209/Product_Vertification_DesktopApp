@@ -21,15 +21,15 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters.Supervi
         }
         private void UpdateView (bool status)
         {
-            _viewParametersSetAndSup.CompressionForceSettingsystem1 = _is71200ModellingMachine.CompressionForceSettingsystem1_SP;
-            _viewParametersSetAndSup.CompressionForceSettingsystem2 = _is71200ModellingMachine.CompressionForceSettingsystem1_SP;
-            _viewParametersSetAndSup.CompressionForceSettingsystem3 = _is71200ModellingMachine.CompressionForceSettingsystem2_SP;
-            _viewParametersSetAndSup.TimeOccupying1 = _is71200ModellingMachine.TimeOccupying1;
-            _viewParametersSetAndSup.TimeOccupying2 = _is71200ModellingMachine.TimeOccupying1;
-            _viewParametersSetAndSup.TimeOccuping3 = _is71200ModellingMachine.TimeOccupying2;
-            _viewParametersSetAndSup.NumberClick1 = _is71200ModellingMachine.NumberClick1_SP;
-            _viewParametersSetAndSup.NumberClick2 = _is71200ModellingMachine.NumberClick1_SP;
-            _viewParametersSetAndSup.NumberClick3 = _is71200ModellingMachine.NumberClick2_SP;
+            _viewParametersSetAndSup.CompressionForceSettingsystem1 = _is71200ModellingMachine.SP_Force_Cylinder_1;
+            _viewParametersSetAndSup.CompressionForceSettingsystem2 = _is71200ModellingMachine.SP_Force_Cylinder_1;
+            _viewParametersSetAndSup.CompressionForceSettingsystem3 = _is71200ModellingMachine.SP_Force_Cylinder_2;
+            _viewParametersSetAndSup.TimeOccupying1 = _is71200ModellingMachine.SP_Time_Hold_12;
+            _viewParametersSetAndSup.TimeOccupying2 = _is71200ModellingMachine.SP_Time_Hold_12;
+            _viewParametersSetAndSup.TimeOccuping3 = _is71200ModellingMachine.SP_Time_Hold_3;
+            _viewParametersSetAndSup.NumberClick1 = _is71200ModellingMachine.SP_No_Press_12;
+            _viewParametersSetAndSup.NumberClick2 = _is71200ModellingMachine.SP_No_Press_12;
+            _viewParametersSetAndSup.NumberClick3 = _is71200ModellingMachine.SP_No_Press_3;
 
         }
     }

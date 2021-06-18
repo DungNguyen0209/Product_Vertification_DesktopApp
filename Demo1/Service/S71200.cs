@@ -1,4 +1,6 @@
-﻿using Sharp7;
+﻿using ProductVertificationDesktopApp.Domain.Models.PlcS71200;
+using S7.Net;
+using Sharp7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace ProductVertificationDesktopApp.Service
 {
     class S71200
     {
-        private readonly S7Client _s7Client;
+        private readonly Plc _s7Client;
         private readonly Timer _timer;
         private readonly Timer _timer1;
         private readonly int _memory;
@@ -17,7 +19,7 @@ namespace ProductVertificationDesktopApp.Service
         public int SelectSystem;
         public S71200( int memory, string address,int DB)
         {
-            _s7Client = new S7Client();
+            _s7Client = new  Plc(CpuType.S71200, address, 0, 1);
             _memory = memory;
             Address = address;
             _DB = DB;
@@ -31,60 +33,60 @@ namespace ProductVertificationDesktopApp.Service
                 Interval = 80,
                 Enabled = false
             };
-            DataReceivedHandlerBits = new List<Action<bool[]>>();
-            DataReceivedHandlerInt = new List<Action<int[]>>();
+            DataReceived = new List<Action<TestingStruct>>();
              _timer.Elapsed += Timer_Tick;
             _timer1.Elapsed += Timer1_Tick;
             Connect();
         }
-
         public string Address { get; set; }
-
-        public List<Action<bool[]>> DataReceivedHandlerBits { get; set; }
-        public List<Action<int[]>> DataReceivedHandlerInt { get; set; }
+        public List<Action<TestingStruct>> DataReceived { get; set; }
         public void Connect()
         {
-            _s7Client.ConnectTo(Address, 0, 0);
-            int result = _s7Client.Connect();
-
-            if (result == 0)
+            _s7Client.Open();
+            bool result = _s7Client.IsConnected;
+            if (result == true)
             {
                 _timer.Enabled = true;
             }
         }
-
         public void SetMemoryBit(string s)
         {
             var buffer = new byte[1];
-            if ((s == "start")&& (_s7Client.Connect() == 0))
+            if ((s == "start")&& (_s7Client.IsConnected == true))
             {
+                _timer.Enabled = false;
                 Sharp7.S7.SetBitAt(buffer, 0,1,true);
-                _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+                _s7Client.WriteBytes(DataType.DataBlock,_DB,0,buffer);
 
             }
-            if ((s == "stop")&&(_s7Client.Connect() == 0))
+            if ((s == "stop")&&(_s7Client.IsConnected == true))
             {
+                _timer.Enabled = false;
                 Sharp7.S7.SetBitAt(buffer, 0, 2, true);
-                _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+                _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
             }
-            if ((s == "reset")&&(_s7Client.Connect() == 0))
+            if ((s == "reset")&&(_s7Client.IsConnected == true))
             {
+                _timer.Enabled = false;
                 Sharp7.S7.SetBitAt(buffer, 0, 3, true);
-                _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+                _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
                 _timer1.Enabled = true;
             }
 
-            if ((s == "confirm") && (_s7Client.Connect() == 0))
+            if ((s == "confirm") && (_s7Client.IsConnected == true))
             {
+                _timer.Enabled = false;
                 Sharp7.S7.SetBitAt(buffer, 0, 6, true);
-                _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+                _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
                 _timer1.Enabled = true;
             }
-            if ((s == "cancel") && (_s7Client.Connect() == 0))
+            if ((s == "cancel") && (_s7Client.IsConnected == true))
             {
+                _timer.Enabled = false;
                 Sharp7.S7.SetBitAt(buffer, 0, 6, false);
-                _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+                _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
                 _timer1.Enabled = true;
+                _timer.Enabled = true;
             }
             buffer[0] = 0;
         }
@@ -94,29 +96,29 @@ namespace ProductVertificationDesktopApp.Service
             SelectSystem = StatusSelect;
             var buffer = new byte[1];
             Sharp7.S7.SetBitAt(buffer, 0, bit, status);
-            _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
             _timer1.Enabled = true;
 
         }
         public void SetMemMoryBitStatus(int offset, int bit, bool status)
         {
-            var bufffer = new byte[1];
-            Sharp7.S7.SetBitAt(bufffer, 0, bit, status);
-            _s7Client.WriteArea(0x84, 52, offset, 1, 0x02, bufffer);
+            var buffer = new byte[1];
+            Sharp7.S7.SetBitAt(buffer, 0, bit, status);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer);
         }
         public void SendDataUint(int offset, Int16 data)
         {
             byte[] _data = new byte[2];
             _data = BitConverter.GetBytes(data);
             var data_send = MyConvert2Byte(_data);
-            _s7Client.WriteArea(0x84, _DB, _memory + offset,1, 0x04, data_send);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, _memory + offset, data_send);
         }
         public void SendDataReal(int offset, Single data)
         {
             byte[] _data = new byte[4];
             _data = BitConverter.GetBytes(data);
             var data_send = MyConvert4Byte(_data);
-            _s7Client.WriteArea(0x84, _DB, _memory + offset, 1, 0x06, data_send);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, _memory + offset, data_send);
         }
 
         public void SendTime(int offset, int data)
@@ -124,10 +126,10 @@ namespace ProductVertificationDesktopApp.Service
             byte[] _data = new byte[4];
             _data = BitConverter.GetBytes(data*1000);
             var data_send = MyConvert4Byte(_data);
-            _s7Client.WriteArea(0x84,_DB, _memory + offset, 1, 0x06, data_send);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, _memory + offset, data_send);
         }
         // đọc về Word khi cần
-        public int ReadInt16(int offset)
+        /*public int ReadInt16(int offset)
         {
             byte[] buffer = new byte[2];
             //_s7Client.DBRead(_DB, offset, 2, buffer);
@@ -155,7 +157,7 @@ namespace ProductVertificationDesktopApp.Service
             _buffer = MyConvert4Byte(buffer);
             var data = BitConverter.ToUInt32(_buffer, 0);
             return (int)data;
-        }
+        }*/
 
         public byte[] MyConvert4Byte(byte[] buffer_data)
         {
@@ -203,46 +205,16 @@ namespace ProductVertificationDesktopApp.Service
                 Sharp7.S7.SetBitAt(buffer_send1, 0, 4,false);
                 Sharp7.S7.SetBitAt(buffer_send1, 0, 5, false);
             }
-            _s7Client.WriteArea(0x84, 52, 0, 1, 0x02, buffer_send1);
+            _s7Client.WriteBytes(DataType.DataBlock, _DB, 0, buffer_send1);
+            _timer.Enabled = true;
             _timer1.Enabled = false;
         }
         private void Timer_Tick(object sender, EventArgs args)
         {
-            byte[] _buffer = new byte[100];
-            _s7Client.DBRead(_DB, 22, 42, _buffer);
-            byte[] buffer = new byte[1];
-            byte[] testing=new byte[15];
-            int PV_Force_Cylinder_1 = ReadReal(22);
-            int PV_Force_Cylinder_2 = ReadReal(26);
-            int PV_Force_Cylinder_3 = ReadReal(30);
-            int PV_No_Press_1 = ReadInt16(34);
-            int PV_No_Press_2 = ReadInt16(36);
-            int PV_No_Press_3 = ReadInt16(38);
-            int SP_Force_Cylinder_12 = ReadReal(40);
-            int SP_Force_Cylinder_3 = ReadReal(44);
-            int SP_No_Press_12 = ReadInt16(48);
-            int SP_No_Press_3 = ReadInt16(50);
-            int SP_Time_Hold_12 = ReadTime(52)/1000;
-            int SP_Time_Hold_3 = ReadTime(56)/1000;
-            int Error_Code = ReadReal(62);
-            int Display_mode = ReadInt16(64);
-            int[] data_supervisor = { 0,PV_Force_Cylinder_1,PV_Force_Cylinder_2,PV_Force_Cylinder_3,PV_No_Press_1,PV_No_Press_2,PV_No_Press_3,SP_Force_Cylinder_12,SP_Force_Cylinder_3,SP_No_Press_12,SP_No_Press_3,SP_Time_Hold_12,SP_Time_Hold_3,Error_Code,Display_mode};
-            _s7Client.DBRead(52, 60, 1, buffer);
-            bool[] data = new bool[16];
-            for (int i = 0; i < 1; i++)
-            {
-                for (int j = 0; j < 8; j++)
-                {
-                    data[i * 8 + j] = Sharp7.S7.GetBitAt(buffer, i, j);
-                }
-            }
-            foreach (var handler in DataReceivedHandlerBits)
+            var data = (TestingStruct)_s7Client.ReadStruct(typeof(TestingStruct), _DB, 22);
+            foreach (var handler in DataReceived)
             {
                 handler.Invoke(data);
-            }
-            foreach (var handler in DataReceivedHandlerInt)
-            {
-                handler.Invoke(data_supervisor);
             }
         }
     }

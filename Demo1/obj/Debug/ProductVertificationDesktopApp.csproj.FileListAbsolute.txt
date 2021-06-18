@@ -753,4 +753,3 @@ C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\D
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\S7.Net.dll
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\S7.Net.xml
 C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\bin\Debug\Consul.dll
-C:\Users\PC\Desktop\AppanhtrianhNghia\ProductVertificationDesktopApp\Demo1\obj\Debug\ProductVertificationDesktopApp.csproj.Migrations._1.resources

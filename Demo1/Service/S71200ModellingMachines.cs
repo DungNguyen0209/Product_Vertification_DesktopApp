@@ -1,30 +1,31 @@
-﻿using ProductVertificationDesktopApp.Service;
+﻿using ProductVertificationDesktopApp.Domain.Models.PlcS71200;
+using ProductVertificationDesktopApp.Service;
 using ProductVertificationDesktopApp.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sharp7;
+using System.Collections;
 
 namespace ProductVertificationDesktopApp.Service
 {
     class S71200ModellingMachines:Is71200ModellingMachine
     {
-        private int _CompressionForceSettingsystem1_SP;
-        private int _CompressionForceSettingsystem2_SP;
-        private int _CompressionForceSettingsystem3_SP;
-        private int _CompressionForceSettingsystem1_PV;
-        private int _CompressionForceSettingsystem2_PV;
-        private int _CompressionForceSettingsystem3_PV;
-        private int _TimeOccupying1;
-        private int _TimeOccupying2;
-        private int _NumberClick1_SP;
-        private int _NumberClick2_SP;
-        private int _NumberClick3_SP;
-        private int _NumberClick1_PV;
-        private int _NumberClick2_PV;
-        private int _NumberClick3_PV;
-        private int _Display_Mode;
+        private int _SP_Force_Cylinder_1;
+        private int _SP_Force_Cylinder_2;
+        private int _SP_Force_Cylinder_3;
+        private int _PV_Force_Cylinder_1;
+        private int _PV_Force_Cylinder_2;
+        private int _PV_Force_Cylinder_3;
+        private int _SP_Time_Hold_12;
+        private int _SP_Time_Hold_3;
+        private int _SP_No_Press_12;
+        private int _SP_No_Press_3;
+        private int _PV_No_Press_1;
+        private int _PV_No_Press_2;
+        private int _PV_No_Press_3;
         private int _ErrorCode;
         private bool _SelectSystem1;
         private bool _SelectSystem2;
@@ -37,146 +38,136 @@ namespace ProductVertificationDesktopApp.Service
         {
             _s71200 = s71200;
             UpdateData = new List<Action<bool>>();
-            _s71200.DataReceivedHandlerBits.Add(DataReceivedBitHandler);
-            _s71200.DataReceivedHandlerInt.Add(DataReceivedIntHandler);
+            _s71200.DataReceived.Add(DataReceivedHandler);
         }
 
         public List<Action<bool>> UpdateData { get; set; }
-        public int CompressionForceSettingsystem1_SP
+        public int SP_Force_Cylinder_1
         {
             get
             {
-                return _CompressionForceSettingsystem1_SP;
+                return _SP_Force_Cylinder_1;
             }
 
             set
-            { _CompressionForceSettingsystem1_SP = value; }
+            { _SP_Force_Cylinder_1 = value; }
         }
-        public int CompressionForceSettingsystem2_SP {
+        public int SP_Force_Cylinder_2 {
             get
             {
-                return _CompressionForceSettingsystem2_SP;
+                return _SP_Force_Cylinder_2;
             }
 
             set
-            { _CompressionForceSettingsystem2_SP = value; }
+            { _SP_Force_Cylinder_2 = value; }
         }
-        public int CompressionForceSettingsystem3_SP {
+        public int SP_Force_Cylinder_3 {
             get
             {
-                return _CompressionForceSettingsystem3_SP;
+                return _SP_Force_Cylinder_3;
             }
 
             set
-            { _CompressionForceSettingsystem3_SP = value; }
+            { _SP_Force_Cylinder_3 = value; }
         }
-        public int CompressionForceSettingsystem1_PV
+        public int PV_Force_Cylinder_1
         {
             get
             {
-                return _CompressionForceSettingsystem1_PV;
+                return _PV_Force_Cylinder_1;
             }
 
             set
-            { _CompressionForceSettingsystem1_PV = value; }
+            { _PV_Force_Cylinder_1 = value; }
         }
-        public int CompressionForceSettingsystem2_PV
+        public int PV_Force_Cylinder_2
         {
             get
             {
-                return _CompressionForceSettingsystem2_PV;
+                return _PV_Force_Cylinder_2;
             }
 
             set
-            { _CompressionForceSettingsystem2_PV = value; }
+            { _PV_Force_Cylinder_2 = value; }
         }
-        public int CompressionForceSettingsystem3_PV
+        public int PV_Force_Cylinder_3
         {
             get
             {
-                return _CompressionForceSettingsystem3_PV;
+                return _PV_Force_Cylinder_3;
             }
 
             set
-            { _CompressionForceSettingsystem3_PV = value; }
+            { _PV_Force_Cylinder_3 = value; }
         }
-        public int TimeOccupying1
+        public int SP_Time_Hold_12
         {
             get
             {
-                return _TimeOccupying1;
+                return _SP_Time_Hold_12;
             }
 
             set
-            { _TimeOccupying1 = value; }
+            { _SP_Time_Hold_12 = value; }
         }
-        public int TimeOccupying2 {
+        public int SP_Time_Hold_3 {
             get
             {
-                return _TimeOccupying2;
+                return _SP_Time_Hold_3;
             }
 
             set
-            { _TimeOccupying2 = value; }
+            { _SP_Time_Hold_3 = value; }
         }
         
-        public int NumberClick1_SP {
+        public int SP_No_Press_12 {
             get
             {
-                return _NumberClick1_SP;
+                return _SP_No_Press_12;
             }
 
             set
-            { _NumberClick1_SP = value; }
+            { _SP_No_Press_12 = value; }
         }
-        public int NumberClick2_SP {
+        public int SP_No_Press_3 {
             get
             {
-                return _NumberClick2_SP;
+                return _SP_No_Press_3;
             }
 
             set
-            { _NumberClick2_SP = value; }
-        }
-        public int NumberClick3_SP {
-            get
-            {
-                return _NumberClick3_SP;
-            }
-
-            set
-            { _NumberClick3_SP = value; }
+            { _SP_No_Press_3 = value; }
         }
 
-        public int NumberClick1_PV
+        public int PV_No_Press_1
         {
             get
             {
-                return _NumberClick1_PV;
+                return _PV_No_Press_1;
             }
 
             set
-            { _NumberClick1_PV = value; }
+            { _PV_No_Press_1 = value; }
         }
-        public int NumberClick2_PV
+        public int PV_No_Press_2
         {
             get
             {
-                return _NumberClick2_PV;
+                return _PV_No_Press_2;
             }
 
             set
-            { _NumberClick2_PV = value; }
+            { _PV_No_Press_2 = value; }
         }
-        public int NumberClick3_PV
+        public int PV_No_Press_3
         {
             get
             {
-                return _NumberClick3_PV;
+                return _PV_No_Press_3;
             }
 
             set
-            { _NumberClick3_PV = value; }
+            { _PV_No_Press_3 = value; }
         }
         public bool Start
         {
@@ -240,48 +231,33 @@ namespace ProductVertificationDesktopApp.Service
             { _ErrorCode = value; }
         }
 
-        public int Display_Mode {
-            get
-            {
-                return _Display_Mode;
-            }
+        
 
-            set
-            { _Display_Mode = value; }
-        }
-
-        private void DataReceivedIntHandler(int[] data)
+        private void DataReceivedHandler(TestingStruct testingStruct)
         {
-            _CompressionForceSettingsystem1_PV = data[1];
-            _CompressionForceSettingsystem2_PV = data[2];
-            _CompressionForceSettingsystem3_PV = data[3];
-            _NumberClick1_PV = data[4];
-            _NumberClick2_PV = data[5];
-            _NumberClick3_PV = data[6];
-            _CompressionForceSettingsystem1_SP = data[7];
-            _CompressionForceSettingsystem2_SP = data[8];
-            _NumberClick1_SP = data[9];
-            _NumberClick2_SP = data[10];
-            _TimeOccupying1 = data[11];
-            _TimeOccupying2 = data[12];
-            _ErrorCode = data[13];
-            _Display_Mode = data[14];
-
+            _PV_Force_Cylinder_1 = (int)testingStruct.PV_Force_Cylinder_1;
+            _PV_Force_Cylinder_2 = (int )testingStruct.PV_Force_Cylinder_2;
+            _PV_Force_Cylinder_3 = (int)testingStruct.PV_Force_Cylinder_3;
+            _PV_No_Press_1 = (int)testingStruct.PV_No_Press_1;
+            _PV_No_Press_2 = (int)testingStruct.PV_No_Press_2;
+            _PV_No_Press_3 =(int)testingStruct.PV_No_Press_3;
+            _SP_Force_Cylinder_1 = (int)testingStruct.SP_Force_Cylinder_12;
+            _SP_Force_Cylinder_2 = (int)testingStruct.SP_Force_Cylinder_3;
+            _SP_No_Press_12 = (int)testingStruct.SP_No_Press_12;
+            _SP_No_Press_3 = (int)testingStruct.SP_No_Press_3;
+            _SP_Time_Hold_12 = (int)testingStruct.SP_Time_Hold_12;
+            _SP_Time_Hold_3 = (int)testingStruct.SP_Time_Hold_3;
+            _ErrorCode = (int)testingStruct.Error_Code;
+            var bits = new BitArray(testingStruct.Mode);
+            _Start = bits[3];
+            _Warning = bits[5];
             foreach (var handler in UpdateData)
             {
                 handler.Invoke(true);
             }
         }
 
-        private void DataReceivedBitHandler(bool[] data)
-        {
-            _SelectSystem1 = data[1];
-            _SelectSystem2 = data[2];
-            _Start = data[3];
-            _Mode = data[0];
-            _Warning = data[4];
 
-        }
         public void SendStatus(string s)
         {
             _s71200.SetMemoryBit(s.ToLower());

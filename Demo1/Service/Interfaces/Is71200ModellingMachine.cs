@@ -8,22 +8,19 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
 {
     public interface Is71200ModellingMachine
     {
-        int CompressionForceSettingsystem1_SP { get; set; }
-        int CompressionForceSettingsystem2_SP { get; set; }
-        int CompressionForceSettingsystem3_SP { get; set; }
-        int CompressionForceSettingsystem1_PV { get; set; }
-        int CompressionForceSettingsystem2_PV { get; set; }
-        int CompressionForceSettingsystem3_PV { get; set; }
-        int TimeOccupying1 { get; set; }
-        int TimeOccupying2 { get; set; }
-        int NumberClick1_SP { get; set; }
-        int NumberClick2_SP { get; set; }
-        int NumberClick3_SP { get; set; }
-        int NumberClick1_PV { get; set; }
-        int NumberClick2_PV { get; set; }
-        int NumberClick3_PV { get; set; }
-        int Display_Mode { get; set; }
-
+        int SP_Force_Cylinder_1 { get; set; }
+        int SP_Force_Cylinder_2 { get; set; }
+        int SP_Force_Cylinder_3 { get; set; }
+        int PV_Force_Cylinder_1 { get; set; }
+        int PV_Force_Cylinder_2 { get; set; }
+        int PV_Force_Cylinder_3 { get; set; }
+        int SP_Time_Hold_12 { get; set; }
+        int SP_Time_Hold_3 { get; set; }
+        int SP_No_Press_12 { get; set; }
+        int SP_No_Press_3 { get; set; }
+        int PV_No_Press_1 { get; set; }
+        int PV_No_Press_2 { get; set; }
+        int PV_No_Press_3 { get; set; }
         int ErrorCode { get; set; }
         bool SelectSystem1 { get; set; }
         bool SelectSystem2 { get; set; }

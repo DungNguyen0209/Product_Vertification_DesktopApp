@@ -21,12 +21,12 @@ namespace ProductVertificationDesktopApp.Presenters.SupervisorPresenters.Supervi
         }
         private void UpdateView(bool status)
         {
-            _viewParametersSetAndSup.CompressionForceSettingsystem1 = _is71200ModellingMachine.CompressionForceSettingsystem1_PV;
-            _viewParametersSetAndSup.CompressionForceSettingsystem2 = _is71200ModellingMachine.CompressionForceSettingsystem2_PV;
-            _viewParametersSetAndSup.CompressionForceSettingsystem3 = _is71200ModellingMachine.CompressionForceSettingsystem3_PV;
-            _viewParametersSetAndSup.NumberClick1 = _is71200ModellingMachine.NumberClick1_PV;
-            _viewParametersSetAndSup.NumberClick2 = _is71200ModellingMachine.NumberClick2_PV;
-            _viewParametersSetAndSup.NumberClick3 = _is71200ModellingMachine.NumberClick3_PV;
+            _viewParametersSetAndSup.CompressionForceSettingsystem1 = _is71200ModellingMachine.PV_Force_Cylinder_1;
+            _viewParametersSetAndSup.CompressionForceSettingsystem2 = _is71200ModellingMachine.PV_Force_Cylinder_2;
+            _viewParametersSetAndSup.CompressionForceSettingsystem3 = _is71200ModellingMachine.PV_Force_Cylinder_3;
+            _viewParametersSetAndSup.NumberClick1 = _is71200ModellingMachine.PV_No_Press_1;
+            _viewParametersSetAndSup.NumberClick2 = _is71200ModellingMachine.PV_No_Press_2;
+            _viewParametersSetAndSup.NumberClick3 = _is71200ModellingMachine.PV_No_Press_3;
 
         }
     }
