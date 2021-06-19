@@ -244,6 +244,7 @@
     <Compile Include="Domain\Communication\WebApi\LoginResponse.cs" />
     <Compile Include="Domain\Communication\WebApi\ServerError.cs" />
     <Compile Include="Domain\Communication\WebApi\Token.cs" />
+    <Compile Include="Domain\Models\LOGO!\ComponentResult.cs" />
     <Compile Include="Domain\Models\PlcS71200\Datatype.cs" />
     <Compile Include="Domain\Models\PlcS71200\ErrorCode.cs" />
     <Compile Include="Domain\Models\PlcS71200\TestingStruct.cs" />

@@ -1,4 +1,5 @@
-﻿using ProductVertificationDesktopApp.Service;
+﻿using ProductVertificationDesktopApp.Domain.Models.LOGO_;
+using ProductVertificationDesktopApp.Service;
 using ProductVertificationDesktopApp.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace ProductVertificationDesktopApp.Service
         private int _TimeCloseSP;
         private int _TimeOpenSP;
         private int _NumberCloseSP;
-        public event EventHandler<int[]> UpdateData;
+        public event EventHandler<bool> UpdateData;
         public Supervisor(Logo logo)
         {
             _logo = logo;
@@ -126,18 +127,18 @@ namespace ProductVertificationDesktopApp.Service
             _logo.SetMemoryBit(s.ToLower());
         }
 
-        private void DataRecivedHandler(int[] data1, bool[] data)
+        private void DataRecivedHandler(ComponentResult componentResult,int CurrentNumberClosing,bool Start, bool Warning)
         {
-            _TimeStop = data1[0];
-            _TimeStart = data1[1];
-            _TimeCount = data1[2];
-            _TimeCurrent = data1[3];
-            _TimeCloseSP = data1[4];
-            _TimeOpenSP = data1[5];
-            _NumberCloseSP = data1[6];
-            _Run = data[7];
-            _Warn = data[3];
-            UpdateData?.Invoke(this, data1);
+            _TimeStop =componentResult.TimeClose;
+            _TimeStart = componentResult.TimeOpen;
+            _TimeCount = componentResult.NumberClosingSmooth;
+            _TimeCurrent = CurrentNumberClosing;
+            _TimeCloseSP = componentResult.TimeCloseSP;
+            _TimeOpenSP = componentResult.TimeOpenSP;
+            _NumberCloseSP = componentResult.NumberClosingSP;
+            _Run = Start;
+            _Warn = Warning;
+            UpdateData?.Invoke(this, true);
         }
 
 

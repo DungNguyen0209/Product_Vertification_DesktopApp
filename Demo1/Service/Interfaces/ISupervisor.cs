@@ -18,6 +18,6 @@ namespace ProductVertificationDesktopApp.Service.Interfaces
         int TimeOpenSP { get; set; }
         int NumberCloseSP { get; set; }
         void SendStatus(string s);
-        event EventHandler<int[]> UpdateData;
+        event EventHandler<bool> UpdateData;
     }
 }
