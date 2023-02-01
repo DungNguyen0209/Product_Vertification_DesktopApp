@@ -7,4 +7,4 @@
   - Kiểm soát lỗi và xử lý khi gặp sự cố trong quá trình kiểm tra chất lượng sản phầm
   - Xuất báo cáo trong quá trình thu thập dữ liệu
   - Thông báo lỗi khi hệ thống gặp lỗi 
-## 🔗 Demo: <a href="https://www.youtube.com/watch?v=cJdSNVObI3s" target="_blank">Product_Vertification_DesktopApp</a>
+#### 🔗 Demo: <a href="https://www.youtube.com/watch?v=cJdSNVObI3s" target="_blank">Product_Vertification_DesktopApp</a>
