@@ -1,5 +1,5 @@
 ### <div align="center">Phần mềm quản lý việc kiểm tra chất lượng sản phẩm tại công ty nhựa</div>
-## 💻Công nghệ: C#, WPF, MVVM, Entity Framework, s7.NET Framework, EPPLus library, Restfull API, 
+# 💻Công nghệ: C#, WPF, MVVM, Entity Framework, s7.NET Framework, EPPLus library, Restfull API, 
 ## ❓ Nhiệm vụ: 
   - Thiết kế phần mềm thu thập dữ liệu trong quá trình kiểm tra chất lượng sản phẩm
   - Lưu trữ dữ liệu của việc kiểm tra chất lượng sản phẩm tại server của nhà máy
